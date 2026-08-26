@@ -1,0 +1,24 @@
+import { ExamHeader } from '../components/ExamHeader'
+import { ExamNavigator } from '../components/ExamNavigator'
+import { QuestionCard } from '../components/QuestionCard'
+import type { ExamSession, Question } from '../types/exam'
+
+interface ExamPageProps {
+  session?: ExamSession
+  questionsById: Record<string, Question>
+  onStart: () => void
+  onSelect: (questionId: string, optionId: string) => void
+  onJump: (index: number) => void
+  onReview: (questionId: string) => void
+  onSubmit: () => void
+}
+
+export function ExamPage({ session, questionsById, onStart, onSelect, onJump, onReview, onSubmit }: ExamPageProps) {
+  if (!session) return <div className="page exam-intro"><p className="eyebrow">FULL EXAM SIMULATOR</p><h1>45 questions.<br /><em>50 minutes.</em></h1><p>This simulator uses an even nine-question distribution across its five study domains. It is not an official Certiport weighting.</p><div className="exam-rules"><span>◷ Absolute timer</span><span>⌁ Navigation map</span><span>⚑ Review flags</span><span>◎ Results on submit</span></div><button className="button primary" onClick={onStart}>Begin full exam →</button></div>
+
+  const safeIndex = Math.min(session.currentIndex, session.questionIds.length - 1)
+  const question = questionsById[session.questionIds[safeIndex]]
+  const answeredIds = Object.entries(session.answers).filter(([, answer]) => answer.length).map(([id]) => id)
+  const jump = (index: number) => onJump(index)
+  return <div className="page exam-page"><ExamHeader expiresAt={session.expiresAt} current={safeIndex + 1} total={session.questionIds.length} onExpire={onSubmit} /><div className="exam-layout"><div><QuestionCard question={question} selectedOptionIds={session.answers[question.id] ?? []} onChange={(optionId) => onSelect(question.id, optionId)} /><div className="exam-actions"><button className={session.reviewQuestionIds.includes(question.id) ? 'review-toggle active' : 'review-toggle'} onClick={() => onReview(question.id)}>⚑ {session.reviewQuestionIds.includes(question.id) ? 'Marked for review' : 'Mark for review'}</button><div><button className="button ghost" disabled={safeIndex === 0} onClick={() => jump(safeIndex - 1)}>← Previous</button><button className="button primary" onClick={() => safeIndex === session.questionIds.length - 1 ? onSubmit() : jump(safeIndex + 1)}>{safeIndex === session.questionIds.length - 1 ? 'Submit exam' : 'Next →'}</button></div></div></div><ExamNavigator questionIds={session.questionIds} currentIndex={safeIndex} answeredIds={answeredIds} reviewIds={session.reviewQuestionIds} onJump={jump} /></div><button className="submit-all" onClick={onSubmit}>Submit exam now</button></div>
+}
