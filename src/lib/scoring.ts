@@ -2,6 +2,8 @@ import type { AnswerMap, Domain, Question } from '../types/exam'
 
 export const normalizeAnswer = (answer: string[]) => [...answer].sort()
 
+export const isMultipleAnswerQuestion = (question: Question) => question.correctOptionIds.length > 1
+
 export const isCorrectAnswer = (question: Question, selectedOptionIds: string[] = []) => {
   const expected = normalizeAnswer(question.correctOptionIds)
   const actual = normalizeAnswer(selectedOptionIds)

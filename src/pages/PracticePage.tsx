@@ -1,5 +1,6 @@
 import { QuestionCard } from '../components/QuestionCard'
 import { domains, type Domain, type PracticeSession, type Question } from '../types/exam'
+import { isCorrectAnswer } from '../lib/scoring'
 
 interface PracticePageProps {
   session?: PracticeSession
@@ -19,5 +20,5 @@ export function PracticePage({ session, questionsById, onStartQuick, onStartDoma
   const question = questionsById[session.questionIds[session.currentIndex]]
   const evaluated = session.evaluatedQuestionIds.includes(question.id)
   const isLast = session.currentIndex === session.questionIds.length - 1
-  return <div className="page session-page"><div className="session-kicker"><span>Practice · {session.label}</span><span>Question {session.currentIndex + 1} of {session.questionIds.length}</span></div><QuestionCard question={question} selectedOptionIds={session.answers[question.id] ?? []} disabled={evaluated} showResult={evaluated} onChange={onSelect} /><div className="session-actions">{!evaluated ? <button className="button primary" disabled={!(session.answers[question.id]?.length)} onClick={onSubmit}>Check answer</button> : <button className="button primary" onClick={onNext}>{isLast ? 'Finish practice' : 'Next question'}</button>}<button className="text-button" onClick={onDiscard}>End session</button></div></div>
+  return <div className="page session-page"><div className="session-kicker"><span>Practice · {session.label}</span><span>Question {session.currentIndex + 1} of {session.questionIds.length}</span></div><QuestionCard question={question} selectedOptionIds={session.answers[question.id] ?? []} disabled={evaluated} showResult={evaluated} onChange={onSelect} />{evaluated && <div className={isCorrectAnswer(question, session.answers[question.id]) ? 'result-banner correct' : 'result-banner incorrect'} role="status">{isCorrectAnswer(question, session.answers[question.id]) ? 'Correct' : 'Incorrect'}</div>}<div className="session-actions">{!evaluated ? <button className="button primary" disabled={!(session.answers[question.id]?.length)} onClick={onSubmit}>Check answer</button> : <button className="button primary" onClick={onNext}>{isLast ? 'Finish practice' : 'Next question'}</button>}<button className="text-button" onClick={onDiscard}>End session</button></div></div>
 }

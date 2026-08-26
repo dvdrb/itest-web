@@ -3,7 +3,7 @@ import { AppShell, type Page } from './components/AppShell'
 import { questions } from './data/questions'
 import { buildFullExam, buildQuickPractice, buildWeakAreaPractice } from './lib/questionSets'
 import { deriveDomainProgress, updateProgress } from './lib/progress'
-import { calculateDomainAccuracy, scoreQuestions } from './lib/scoring'
+import { calculateDomainAccuracy, isMultipleAnswerQuestion, scoreQuestions } from './lib/scoring'
 import { clearState, isExamExpired, readState, reconcileStateForQuestionIds, writeState } from './lib/storage'
 import { DashboardPage } from './pages/DashboardPage'
 import { ExamPage } from './pages/ExamPage'
@@ -33,10 +33,11 @@ function App() {
   }, [])
   useEffect(() => { writeState(state) }, [state])
 
-  const navigate = (nextPage: Page) => {
+  const navigate = useCallback((nextPage: Page, bypassActiveExamWarning = false) => {
+    if (!bypassActiveExamWarning && state.activeExam && nextPage !== 'exam' && !window.confirm('A full exam is still active. Its timer will continue while you navigate away. Continue?')) return
     window.location.hash = nextPage
     setPage(nextPage)
-  }
+  }, [state.activeExam])
 
   const completeExam = useCallback((session: ExamSession) => {
     const sessionQuestions = session.questionIds.map((id) => questionsById[id]).filter(Boolean)
@@ -54,11 +55,17 @@ function App() {
       if (current.activeExam?.id !== session.id) return current
       return { ...current, progress: updateProgress(current.progress, sessionQuestions, session.answers), attempts: [attempt, ...current.attempts], activeExam: undefined }
     })
-    navigate('results')
-  }, [questionsById])
+    navigate('results', true)
+  }, [navigate, questionsById])
 
   useEffect(() => {
-    if (state.activeExam && isExamExpired(state.activeExam)) completeExam(state.activeExam)
+    if (!state.activeExam) return undefined
+    if (isExamExpired(state.activeExam)) {
+      completeExam(state.activeExam)
+      return undefined
+    }
+    const timeout = window.setTimeout(() => completeExam(state.activeExam!), Math.max(0, state.activeExam.expiresAt - Date.now()))
+    return () => window.clearTimeout(timeout)
   }, [state.activeExam, completeExam])
 
   const startPractice = (questionIds: string[], label: string) => {
@@ -73,7 +80,7 @@ function App() {
       if (!session) return current
       const question = questionsById[session.questionIds[session.currentIndex]]
       const currentAnswer = session.answers[question.id] ?? []
-      const selected = question.type === 'multiple-choice'
+      const selected = isMultipleAnswerQuestion(question)
         ? (currentAnswer.includes(optionId) ? currentAnswer.filter((id) => id !== optionId) : [...currentAnswer, optionId])
         : [optionId]
       return { ...current, activePractice: { ...session, answers: { ...session.answers, [question.id]: selected } } }
@@ -110,7 +117,7 @@ function App() {
       if (!session) return current
       const question = questionsById[questionId]
       const answer = session.answers[questionId] ?? []
-      const selected = question.type === 'multiple-choice' ? (answer.includes(optionId) ? answer.filter((id) => id !== optionId) : [...answer, optionId]) : [optionId]
+      const selected = isMultipleAnswerQuestion(question) ? (answer.includes(optionId) ? answer.filter((id) => id !== optionId) : [...answer, optionId]) : [optionId]
       return { ...current, activeExam: { ...session, answers: { ...session.answers, [questionId]: selected } } }
     })
   }
@@ -133,9 +140,9 @@ function App() {
   const renderPage = () => {
     switch (page) {
       case 'practice': return <PracticePage session={state.activePractice} questionsById={questionsById} onStartQuick={(size) => startPractice(buildQuickPractice(questions, size), `${size}-question mixed set`)} onStartDomain={(domain: Domain) => startPractice(buildQuickPractice(questions, 10, domain), `${domain} drill`)} onStartWeak={() => startPractice(buildWeakAreaPractice(questions, state.progress), 'weak-area drill')} onSelect={handlePracticeSelect} onSubmit={submitPractice} onNext={nextPractice} onDiscard={() => { setState((current) => ({ ...current, activePractice: undefined })); navigate('dashboard') }} />
-      case 'exam': return <ExamPage session={state.activeExam} questionsById={questionsById} onStart={startExam} onSelect={selectExamAnswer} onJump={jumpExam} onReview={toggleExamReview} onSubmit={() => state.activeExam && completeExam(state.activeExam)} />
+      case 'exam': return <ExamPage session={state.activeExam} questionsById={questionsById} onStart={startExam} onSelect={selectExamAnswer} onJump={jumpExam} onReview={toggleExamReview} onManualSubmit={() => state.activeExam && completeExam(state.activeExam)} onExpire={() => state.activeExam && completeExam(state.activeExam)} />
       case 'notes': return <StudyNotesPage />
-      case 'results': return <ResultsPage attempt={state.attempts[0]} questionsById={questionsById} onPractice={() => navigate('practice')} />
+      case 'results': return <ResultsPage attempt={state.attempts[0]} questionsById={questionsById} onPracticeWeak={() => startPractice(buildWeakAreaPractice(questions, state.progress), 'weak-area drill')} />
       default: return <DashboardPage domainProgress={domainProgress} attempts={state.attempts} totalAnswered={domainProgress.reduce((total, entry) => total + entry.attempted, 0)} onNavigate={navigate} onPracticeWeak={() => startPractice(buildWeakAreaPractice(questions, state.progress), 'weak-area drill')} onReset={resetProgress} />
     }
   }

@@ -1,4 +1,5 @@
 import type { Question } from '../types/exam'
+import { isMultipleAnswerQuestion } from '../lib/scoring'
 
 interface QuestionCardProps {
   question: Question
@@ -18,7 +19,7 @@ const typeLabels: Record<Question['type'], string> = {
 }
 
 export function QuestionCard({ question, selectedOptionIds, mode = 'practice', disabled = false, showResult = false, onChange }: QuestionCardProps) {
-  const isMultiple = question.type === 'multiple-choice'
+  const isMultiple = isMultipleAnswerQuestion(question)
   const showMetadata = mode === 'review' || (mode === 'practice' && showResult)
   const selectedDistractors = question.options.filter((option) => selectedOptionIds.includes(option.id) && !question.correctOptionIds.includes(option.id) && question.distractorExplanations[option.id])
   return (

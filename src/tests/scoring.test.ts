@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { questions } from '../data/questions'
-import { isCorrectAnswer, scoreQuestions } from '../lib/scoring'
+import { isCorrectAnswer, isMultipleAnswerQuestion, scoreQuestions } from '../lib/scoring'
 
 describe('scoring', () => {
   it('scores single-choice answers exactly', () => {
@@ -13,6 +13,14 @@ describe('scoring', () => {
     const question = questions.find((item) => item.type === 'multiple-choice')!
     expect(isCorrectAnswer(question, [...question.correctOptionIds].reverse())).toBe(true)
     expect(isCorrectAnswer(question, [question.correctOptionIds[0]])).toBe(false)
+  })
+
+  it('uses correct-option cardinality, not content type, for selection mechanics', () => {
+    questions.forEach((question) => expect(isMultipleAnswerQuestion(question)).toBe(question.correctOptionIds.length > 1))
+    const singleAnswerScenario = { ...questions.find((item) => item.correctOptionIds.length === 1)!, type: 'scenario' as const }
+    const multipleAnswerCommand = { ...questions.find((item) => item.correctOptionIds.length > 1)!, type: 'command-output' as const }
+    expect(isMultipleAnswerQuestion(singleAnswerScenario)).toBe(false)
+    expect(isMultipleAnswerQuestion(multipleAnswerCommand)).toBe(true)
   })
 
   it('returns a complete score summary', () => {

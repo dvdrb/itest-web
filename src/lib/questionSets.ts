@@ -16,7 +16,12 @@ export const buildFullExam = (questions: Question[], random: Random = Math.rando
   const selected = domains.flatMap((domain) => {
     const domainQuestions = questions.filter((question) => question.domain === domain)
     if (domainQuestions.length < 9) throw new Error(`The active question bank needs at least nine questions for ${domain}.`)
-    return shuffle(domainQuestions, random).slice(0, 9)
+    const byObjective = new Map<string, Question[]>()
+    domainQuestions.forEach((question) => byObjective.set(question.objectiveId, [...(byObjective.get(question.objectiveId) ?? []), question]))
+    const coverageQuestions = [...byObjective.values()].map((objectiveQuestions) => shuffle(objectiveQuestions, random)[0])
+    const selectedIds = new Set(coverageQuestions.map((question) => question.id))
+    const remaining = shuffle(domainQuestions.filter((question) => !selectedIds.has(question.id)), random)
+    return [...coverageQuestions, ...remaining].slice(0, 9)
   })
   return shuffle(selected, random).map((question) => question.id)
 }
@@ -45,13 +50,22 @@ export const buildWeakAreaPractice = (questions: Question[], progress: ProgressB
 
   const priority = (question: Question) => {
     const current = progress[question.id]
-    if (current?.everIncorrect) return 0
+    if (current && !current.lastCorrect) return 0
     if (!current) return 1
-    return 2
+    if (current.everIncorrect) return 2
+    return 3
   }
 
-  const candidates = shuffle(questions.filter((question) => weakDomains.includes(question.domain)), random)
-    .sort((left, right) => priority(left) - priority(right))
+  const selected: Question[] = []
+  for (let rank = 0; rank <= 3 && selected.length < preferredSize; rank += 1) {
+    const domainPools = Object.fromEntries(weakDomains.map((domain) => [domain, shuffle(questions.filter((question) => question.domain === domain && priority(question) === rank), random)])) as Record<Domain, Question[]>
+    while (selected.length < preferredSize && weakDomains.some((domain) => domainPools[domain].length)) {
+      weakDomains.forEach((domain) => {
+        const question = domainPools[domain].shift()
+        if (question && selected.length < preferredSize) selected.push(question)
+      })
+    }
+  }
 
-  return candidates.slice(0, Math.min(preferredSize, candidates.length)).map((question) => question.id)
+  return selected.map((question) => question.id)
 }

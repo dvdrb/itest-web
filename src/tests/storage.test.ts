@@ -26,4 +26,23 @@ describe('storage', () => {
     expect(migrated.progress).not.toHaveProperty('old-fixture-id')
     expect(migrated.activeExam).toBeUndefined()
   })
+
+  it('discards malformed v2 records and invalid session fragments without crashing', () => {
+    const storage = createMemoryStorage()
+    storage.setItem('network-field-guide:v2', JSON.stringify({
+      version: 2,
+      progress: {
+        valid: { questionId: 'valid', attempts: 2, lastCorrect: true, everIncorrect: true },
+        invalid: { questionId: 'invalid', attempts: 'two', lastCorrect: true, everIncorrect: false },
+      },
+      attempts: [{ id: 'bad-attempt', completedAt: 1, questionIds: 'not-an-array', score: 0, total: 1, domainAccuracy: {} }],
+      activePractice: { kind: 'practice', id: 'bad-practice', label: 'Broken', questionIds: ['valid'], currentIndex: 1, answers: { valid: 'not-an-array' }, evaluatedQuestionIds: [] },
+      activeExam: { kind: 'exam', id: 'bad-exam', questionIds: ['valid', 'valid'], currentIndex: 0, answers: { valid: ['A'] }, reviewQuestionIds: [], expiresAt: 1000 },
+    }))
+    const recovered = reconcileStateForQuestionIds(readState(storage), new Set(['valid']))
+    expect(recovered.progress).toEqual({ valid: { questionId: 'valid', attempts: 2, lastCorrect: true, everIncorrect: true } })
+    expect(recovered.attempts).toEqual([])
+    expect(recovered.activePractice).toBeUndefined()
+    expect(recovered.activeExam).toBeUndefined()
+  })
 })
