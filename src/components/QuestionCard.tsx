@@ -9,15 +9,15 @@ interface QuestionCardProps {
 }
 
 const typeLabels: Record<Question['type'], string> = {
-  single: 'Single choice',
-  multiple: 'Select all that apply',
+  'single-choice': 'Single choice',
+  'multiple-choice': 'Select all that apply',
   scenario: 'Scenario',
   subnetting: 'Subnetting',
   'command-output': 'Command / output',
 }
 
 export function QuestionCard({ question, selectedOptionIds, disabled = false, showResult = false, onChange }: QuestionCardProps) {
-  const isMultiple = question.type === 'multiple'
+  const isMultiple = question.type === 'multiple-choice'
   return (
     <article className="question-card">
       <div className="question-meta"><span>{question.domain}</span><span>{question.objectiveId}</span><span>{typeLabels[question.type]}</span></div>

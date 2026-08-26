@@ -1,0 +1,74 @@
+[
+  {
+    "id": "official-objectives",
+    "title": "Certiport IT Specialist Networking Exam Objectives (ITS OD Networking 101 0225)",
+    "url": "https://ceiti.md/files/2024-2025/pdf/ITS%20OD%20Networking%20101%200225.pdf",
+    "scope": "Authoritative exam scope"
+  },
+  {
+    "id": "iana-ports",
+    "title": "IANA Service Name and Transport Protocol Port Number Registry",
+    "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml",
+    "scope": "Ports"
+  },
+  {
+    "id": "rfc1122",
+    "title": "RFC 1122 Requirements for Internet Hosts",
+    "url": "https://www.rfc-editor.org/info/rfc1122/",
+    "scope": "TCP/IP model"
+  },
+  {
+    "id": "rfc1918",
+    "title": "RFC 1918 Address Allocation for Private Internets",
+    "url": "https://www.rfc-editor.org/info/rfc1918/",
+    "scope": "Private IPv4"
+  },
+  {
+    "id": "rfc3927",
+    "title": "RFC 3927 IPv4 Link-Local",
+    "url": "https://www.rfc-editor.org/info/rfc3927/",
+    "scope": "169.254/16"
+  },
+  {
+    "id": "rfc4291",
+    "title": "RFC 4291 IPv6 Addressing Architecture",
+    "url": "https://www.rfc-editor.org/info/rfc4291/",
+    "scope": "IPv6"
+  },
+  {
+    "id": "rfc1035",
+    "title": "RFC 1035 Domain Names - Implementation and Specification",
+    "url": "https://www.rfc-editor.org/info/rfc1035/",
+    "scope": "DNS"
+  },
+  {
+    "id": "rfc3596",
+    "title": "RFC 3596 DNS Extensions to Support IPv6",
+    "url": "https://www.rfc-editor.org/info/rfc3596/",
+    "scope": "AAAA"
+  },
+  {
+    "id": "rfc2782",
+    "title": "RFC 2782 DNS SRV",
+    "url": "https://www.rfc-editor.org/info/rfc2782/",
+    "scope": "SRV"
+  },
+  {
+    "id": "microsoft-ipconfig",
+    "title": "Microsoft Windows ipconfig documentation",
+    "url": "https://learn.microsoft.com/windows-server/administration/windows-commands/ipconfig",
+    "scope": "Windows troubleshooting"
+  },
+  {
+    "id": "microsoft-tracert",
+    "title": "Microsoft Windows tracert documentation",
+    "url": "https://learn.microsoft.com/windows-server/administration/windows-commands/tracert",
+    "scope": "Windows troubleshooting"
+  },
+  {
+    "id": "cisco-troubleshooting",
+    "title": "Cisco Internetwork Troubleshooting Guide",
+    "url": "https://www.cisco.com/en/US/docs/internetworking/troubleshooting/guide/tr1901.html",
+    "scope": "Troubleshooting process/tools"
+  }
+]

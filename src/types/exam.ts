@@ -2,12 +2,14 @@ export const domains = [
   'Networking Fundamentals',
   'Network Infrastructures',
   'Network Hardware',
-  'Protocols & Services',
+  'Protocols and Services',
   'Troubleshooting',
 ] as const
 
 export type Domain = (typeof domains)[number]
-export type QuestionType = 'single' | 'multiple' | 'scenario' | 'subnetting' | 'command-output'
+export type DomainId = '1' | '2' | '3' | '4' | '5'
+export type Difficulty = 'easy' | 'medium' | 'hard'
+export type QuestionType = 'single-choice' | 'multiple-choice' | 'scenario' | 'subnetting' | 'command-output'
 
 export interface QuestionOption {
   id: string
@@ -17,19 +19,26 @@ export interface QuestionOption {
 export interface Question {
   id: string
   objectiveId: string
+  domainId: DomainId
   domain: Domain
   type: QuestionType
+  difficulty: Difficulty
   prompt: string
   context?: string
   options: QuestionOption[]
   correctOptionIds: string[]
   explanation: string
+  distractorExplanations: Record<string, string>
+  tags: string[]
+  sourceRefs: string[]
 }
 
 export interface Objective {
   id: string
+  domainId: DomainId
   domain: Domain
   title: string
+  topics: string[]
 }
 
 export interface QuestionProgress {
@@ -76,7 +85,7 @@ export interface ExamAttempt {
 }
 
 export interface PersistedState {
-  version: 1
+  version: 2
   progress: ProgressByQuestion
   attempts: ExamAttempt[]
   activePractice?: PracticeSession

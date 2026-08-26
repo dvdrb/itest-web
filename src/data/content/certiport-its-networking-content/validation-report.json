@@ -1,0 +1,58 @@
+{
+  "productionQuestionCount": 145,
+  "uniqueIds": 145,
+  "domainCounts": {
+    "1": 29,
+    "2": 29,
+    "3": 29,
+    "4": 29,
+    "5": 29
+  },
+  "objectiveCounts": {
+    "1.1": 11,
+    "1.2": 8,
+    "1.3": 10,
+    "2.1": 8,
+    "2.2": 6,
+    "2.3": 10,
+    "2.4": 5,
+    "3.1": 11,
+    "3.2": 10,
+    "3.3": 8,
+    "4.1": 4,
+    "4.2": 4,
+    "4.3": 6,
+    "4.4": 4,
+    "4.5": 4,
+    "4.6": 4,
+    "4.7": 3,
+    "5.1": 6,
+    "5.2": 6,
+    "5.3": 9,
+    "5.4": 8
+  },
+  "questionTypes": {
+    "single-choice": 97,
+    "scenario": 28,
+    "multiple-choice": 16,
+    "subnetting": 3,
+    "command-output": 1
+  },
+  "difficultyCounts": {
+    "easy": 67,
+    "medium": 71,
+    "hard": 7
+  },
+  "validAnswerReferences": true,
+  "duplicateNormalizedPrompts": 0,
+  "studyNoteCount": 21,
+  "fixtureCount": 45,
+  "fixtureDomainCounts": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 9
+  },
+  "status": "PASS"
+}

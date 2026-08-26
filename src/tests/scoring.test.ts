@@ -3,18 +3,21 @@ import { questions } from '../data/questions'
 import { isCorrectAnswer, scoreQuestions } from '../lib/scoring'
 
 describe('scoring', () => {
-  it('scores single and multiple-choice answers exactly', () => {
-    const single = questions.find((question) => question.id === 'nf-01')!
-    const multiple = questions.find((question) => question.id === 'nf-02')!
-    expect(isCorrectAnswer(single, ['c'])).toBe(true)
-    expect(isCorrectAnswer(single, ['a'])).toBe(false)
-    expect(isCorrectAnswer(multiple, ['b', 'c'])).toBe(true)
-    expect(isCorrectAnswer(multiple, ['b'])).toBe(false)
+  it('scores single-choice answers exactly', () => {
+    const question = questions.find((item) => item.type === 'single-choice')!
+    expect(isCorrectAnswer(question, question.correctOptionIds)).toBe(true)
+    expect(isCorrectAnswer(question, [question.options.find((option) => !question.correctOptionIds.includes(option.id))!.id])).toBe(false)
   })
 
-  it('returns a scored question list', () => {
+  it('scores multiple-choice answers exactly', () => {
+    const question = questions.find((item) => item.type === 'multiple-choice')!
+    expect(isCorrectAnswer(question, [...question.correctOptionIds].reverse())).toBe(true)
+    expect(isCorrectAnswer(question, [question.correctOptionIds[0]])).toBe(false)
+  })
+
+  it('returns a complete score summary', () => {
     const selected = questions.slice(0, 2)
-    const result = scoreQuestions(selected, { 'nf-01': ['c'], 'nf-02': ['b'] })
-    expect(result).toMatchObject({ score: 1, total: 2, correctQuestionIds: ['nf-01'] })
+    const result = scoreQuestions(selected, { [selected[0].id]: selected[0].correctOptionIds, [selected[1].id]: [] })
+    expect(result).toMatchObject({ score: 1, total: 2, correctQuestionIds: [selected[0].id] })
   })
 })

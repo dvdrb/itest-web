@@ -1,0 +1,23 @@
+import { objective1_1 } from "./objective-1-1";
+import { objective1_2 } from "./objective-1-2";
+import { objective1_3 } from "./objective-1-3";
+import { objective2_1 } from "./objective-2-1";
+import { objective2_2 } from "./objective-2-2";
+import { objective2_3 } from "./objective-2-3";
+import { objective2_4 } from "./objective-2-4";
+import { objective3_1 } from "./objective-3-1";
+import { objective3_2 } from "./objective-3-2";
+import { objective3_3 } from "./objective-3-3";
+import { objective4_1 } from "./objective-4-1";
+import { objective4_2 } from "./objective-4-2";
+import { objective4_3 } from "./objective-4-3";
+import { objective4_4 } from "./objective-4-4";
+import { objective4_5 } from "./objective-4-5";
+import { objective4_6 } from "./objective-4-6";
+import { objective4_7 } from "./objective-4-7";
+import { objective5_1 } from "./objective-5-1";
+import { objective5_2 } from "./objective-5-2";
+import { objective5_3 } from "./objective-5-3";
+import { objective5_4 } from "./objective-5-4";
+
+export const studyNotes = [objective1_1, objective1_2, objective1_3, objective2_1, objective2_2, objective2_3, objective2_4, objective3_1, objective3_2, objective3_3, objective4_1, objective4_2, objective4_3, objective4_4, objective4_5, objective4_6, objective4_7, objective5_1, objective5_2, objective5_3, objective5_4];
