@@ -3,72 +3,294 @@
     "id": "official-objectives",
     "title": "Certiport IT Specialist Networking Exam Objectives (ITS OD Networking 101 0225)",
     "url": "https://ceiti.md/files/2024-2025/pdf/ITS%20OD%20Networking%20101%200225.pdf",
-    "scope": "Authoritative exam scope"
+    "scope": "Authoritative 2025 exam scope"
   },
   {
-    "id": "iana-ports",
-    "title": "IANA Service Name and Transport Protocol Port Number Registry",
-    "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml",
-    "scope": "Ports"
+    "id": "ibm-networking",
+    "title": "IBM - What Is Computer Networking?",
+    "url": "https://www.ibm.com/think/topics/networking",
+    "scope": "Network concepts and topologies"
+  },
+  {
+    "id": "microsoft-hyperv",
+    "title": "Microsoft Learn - Hyper-V documentation",
+    "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/",
+    "scope": "Hypervisors and virtual machines"
+  },
+  {
+    "id": "microsoft-vswitch",
+    "title": "Microsoft Learn - Hyper-V Virtual Switch",
+    "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/virtual-switch",
+    "scope": "Virtual switches"
+  },
+  {
+    "id": "microsoft-vpn",
+    "title": "Microsoft Learn - VPN connection types",
+    "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/vpn/vpn-connection-type",
+    "scope": "VPN and tunneling"
+  },
+  {
+    "id": "microsoft-rdp",
+    "title": "Microsoft Learn - Remote Desktop outside the local network",
+    "url": "https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/remotepc/remote-desktop-allow-outside-access",
+    "scope": "Remote Desktop and default port"
+  },
+  {
+    "id": "cisco-vlan",
+    "title": "Cisco - VLAN concepts",
+    "url": "https://www.cisco.com/c/en/us/support/docs/wireless/aironet-1100-series/46141-vlanswireless.html",
+    "scope": "VLANs and broadcast domains"
+  },
+  {
+    "id": "cisco-intervlan",
+    "title": "Cisco - Configure Inter-VLAN Routing with Catalyst Switches",
+    "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/inter-vlan-routing/41260-189.html",
+    "scope": "Inter-VLAN routing and segmentation"
+  },
+  {
+    "id": "cisco-mac",
+    "title": "Cisco - MAC address table management",
+    "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst2960/software/release/15-2_1_e/configuration/guide/2960_scg/swadmin.html",
+    "scope": "MAC learning and forwarding"
+  },
+  {
+    "id": "cisco-stp",
+    "title": "Cisco - Spanning Tree Protocol documentation",
+    "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/5234-5.html",
+    "scope": "Layer 2 loop prevention"
+  },
+  {
+    "id": "cisco-routing",
+    "title": "Cisco - IP routing and longest-prefix concepts",
+    "url": "https://www.cisco.com/c/en/us/support/docs/ip/ip-routing/200711-Understanding-Route-Selection-in-Cisco-I.html",
+    "scope": "Routing tables and route selection"
+  },
+  {
+    "id": "cisco-dsl",
+    "title": "Cisco - Digital Subscriber Line technology description",
+    "url": "https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network/3-8/reference/guide/dsl.html",
+    "scope": "DSL WAN access"
+  },
+  {
+    "id": "ibm-topology",
+    "title": "IBM - What Is Network Topology?",
+    "url": "https://www.ibm.com/think/topics/network-topology",
+    "scope": "Star, mesh, ring, bus; physical/logical concepts"
+  },
+  {
+    "id": "cisco-auto-mdix",
+    "title": "Cisco - Auto-MDIX",
+    "url": "https://www.cisco.com/c/en/us/td/docs/IIOT/switches/ie35xx/sw-config-guide/17-18/b_ie3500_1718-cg/configuring_auto_mdix.pdf",
+    "scope": "Straight-through/crossover cabling context"
   },
   {
     "id": "rfc1122",
-    "title": "RFC 1122 Requirements for Internet Hosts",
+    "title": "RFC 1122 - Requirements for Internet Hosts",
     "url": "https://www.rfc-editor.org/info/rfc1122/",
-    "scope": "TCP/IP model"
+    "scope": "TCP/IP architecture"
   },
   {
     "id": "rfc1918",
-    "title": "RFC 1918 Address Allocation for Private Internets",
+    "title": "RFC 1918 - Address Allocation for Private Internets",
     "url": "https://www.rfc-editor.org/info/rfc1918/",
     "scope": "Private IPv4"
   },
   {
     "id": "rfc3927",
-    "title": "RFC 3927 IPv4 Link-Local",
+    "title": "RFC 3927 - Dynamic Configuration of IPv4 Link-Local Addresses",
     "url": "https://www.rfc-editor.org/info/rfc3927/",
-    "scope": "169.254/16"
+    "scope": "169.254.0.0/16 IPv4 link-local"
+  },
+  {
+    "id": "rfc4632",
+    "title": "RFC 4632 - Classless Inter-domain Routing (CIDR)",
+    "url": "https://www.rfc-editor.org/info/rfc4632/",
+    "scope": "CIDR/classless addressing"
   },
   {
     "id": "rfc4291",
-    "title": "RFC 4291 IPv6 Addressing Architecture",
+    "title": "RFC 4291 - IPv6 Addressing Architecture",
     "url": "https://www.rfc-editor.org/info/rfc4291/",
-    "scope": "IPv6"
+    "scope": "IPv6 address types and multicast"
+  },
+  {
+    "id": "rfc5952",
+    "title": "RFC 5952 - IPv6 Text Representation",
+    "url": "https://www.rfc-editor.org/info/rfc5952/",
+    "scope": "IPv6 abbreviation/canonical text"
+  },
+  {
+    "id": "iana-ports",
+    "title": "IANA Service Name and Transport Protocol Port Number Registry",
+    "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml",
+    "scope": "Well-known/default ports"
   },
   {
     "id": "rfc1035",
-    "title": "RFC 1035 Domain Names - Implementation and Specification",
+    "title": "RFC 1035 - Domain Names: Implementation and Specification",
     "url": "https://www.rfc-editor.org/info/rfc1035/",
-    "scope": "DNS"
+    "scope": "DNS and resource records"
   },
   {
     "id": "rfc3596",
-    "title": "RFC 3596 DNS Extensions to Support IPv6",
+    "title": "RFC 3596 - DNS Extensions to Support IPv6",
     "url": "https://www.rfc-editor.org/info/rfc3596/",
-    "scope": "AAAA"
+    "scope": "AAAA and IPv6 reverse DNS"
   },
   {
     "id": "rfc2782",
-    "title": "RFC 2782 DNS SRV",
+    "title": "RFC 2782 - DNS SRV RR",
     "url": "https://www.rfc-editor.org/info/rfc2782/",
-    "scope": "SRV"
+    "scope": "SRV records"
+  },
+  {
+    "id": "microsoft-dns-client",
+    "title": "Microsoft Learn - Troubleshoot DNS client name resolution",
+    "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/troubleshoot-dns-client-resolution-issues",
+    "scope": "Windows DNS cache, HOSTS, resolver sequence"
+  },
+  {
+    "id": "microsoft-wins",
+    "title": "Microsoft Learn - DNS WINS lookup integration",
+    "url": "https://learn.microsoft.com/en-us/windows-server/networking/dns/wins-lookup",
+    "scope": "WINS/NetBIOS legacy resolution"
+  },
+  {
+    "id": "rfc2131",
+    "title": "RFC 2131 - Dynamic Host Configuration Protocol",
+    "url": "https://www.rfc-editor.org/info/rfc2131/",
+    "scope": "DHCP exchange and configuration"
+  },
+  {
+    "id": "rfc3022",
+    "title": "RFC 3022 - Traditional NAT",
+    "url": "https://www.rfc-editor.org/info/rfc3022/",
+    "scope": "NAT and NAPT/PAT"
   },
   {
     "id": "microsoft-ipconfig",
-    "title": "Microsoft Windows ipconfig documentation",
-    "url": "https://learn.microsoft.com/windows-server/administration/windows-commands/ipconfig",
-    "scope": "Windows troubleshooting"
+    "title": "Microsoft Learn - ipconfig",
+    "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig",
+    "scope": "Windows IP configuration and DHCP/DNS cache"
+  },
+  {
+    "id": "microsoft-ping",
+    "title": "Microsoft Learn - ping",
+    "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ping",
+    "scope": "Windows reachability and name-resolution diagnostics"
   },
   {
     "id": "microsoft-tracert",
-    "title": "Microsoft Windows tracert documentation",
-    "url": "https://learn.microsoft.com/windows-server/administration/windows-commands/tracert",
-    "scope": "Windows troubleshooting"
+    "title": "Microsoft Learn - tracert",
+    "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/tracert",
+    "scope": "Windows route tracing"
+  },
+  {
+    "id": "microsoft-pathping",
+    "title": "Microsoft Learn - pathping",
+    "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/pathping",
+    "scope": "Windows per-hop latency/loss analysis"
+  },
+  {
+    "id": "microsoft-nslookup",
+    "title": "Microsoft Learn - nslookup",
+    "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup",
+    "scope": "Windows DNS query diagnostics"
+  },
+  {
+    "id": "microsoft-netstat",
+    "title": "Microsoft Learn - netstat",
+    "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/netstat",
+    "scope": "Windows connections/listeners/routing statistics"
+  },
+  {
+    "id": "microsoft-arp",
+    "title": "Microsoft Learn - arp",
+    "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/arp",
+    "scope": "Windows ARP cache"
+  },
+  {
+    "id": "man7-ipaddr",
+    "title": "Linux ip-address(8) manual",
+    "url": "https://man7.org/linux/man-pages/man8/ip-address.8.html",
+    "scope": "Linux ip addr"
+  },
+  {
+    "id": "man7-ping",
+    "title": "Linux ping(8) manual",
+    "url": "https://man7.org/linux/man-pages/man8/ping.8.html",
+    "scope": "Linux ICMP echo"
+  },
+  {
+    "id": "man7-traceroute",
+    "title": "Linux traceroute(8) manual",
+    "url": "https://man7.org/linux/man-pages/man8/traceroute.8.html",
+    "scope": "Linux routed path tracing"
+  },
+  {
+    "id": "man7-tracepath",
+    "title": "Linux tracepath(8) manual",
+    "url": "https://man7.org/linux/man-pages/man8/tracepath.8%40%40iputils.html",
+    "scope": "Linux path and path-MTU discovery"
+  },
+  {
+    "id": "bind-dig",
+    "title": "BIND 9 - dig manual",
+    "url": "https://bind9.readthedocs.io/en/stable/manpages.html",
+    "scope": "Linux/Unix DNS troubleshooting with dig"
+  },
+  {
+    "id": "ubuntu-host",
+    "title": "Ubuntu manpage - host DNS lookup utility",
+    "url": "https://manpages.ubuntu.com/manpages/focal/man1/host.1.html",
+    "scope": "Linux host DNS lookup"
+  },
+  {
+    "id": "man7-netstat",
+    "title": "Linux netstat(8) manual",
+    "url": "https://man7.org/linux/man-pages/man8/netstat.8.html",
+    "scope": "Linux legacy network status command"
+  },
+  {
+    "id": "cisco-wifi-rf",
+    "title": "Cisco Wireless RF Reference Guide",
+    "url": "https://www.cisco.com/c/en/us/td/docs/wireless/controller/9800/technical-reference/wireless-rf-reference-guide.html",
+    "scope": "Wi-Fi bands, channels, interference"
+  },
+  {
+    "id": "microsoft-8021x",
+    "title": "Microsoft Learn - Deploy 802.1X authenticated wireless access",
+    "url": "https://learn.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/wireless/a-deploy-8021x-wireless-access",
+    "scope": "802.1X and WPA/WPA2 enterprise wireless security"
+  },
+  {
+    "id": "cisco-cabling",
+    "title": "Cisco Catalyst 9200 Hardware Guide - Multigigabit Ethernet cabling",
+    "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9200/hardware/install/b-c9200-hig/product_overview.html",
+    "scope": "Copper category speed/distance context"
+  },
+  {
+    "id": "fluke-telecom",
+    "title": "Fluke Networks - Telecom Test Tools",
+    "url": "https://www.flukenetworks.com/telecom-test",
+    "scope": "TDR, toner, copper fault-location tool context"
+  },
+  {
+    "id": "fluke-otdr",
+    "title": "Fluke Networks - Diagnosing OTDR Test Failures",
+    "url": "https://www.flukenetworks.com/knowledge-base/dtx-compact-otdr/diagnosing-otdr-test-failures-dtx-compact-otdr-module",
+    "scope": "OTDR fiber event/fault location"
+  },
+  {
+    "id": "cisco-arp",
+    "title": "Cisco - Address Resolution Protocol",
+    "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios-xe/ip-addressing/ip-addressing/m_arp-config-arp-0.html",
+    "scope": "ARP IPv4-to-MAC mapping"
   },
   {
     "id": "cisco-troubleshooting",
     "title": "Cisco Internetwork Troubleshooting Guide",
     "url": "https://www.cisco.com/en/US/docs/internetworking/troubleshooting/guide/tr1901.html",
-    "scope": "Troubleshooting process/tools"
+    "scope": "Structured network troubleshooting"
   }
 ]

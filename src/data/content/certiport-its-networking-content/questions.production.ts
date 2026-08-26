@@ -10,16 +10,16 @@ export const productionQuestions = [
     "prompt": "Which term describes the worldwide public network of interconnected networks?",
     "options": [
       {
-        "id": "a",
-        "text": "extranet"
+        "id": "c",
+        "text": "Internet"
       },
       {
         "id": "b",
         "text": "peer-to-peer network"
       },
       {
-        "id": "c",
-        "text": "Internet"
+        "id": "a",
+        "text": "extranet"
       },
       {
         "id": "d",
@@ -31,16 +31,17 @@ export const productionQuestions = [
     ],
     "explanation": "The Internet is the globally interconnected public network. An intranet is private to an organization; an extranet selectively exposes private resources to approved outsiders.",
     "distractorExplanations": {
-      "a": "Incorrect. extranet does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. peer-to-peer network does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. intranet does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. An extranet gives approved external parties controlled access to selected private resources. The stem instead calls for Internet.",
+      "b": "Incorrect. Peer-to-peer allows endpoints to share resources directly without requiring a dedicated central server. The stem instead calls for Internet.",
+      "d": "Incorrect. An intranet is private to an organization. The stem instead calls for Internet."
     },
     "tags": [
       "1.1",
       "define-network-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-networking"
     ]
   },
   {
@@ -56,16 +57,16 @@ export const productionQuestions = [
         "text": "A peer-to-peer network"
       },
       {
+        "id": "d",
+        "text": "An extranet"
+      },
+      {
         "id": "b",
         "text": "An intranet"
       },
       {
         "id": "c",
         "text": "The Internet"
-      },
-      {
-        "id": "d",
-        "text": "An extranet"
       }
     ],
     "correctOptionIds": [
@@ -73,16 +74,17 @@ export const productionQuestions = [
     ],
     "explanation": "An intranet is a private network/service intended for members of one organization.",
     "distractorExplanations": {
-      "a": "Incorrect. A peer-to-peer network does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. The Internet does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. An extranet does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. Peer-to-peer allows endpoints to share resources directly without requiring a dedicated central server. The stem instead calls for An intranet.",
+      "c": "Incorrect. The Internet is the worldwide public internetwork. The stem instead calls for An intranet.",
+      "d": "Incorrect. An extranet gives approved external parties controlled access to selected private resources. The stem instead calls for An intranet."
     },
     "tags": [
       "1.1",
       "define-network-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-networking"
     ]
   },
   {
@@ -98,16 +100,16 @@ export const productionQuestions = [
         "text": "Extranet"
       },
       {
-        "id": "b",
-        "text": "Internet"
+        "id": "d",
+        "text": "broadcast"
       },
       {
         "id": "c",
         "text": "intranet"
       },
       {
-        "id": "d",
-        "text": "broadcast"
+        "id": "b",
+        "text": "Internet"
       }
     ],
     "correctOptionIds": [
@@ -115,16 +117,17 @@ export const productionQuestions = [
     ],
     "explanation": "An extranet extends selected private organizational resources to trusted external parties.",
     "distractorExplanations": {
-      "b": "Incorrect. Internet does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. intranet does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. broadcast does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. The Internet is the worldwide public internetwork. The stem instead calls for Extranet.",
+      "c": "Incorrect. An intranet is private to an organization. The stem instead calls for Extranet.",
+      "d": "Incorrect. Broadcast targets all hosts in the local broadcast domain. The stem instead calls for Extranet."
     },
     "tags": [
       "1.1",
       "define-network-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-networking"
     ]
   },
   {
@@ -140,16 +143,16 @@ export const productionQuestions = [
         "text": "peer-to-peer"
       },
       {
+        "id": "d",
+        "text": "Client-server"
+      },
+      {
         "id": "b",
         "text": "broadcast-only"
       },
       {
         "id": "c",
         "text": "ad hoc wireless"
-      },
-      {
-        "id": "d",
-        "text": "Client-server"
       }
     ],
     "correctOptionIds": [
@@ -157,16 +160,17 @@ export const productionQuestions = [
     ],
     "explanation": "Client-server uses servers to provide centralized services/resources to clients.",
     "distractorExplanations": {
-      "a": "Incorrect. peer-to-peer does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. broadcast-only does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. ad hoc wireless does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. Peer-to-peer allows endpoints to share resources directly without requiring a dedicated central server. The stem instead calls for Client-server.",
+      "b": "Incorrect. Broadcast targets all hosts in the local broadcast domain. The stem instead calls for Client-server.",
+      "c": "Incorrect. This choice conflicts with the defining fact in the item: Client-server uses servers to provide centralized services/resources to clients. The correct answer is Client-server."
     },
     "tags": [
       "1.1",
       "define-network-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-networking"
     ]
   },
   {
@@ -178,20 +182,20 @@ export const productionQuestions = [
     "prompt": "A small workgroup shares files directly between PCs with no dedicated server. Which model is this?",
     "options": [
       {
-        "id": "a",
-        "text": "extranet"
-      },
-      {
         "id": "b",
         "text": "multicast"
       },
       {
-        "id": "c",
-        "text": "Peer-to-peer"
-      },
-      {
         "id": "d",
         "text": "client-server"
+      },
+      {
+        "id": "a",
+        "text": "extranet"
+      },
+      {
+        "id": "c",
+        "text": "Peer-to-peer"
       }
     ],
     "correctOptionIds": [
@@ -199,16 +203,17 @@ export const productionQuestions = [
     ],
     "explanation": "Peer-to-peer systems let endpoints act as peers and directly share resources.",
     "distractorExplanations": {
-      "a": "Incorrect. extranet does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. multicast does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. client-server does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. An extranet gives approved external parties controlled access to selected private resources. The stem instead calls for Peer-to-peer.",
+      "b": "Incorrect. Multicast delivers traffic to members of a selected group. The stem instead calls for Peer-to-peer.",
+      "d": "Incorrect. Client-server centralizes services on servers that respond to clients. The stem instead calls for Peer-to-peer."
     },
     "tags": [
       "1.1",
       "define-network-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-networking"
     ]
   },
   {
@@ -220,20 +225,20 @@ export const productionQuestions = [
     "prompt": "One sender transmits one packet stream to exactly one destination host. What transmission type is used?",
     "options": [
       {
-        "id": "a",
-        "text": "anycast"
+        "id": "c",
+        "text": "multicast"
       },
       {
         "id": "b",
         "text": "Unicast"
       },
       {
-        "id": "c",
-        "text": "multicast"
-      },
-      {
         "id": "d",
         "text": "broadcast"
+      },
+      {
+        "id": "a",
+        "text": "anycast"
       }
     ],
     "correctOptionIds": [
@@ -241,16 +246,17 @@ export const productionQuestions = [
     ],
     "explanation": "Unicast is one sender to one specific destination.",
     "distractorExplanations": {
-      "a": "Incorrect. anycast does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. multicast does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. broadcast does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: Unicast is one sender to one specific destination. The correct answer is Unicast.",
+      "c": "Incorrect. Multicast delivers traffic to members of a selected group. The stem instead calls for Unicast.",
+      "d": "Incorrect. Broadcast targets all hosts in the local broadcast domain. The stem instead calls for Unicast."
     },
     "tags": [
       "1.1",
       "define-network-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-networking"
     ]
   },
   {
@@ -262,20 +268,20 @@ export const productionQuestions = [
     "prompt": "A video stream is delivered only to hosts that joined a particular group. What transmission type best describes this?",
     "options": [
       {
-        "id": "a",
-        "text": "Multicast"
-      },
-      {
         "id": "b",
         "text": "unicast"
+      },
+      {
+        "id": "d",
+        "text": "peer-to-peer"
       },
       {
         "id": "c",
         "text": "broadcast"
       },
       {
-        "id": "d",
-        "text": "peer-to-peer"
+        "id": "a",
+        "text": "Multicast"
       }
     ],
     "correctOptionIds": [
@@ -283,16 +289,17 @@ export const productionQuestions = [
     ],
     "explanation": "Multicast is one-to-many delivery to members of a defined group.",
     "distractorExplanations": {
-      "b": "Incorrect. unicast does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. broadcast does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. peer-to-peer does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. Unicast is one sender to one destination. The stem instead calls for Multicast.",
+      "c": "Incorrect. Broadcast targets all hosts in the local broadcast domain. The stem instead calls for Multicast.",
+      "d": "Incorrect. Peer-to-peer allows endpoints to share resources directly without requiring a dedicated central server. The stem instead calls for Multicast."
     },
     "tags": [
       "1.1",
       "define-network-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-networking"
     ]
   },
   {
@@ -304,20 +311,20 @@ export const productionQuestions = [
     "prompt": "A frame is intended for every device in the local broadcast domain. What transmission type is this?",
     "options": [
       {
-        "id": "a",
-        "text": "unicast"
+        "id": "c",
+        "text": "client-server"
       },
       {
         "id": "b",
         "text": "multicast"
       },
       {
-        "id": "c",
-        "text": "client-server"
-      },
-      {
         "id": "d",
         "text": "Broadcast"
+      },
+      {
+        "id": "a",
+        "text": "unicast"
       }
     ],
     "correctOptionIds": [
@@ -325,16 +332,17 @@ export const productionQuestions = [
     ],
     "explanation": "Broadcast is one-to-all within the applicable broadcast domain.",
     "distractorExplanations": {
-      "a": "Incorrect. unicast does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. multicast does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. client-server does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. Unicast is one sender to one destination. The stem instead calls for Broadcast.",
+      "b": "Incorrect. Multicast delivers traffic to members of a selected group. The stem instead calls for Broadcast.",
+      "c": "Incorrect. Client-server centralizes services on servers that respond to clients. The stem instead calls for Broadcast."
     },
     "tags": [
       "1.1",
       "define-network-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-networking"
     ]
   },
   {
@@ -346,12 +354,12 @@ export const productionQuestions = [
     "prompt": "Select TWO statements that correctly contrast client-server and peer-to-peer networking.",
     "options": [
       {
-        "id": "a",
-        "text": "Peer-to-peer always requires a domain controller."
-      },
-      {
         "id": "b",
         "text": "Client-server means broadcasts are impossible."
+      },
+      {
+        "id": "a",
+        "text": "Peer-to-peer always requires a domain controller."
       },
       {
         "id": "c",
@@ -368,15 +376,16 @@ export const productionQuestions = [
     ],
     "explanation": "Client-server centralizes services; peer-to-peer allows direct sharing among peers. The other statements are false.",
     "distractorExplanations": {
-      "a": "Incorrect for this item. Peer-to-peer always requires a domain controller. is not one of the required selections.",
-      "b": "Incorrect for this item. Client-server means broadcasts are impossible. is not one of the required selections."
+      "a": "Incorrect. Peer-to-peer networking does not inherently require a domain controller; peers can share resources directly without dedicated centralized server infrastructure.",
+      "b": "Incorrect. Client-server describes how services are provided; it does not eliminate broadcast traffic at the network/link layers."
     },
     "tags": [
       "1.1",
       "define-network-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-networking"
     ]
   },
   {
@@ -388,16 +397,16 @@ export const productionQuestions = [
     "prompt": "A smart thermostat joins the IP network and reports telemetry to a cloud service. Which exam-scope category best describes it?",
     "options": [
       {
+        "id": "c",
+        "text": "a Layer 3 routing protocol"
+      },
+      {
         "id": "a",
         "text": "a DNS resource record"
       },
       {
         "id": "b",
         "text": "An IoT network device"
-      },
-      {
-        "id": "c",
-        "text": "a Layer 3 routing protocol"
       },
       {
         "id": "d",
@@ -409,16 +418,17 @@ export const productionQuestions = [
     ],
     "explanation": "Internet of Things devices are network-connected embedded devices such as sensors, thermostats, cameras, and appliances.",
     "distractorExplanations": {
-      "a": "Incorrect. a DNS resource record does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. a Layer 3 routing protocol does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. a cable tester does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for An IoT network device.",
+      "c": "Incorrect. This choice conflicts with the defining fact in the item: Internet of Things devices are network-connected embedded devices such as sensors, thermostats, cameras, and appliances. The correct answer is An IoT network device.",
+      "d": "Incorrect. A cable tester checks properties such as continuity and wiremap. The stem instead calls for An IoT network device."
     },
     "tags": [
       "1.1",
       "define-network-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-networking"
     ]
   },
   {
@@ -430,20 +440,20 @@ export const productionQuestions = [
     "prompt": "Which device is primarily used to connect different IP networks and forward packets between them?",
     "options": [
       {
-        "id": "a",
-        "text": "Router"
+        "id": "c",
+        "text": "Layer 1 repeater"
       },
       {
         "id": "b",
         "text": "hub"
       },
       {
-        "id": "c",
-        "text": "Layer 1 repeater"
-      },
-      {
         "id": "d",
         "text": "patch panel"
+      },
+      {
+        "id": "a",
+        "text": "Router"
       }
     ],
     "correctOptionIds": [
@@ -451,16 +461,17 @@ export const productionQuestions = [
     ],
     "explanation": "A router makes Layer 3 forwarding decisions between networks.",
     "distractorExplanations": {
-      "b": "Incorrect. hub does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. Layer 1 repeater does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. patch panel does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. A hub repeats incoming bits to other ports and does not make MAC-based forwarding decisions. The stem instead calls for Router.",
+      "c": "Incorrect. This choice conflicts with the defining fact in the item: A router makes Layer 3 forwarding decisions between networks. The correct answer is Router.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: A router makes Layer 3 forwarding decisions between networks. The correct answer is Router."
     },
     "tags": [
       "1.1",
       "define-network-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-networking"
     ]
   },
   {
@@ -472,12 +483,12 @@ export const productionQuestions = [
     "prompt": "What software layer creates and manages virtual machines by abstracting physical hardware?",
     "options": [
       {
-        "id": "a",
-        "text": "firewall rule"
-      },
-      {
         "id": "b",
         "text": "DHCP relay"
+      },
+      {
+        "id": "a",
+        "text": "firewall rule"
       },
       {
         "id": "c",
@@ -493,16 +504,18 @@ export const productionQuestions = [
     ],
     "explanation": "A hypervisor provides the virtualization layer that hosts and manages VMs.",
     "distractorExplanations": {
-      "a": "Incorrect. firewall rule does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. DHCP relay does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. DNS resolver does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: A hypervisor provides the virtualization layer that hosts and manages VMs. The correct answer is Hypervisor.",
+      "b": "Incorrect. This choice conflicts with the defining fact in the item: A hypervisor provides the virtualization layer that hosts and manages VMs. The correct answer is Hypervisor.",
+      "d": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for Hypervisor."
     },
     "tags": [
       "1.2",
       "define-cloud-and-virtualization-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-hyperv",
+      "microsoft-vswitch"
     ]
   },
   {
@@ -514,20 +527,20 @@ export const productionQuestions = [
     "prompt": "What is a virtual machine?",
     "options": [
       {
-        "id": "a",
-        "text": "A VPN tunnel only"
-      },
-      {
-        "id": "b",
-        "text": "A software-defined computer with virtualized CPU, memory, storage, and networking"
-      },
-      {
         "id": "c",
         "text": "A physical switch with VLANs"
       },
       {
+        "id": "a",
+        "text": "A VPN tunnel only"
+      },
+      {
         "id": "d",
         "text": "A DNS alias"
+      },
+      {
+        "id": "b",
+        "text": "A software-defined computer with virtualized CPU, memory, storage, and networking"
       }
     ],
     "correctOptionIds": [
@@ -535,16 +548,18 @@ export const productionQuestions = [
     ],
     "explanation": "A VM behaves like an independent computer while its hardware resources are virtualized.",
     "distractorExplanations": {
-      "a": "Incorrect. A VPN tunnel only does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. A physical switch with VLANs does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. A DNS alias does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. That limitation is not valid here. The stem is testing A software-defined computer with virtualized CPU, memory, storage, and networking; the cited choice either describes a different function or adds an unsupported restriction.",
+      "c": "Incorrect. A Layer 2 switch forwards Ethernet frames using MAC addresses. The stem instead calls for A software-defined computer with virtualized CPU, memory, storage, and networking.",
+      "d": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for A software-defined computer with virtualized CPU, memory, storage, and networking."
     },
     "tags": [
       "1.2",
       "define-cloud-and-virtualization-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-hyperv",
+      "microsoft-vswitch"
     ]
   },
   {
@@ -560,16 +575,16 @@ export const productionQuestions = [
         "text": "Virtual switch"
       },
       {
+        "id": "d",
+        "text": "WINS server"
+      },
+      {
         "id": "b",
         "text": "default gateway only"
       },
       {
         "id": "c",
         "text": "TDR"
-      },
-      {
-        "id": "d",
-        "text": "WINS server"
       }
     ],
     "correctOptionIds": [
@@ -577,16 +592,18 @@ export const productionQuestions = [
     ],
     "explanation": "A virtual switch provides software-based Ethernet switching for virtual NICs.",
     "distractorExplanations": {
-      "b": "Incorrect. default gateway only does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. TDR does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. WINS server does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. That limitation is not valid here. The stem is testing Virtual switch; the cited choice either describes a different function or adds an unsupported restriction.",
+      "c": "Incorrect. A TDR locates copper-cable faults by analyzing signal reflections and distance. The stem instead calls for Virtual switch.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: A virtual switch provides software-based Ethernet switching for virtual NICs. The correct answer is Virtual switch."
     },
     "tags": [
       "1.2",
       "define-cloud-and-virtualization-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-hyperv",
+      "microsoft-vswitch"
     ]
   },
   {
@@ -598,20 +615,20 @@ export const productionQuestions = [
     "prompt": "Which statement best describes a Type 1 hypervisor?",
     "options": [
       {
-        "id": "a",
-        "text": "It is only a DNS service"
-      },
-      {
-        "id": "b",
-        "text": "It is a virtual NIC driver inside one VM"
-      },
-      {
         "id": "c",
         "text": "It requires a peer-to-peer workgroup"
       },
       {
         "id": "d",
         "text": "It runs directly on host hardware rather than on top of a general-purpose host OS"
+      },
+      {
+        "id": "b",
+        "text": "It is a virtual NIC driver inside one VM"
+      },
+      {
+        "id": "a",
+        "text": "It is only a DNS service"
       }
     ],
     "correctOptionIds": [
@@ -619,16 +636,18 @@ export const productionQuestions = [
     ],
     "explanation": "A Type 1 (bare-metal) hypervisor runs directly on the physical host.",
     "distractorExplanations": {
-      "a": "Incorrect. It is only a DNS service does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. It is a virtual NIC driver inside one VM does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. It requires a peer-to-peer workgroup does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. That limitation is not valid here. The stem is testing It runs directly on host hardware rather than on top of a general-purpose host OS; the cited choice either describes a different function or adds an unsupported restriction.",
+      "b": "Incorrect. This choice conflicts with the defining fact in the item: A Type 1 (bare-metal) hypervisor runs directly on the physical host. The correct answer is It runs directly on host hardware rather than on top of a general-purpose host OS.",
+      "c": "Incorrect. Peer-to-peer allows endpoints to share resources directly without requiring a dedicated central server. The stem instead calls for It runs directly on host hardware rather than on top of a general-purpose host OS."
     },
     "tags": [
       "1.2",
       "define-cloud-and-virtualization-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-hyperv",
+      "microsoft-vswitch"
     ]
   },
   {
@@ -640,10 +659,6 @@ export const productionQuestions = [
     "prompt": "A host runs multiple isolated guest operating systems at the same time. Which technology enables this?",
     "options": [
       {
-        "id": "a",
-        "text": "broadcasting"
-      },
-      {
         "id": "b",
         "text": "cable toning"
       },
@@ -654,6 +669,10 @@ export const productionQuestions = [
       {
         "id": "d",
         "text": "NAT only"
+      },
+      {
+        "id": "a",
+        "text": "broadcasting"
       }
     ],
     "correctOptionIds": [
@@ -661,16 +680,18 @@ export const productionQuestions = [
     ],
     "explanation": "Virtualization lets one physical system host multiple isolated virtual machines.",
     "distractorExplanations": {
-      "a": "Incorrect. broadcasting does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. cable toning does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. NAT only does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. Broadcast targets all hosts in the local broadcast domain. The stem instead calls for Virtualization.",
+      "b": "Incorrect. This choice conflicts with the defining fact in the item: Virtualization lets one physical system host multiple isolated virtual machines. The correct answer is Virtualization.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: Virtualization lets one physical system host multiple isolated virtual machines. The correct answer is Virtualization."
     },
     "tags": [
       "1.2",
       "define-cloud-and-virtualization-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-hyperv",
+      "microsoft-vswitch"
     ]
   },
   {
@@ -682,8 +703,8 @@ export const productionQuestions = [
     "prompt": "Select TWO benefits commonly associated with server virtualization.",
     "options": [
       {
-        "id": "a",
-        "text": "It guarantees zero hardware failures"
+        "id": "d",
+        "text": "It removes the need for IP addressing"
       },
       {
         "id": "b",
@@ -694,8 +715,8 @@ export const productionQuestions = [
         "text": "Isolation between separate virtual machines"
       },
       {
-        "id": "d",
-        "text": "It removes the need for IP addressing"
+        "id": "a",
+        "text": "It guarantees zero hardware failures"
       }
     ],
     "correctOptionIds": [
@@ -704,15 +725,17 @@ export const productionQuestions = [
     ],
     "explanation": "Virtualization can consolidate workloads and isolate guests; it does not eliminate networking or hardware risk.",
     "distractorExplanations": {
-      "a": "Incorrect for this item. It guarantees zero hardware failures is not one of the required selections.",
-      "d": "Incorrect for this item. It removes the need for IP addressing is not one of the required selections."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: Virtualization can consolidate workloads and isolate guests; it does not eliminate networking or hardware risk. The correct answer is Better utilization of physical hardware / Isolation between separate virtual machines.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: Virtualization can consolidate workloads and isolate guests; it does not eliminate networking or hardware risk. The correct answer is Better utilization of physical hardware / Isolation between separate virtual machines."
     },
     "tags": [
       "1.2",
       "define-cloud-and-virtualization-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-hyperv",
+      "microsoft-vswitch"
     ]
   },
   {
@@ -724,20 +747,20 @@ export const productionQuestions = [
     "prompt": "A VM has a virtual NIC connected to a virtual switch. What does the virtual switch most closely emulate?",
     "options": [
       {
-        "id": "a",
-        "text": "An Ethernet switch"
-      },
-      {
-        "id": "b",
-        "text": "a fiber OTDR"
+        "id": "d",
+        "text": "a cellular modem"
       },
       {
         "id": "c",
         "text": "a DNS MX record"
       },
       {
-        "id": "d",
-        "text": "a cellular modem"
+        "id": "b",
+        "text": "a fiber OTDR"
+      },
+      {
+        "id": "a",
+        "text": "An Ethernet switch"
       }
     ],
     "correctOptionIds": [
@@ -745,16 +768,18 @@ export const productionQuestions = [
     ],
     "explanation": "A virtual switch forwards Ethernet frames among virtual/physical interfaces similarly to a physical switch.",
     "distractorExplanations": {
-      "b": "Incorrect. a fiber OTDR does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. a DNS MX record does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. a cellular modem does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. Fiber carries light, is immune to EMI, and supports long distances/high bandwidth. The stem instead calls for An Ethernet switch.",
+      "c": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for An Ethernet switch.",
+      "d": "Incorrect. Cellular WAN access uses mobile carrier networks such as 3G/4G/5G. The stem instead calls for An Ethernet switch."
     },
     "tags": [
       "1.2",
       "define-cloud-and-virtualization-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-hyperv",
+      "microsoft-vswitch"
     ]
   },
   {
@@ -766,8 +791,8 @@ export const productionQuestions = [
     "prompt": "If a physical virtualization host fails, several VMs on that host become unavailable. What concept does this illustrate?",
     "options": [
       {
-        "id": "a",
-        "text": "multicast optimization"
+        "id": "d",
+        "text": "A potential single point of failure"
       },
       {
         "id": "b",
@@ -778,8 +803,8 @@ export const productionQuestions = [
         "text": "full-duplex Ethernet"
       },
       {
-        "id": "d",
-        "text": "A potential single point of failure"
+        "id": "a",
+        "text": "multicast optimization"
       }
     ],
     "correctOptionIds": [
@@ -787,16 +812,18 @@ export const productionQuestions = [
     ],
     "explanation": "Consolidating workloads on one host can increase the impact of a host failure unless redundancy exists.",
     "distractorExplanations": {
-      "a": "Incorrect. multicast optimization does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. DNS recursion does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. full-duplex Ethernet does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. Multicast delivers traffic to members of a selected group. The stem instead calls for A potential single point of failure.",
+      "b": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for A potential single point of failure.",
+      "c": "Incorrect. This choice conflicts with the defining fact in the item: Consolidating workloads on one host can increase the impact of a host failure unless redundancy exists. The correct answer is A potential single point of failure."
     },
     "tags": [
       "1.2",
       "define-cloud-and-virtualization-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-hyperv",
+      "microsoft-vswitch"
     ]
   },
   {
@@ -816,12 +843,12 @@ export const productionQuestions = [
         "text": "VLAN trunk"
       },
       {
-        "id": "c",
-        "text": "VPN"
-      },
-      {
         "id": "d",
         "text": "ARP"
+      },
+      {
+        "id": "c",
+        "text": "VPN"
       }
     ],
     "correctOptionIds": [
@@ -829,16 +856,18 @@ export const productionQuestions = [
     ],
     "explanation": "A VPN protects remote network traffic by creating a secure tunnel over another network such as the Internet.",
     "distractorExplanations": {
-      "a": "Incorrect. DNS zone does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. VLAN trunk does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. ARP does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for VPN.",
+      "b": "Incorrect. A trunk carries traffic for multiple VLANs between network devices. The stem instead calls for VPN.",
+      "d": "Incorrect. ARP maps local IPv4 addresses to Layer 2 MAC addresses. The stem instead calls for VPN."
     },
     "tags": [
       "1.3",
       "describe-remote-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-vpn",
+      "microsoft-rdp"
     ]
   },
   {
@@ -850,20 +879,20 @@ export const productionQuestions = [
     "prompt": "Which technology lets a user interact with the graphical desktop of a remote Windows computer?",
     "options": [
       {
-        "id": "a",
-        "text": "PAT"
-      },
-      {
-        "id": "b",
-        "text": "Remote Desktop"
+        "id": "d",
+        "text": "SMTP"
       },
       {
         "id": "c",
         "text": "TDR"
       },
       {
-        "id": "d",
-        "text": "SMTP"
+        "id": "b",
+        "text": "Remote Desktop"
+      },
+      {
+        "id": "a",
+        "text": "PAT"
       }
     ],
     "correctOptionIds": [
@@ -871,16 +900,18 @@ export const productionQuestions = [
     ],
     "explanation": "Remote Desktop provides interactive remote access to a Windows desktop/session.",
     "distractorExplanations": {
-      "a": "Incorrect. PAT does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. TDR does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. SMTP does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: Remote Desktop provides interactive remote access to a Windows desktop/session. The correct answer is Remote Desktop.",
+      "c": "Incorrect. A TDR locates copper-cable faults by analyzing signal reflections and distance. The stem instead calls for Remote Desktop.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: Remote Desktop provides interactive remote access to a Windows desktop/session. The correct answer is Remote Desktop."
     },
     "tags": [
       "1.3",
       "describe-remote-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-vpn",
+      "microsoft-rdp"
     ]
   },
   {
@@ -892,6 +923,10 @@ export const productionQuestions = [
     "prompt": "An employee at home needs secure access to internal company resources over the Internet. Which solution is most appropriate?",
     "options": [
       {
+        "id": "d",
+        "text": "WINS only"
+      },
+      {
         "id": "a",
         "text": "Remote-access VPN"
       },
@@ -902,10 +937,6 @@ export const productionQuestions = [
       {
         "id": "c",
         "text": "crossover cable"
-      },
-      {
-        "id": "d",
-        "text": "WINS only"
       }
     ],
     "correctOptionIds": [
@@ -913,16 +944,18 @@ export const productionQuestions = [
     ],
     "explanation": "A remote-access VPN securely connects an individual remote endpoint to the private network.",
     "distractorExplanations": {
-      "b": "Incorrect. broadcast Ethernet does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. crossover cable does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. WINS only does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. Broadcast targets all hosts in the local broadcast domain. The stem instead calls for Remote-access VPN.",
+      "c": "Incorrect. A crossover cable historically connects like MDI/MDI-X roles when auto-MDI-X is unavailable. The stem instead calls for Remote-access VPN.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: A remote-access VPN securely connects an individual remote endpoint to the private network. The correct answer is Remote-access VPN."
     },
     "tags": [
       "1.3",
       "describe-remote-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-vpn",
+      "microsoft-rdp"
     ]
   },
   {
@@ -934,20 +967,20 @@ export const productionQuestions = [
     "prompt": "Two branch offices need an encrypted always-on connection between their networks across the Internet. Which method is most appropriate?",
     "options": [
       {
-        "id": "a",
-        "text": "RDP to every workstation"
-      },
-      {
-        "id": "b",
-        "text": "ad hoc Wi-Fi"
+        "id": "d",
+        "text": "Site-to-site VPN"
       },
       {
         "id": "c",
         "text": "local loopback"
       },
       {
-        "id": "d",
-        "text": "Site-to-site VPN"
+        "id": "a",
+        "text": "RDP to every workstation"
+      },
+      {
+        "id": "b",
+        "text": "ad hoc Wi-Fi"
       }
     ],
     "correctOptionIds": [
@@ -955,16 +988,18 @@ export const productionQuestions = [
     ],
     "explanation": "Site-to-site VPNs connect networks through their gateways.",
     "distractorExplanations": {
-      "a": "Incorrect. RDP to every workstation does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. ad hoc Wi-Fi does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. local loopback does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. RDP is Microsoft’s Remote Desktop Protocol and commonly uses TCP 3389 by default. The stem instead calls for Site-to-site VPN.",
+      "b": "Incorrect. This choice conflicts with the defining fact in the item: Site-to-site VPNs connect networks through their gateways. The correct answer is Site-to-site VPN.",
+      "c": "Incorrect. Loopback tests stay inside the local host and do not verify the external LAN path. The stem instead calls for Site-to-site VPN."
     },
     "tags": [
       "1.3",
       "describe-remote-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-vpn",
+      "microsoft-rdp"
     ]
   },
   {
@@ -980,12 +1015,12 @@ export const productionQuestions = [
         "text": "53"
       },
       {
-        "id": "b",
-        "text": "443"
-      },
-      {
         "id": "c",
         "text": "3389"
+      },
+      {
+        "id": "b",
+        "text": "443"
       },
       {
         "id": "d",
@@ -997,16 +1032,18 @@ export const productionQuestions = [
     ],
     "explanation": "RDP commonly listens on TCP 3389 by default.",
     "distractorExplanations": {
-      "a": "Incorrect. 53 does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. 443 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. 22 does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. 53 is not the correct value for this item; the correct answer is 3389. ",
+      "b": "Incorrect. 443 is not the correct value for this item; the correct answer is 3389. ",
+      "d": "Incorrect. 22 is not the correct value for this item; the correct answer is 3389. "
     },
     "tags": [
       "1.3",
       "describe-remote-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-vpn",
+      "microsoft-rdp"
     ]
   },
   {
@@ -1039,16 +1076,18 @@ export const productionQuestions = [
     ],
     "explanation": "VPNs are used to protect data in transit across untrusted networks.",
     "distractorExplanations": {
-      "a": "Incorrect. It replaces every router does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. It converts every private address into IPv6 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. It prevents all malware automatically does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. A router forwards Layer 3 packets between IP networks. The stem instead calls for It can provide confidentiality and integrity for tunneled traffic.",
+      "c": "Incorrect. This choice conflicts with the defining fact in the item: VPNs are used to protect data in transit across untrusted networks. The correct answer is It can provide confidentiality and integrity for tunneled traffic.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: VPNs are used to protect data in transit across untrusted networks. The correct answer is It can provide confidentiality and integrity for tunneled traffic."
     },
     "tags": [
       "1.3",
       "describe-remote-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-vpn",
+      "microsoft-rdp"
     ]
   },
   {
@@ -1060,20 +1099,20 @@ export const productionQuestions = [
     "prompt": "A support technician needs to see and control a user’s Windows desktop remotely. Which method best matches the requirement?",
     "options": [
       {
-        "id": "a",
-        "text": "Remote Desktop"
-      },
-      {
-        "id": "b",
-        "text": "site-to-site VPN only"
+        "id": "d",
+        "text": "Bluetooth PAN"
       },
       {
         "id": "c",
         "text": "DNS reverse lookup"
       },
       {
-        "id": "d",
-        "text": "Bluetooth PAN"
+        "id": "a",
+        "text": "Remote Desktop"
+      },
+      {
+        "id": "b",
+        "text": "site-to-site VPN only"
       }
     ],
     "correctOptionIds": [
@@ -1081,16 +1120,18 @@ export const productionQuestions = [
     ],
     "explanation": "Remote Desktop is designed for interactive remote graphical control.",
     "distractorExplanations": {
-      "b": "Incorrect. site-to-site VPN only does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. DNS reverse lookup does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. Bluetooth PAN does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. That limitation is not valid here. The stem is testing Remote Desktop; the cited choice either describes a different function or adds an unsupported restriction.",
+      "c": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for Remote Desktop.",
+      "d": "Incorrect. Bluetooth is primarily a short-range personal-area wireless technology. The stem instead calls for Remote Desktop."
     },
     "tags": [
       "1.3",
       "describe-remote-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-vpn",
+      "microsoft-rdp"
     ]
   },
   {
@@ -1102,20 +1143,20 @@ export const productionQuestions = [
     "prompt": "Select TWO accurate statements about VPN and Remote Desktop.",
     "options": [
       {
-        "id": "a",
-        "text": "Remote Desktop provides an interactive remote desktop session."
-      },
-      {
-        "id": "b",
-        "text": "RDP is a cable-testing protocol."
+        "id": "d",
+        "text": "A VPN can provide network-level access to remote private resources."
       },
       {
         "id": "c",
         "text": "A VPN is the same thing as a VLAN trunk."
       },
       {
-        "id": "d",
-        "text": "A VPN can provide network-level access to remote private resources."
+        "id": "a",
+        "text": "Remote Desktop provides an interactive remote desktop session."
+      },
+      {
+        "id": "b",
+        "text": "RDP is a cable-testing protocol."
       }
     ],
     "correctOptionIds": [
@@ -1124,15 +1165,17 @@ export const productionQuestions = [
     ],
     "explanation": "VPN and RDP solve different remote-access problems: network connectivity versus interactive desktop access.",
     "distractorExplanations": {
-      "b": "Incorrect for this item. RDP is a cable-testing protocol. is not one of the required selections.",
-      "c": "Incorrect for this item. A VPN is the same thing as a VLAN trunk. is not one of the required selections."
+      "b": "Incorrect. RDP is Microsoft’s Remote Desktop Protocol and commonly uses TCP 3389 by default. The stem instead calls for A VPN can provide network-level access to remote private resources. / Remote Desktop provides an interactive remote desktop session..",
+      "c": "Incorrect. A trunk carries traffic for multiple VLANs between network devices. The stem instead calls for A VPN can provide network-level access to remote private resources. / Remote Desktop provides an interactive remote desktop session.."
     },
     "tags": [
       "1.3",
       "describe-remote-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-vpn",
+      "microsoft-rdp"
     ]
   },
   {
@@ -1144,10 +1187,6 @@ export const productionQuestions = [
     "prompt": "A user establishes a VPN successfully but still cannot log in to a particular Windows server desktop. What should you conclude first?",
     "options": [
       {
-        "id": "a",
-        "text": "The server must be using IPv6"
-      },
-      {
         "id": "b",
         "text": "The cable tester is faulty"
       },
@@ -1158,6 +1197,10 @@ export const productionQuestions = [
       {
         "id": "d",
         "text": "The VPN proves RDP must work"
+      },
+      {
+        "id": "a",
+        "text": "The server must be using IPv6"
       }
     ],
     "correctOptionIds": [
@@ -1165,16 +1208,18 @@ export const productionQuestions = [
     ],
     "explanation": "A working VPN provides network reachability, but RDP may still be disabled, blocked, or misconfigured.",
     "distractorExplanations": {
-      "a": "Incorrect. The server must be using IPv6 does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. The cable tester is faulty does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. The VPN proves RDP must work does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: A working VPN provides network reachability, but RDP may still be disabled, blocked, or misconfigured. The correct answer is VPN connectivity and Remote Desktop availability are separate issues.",
+      "b": "Incorrect. A cable tester checks properties such as continuity and wiremap. The stem instead calls for VPN connectivity and Remote Desktop availability are separate issues.",
+      "d": "Incorrect. A VPN provides protected network connectivity through a logical tunnel across another network. The stem instead calls for VPN connectivity and Remote Desktop availability are separate issues."
     },
     "tags": [
       "1.3",
       "describe-remote-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-vpn",
+      "microsoft-rdp"
     ]
   },
   {
@@ -1186,20 +1231,20 @@ export const productionQuestions = [
     "prompt": "Which remote access option typically exposes a desktop/session rather than the entire remote network?",
     "options": [
       {
-        "id": "a",
-        "text": "NAT pool"
-      },
-      {
-        "id": "b",
-        "text": "Remote Desktop"
-      },
-      {
         "id": "c",
         "text": "site-to-site VPN"
       },
       {
         "id": "d",
         "text": "DHCP"
+      },
+      {
+        "id": "a",
+        "text": "NAT pool"
+      },
+      {
+        "id": "b",
+        "text": "Remote Desktop"
       }
     ],
     "correctOptionIds": [
@@ -1207,16 +1252,18 @@ export const productionQuestions = [
     ],
     "explanation": "RDP provides access to a remote Windows session; a VPN provides network connectivity.",
     "distractorExplanations": {
-      "a": "Incorrect. NAT pool does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. site-to-site VPN does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. DHCP does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: RDP provides access to a remote Windows session; a VPN provides network connectivity. The correct answer is Remote Desktop.",
+      "c": "Incorrect. A VPN provides protected network connectivity through a logical tunnel across another network. The stem instead calls for Remote Desktop.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: RDP provides access to a remote Windows session; a VPN provides network connectivity. The correct answer is Remote Desktop."
     },
     "tags": [
       "1.3",
       "describe-remote-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-vpn",
+      "microsoft-rdp"
     ]
   },
   {
@@ -1228,16 +1275,16 @@ export const productionQuestions = [
     "prompt": "What does a VLAN primarily provide on a switched LAN?",
     "options": [
       {
-        "id": "a",
-        "text": "DNS recursion"
+        "id": "c",
+        "text": "physical fiber conversion"
       },
       {
         "id": "b",
         "text": "Logical Layer 2 segmentation into separate broadcast domains"
       },
       {
-        "id": "c",
-        "text": "physical fiber conversion"
+        "id": "a",
+        "text": "DNS recursion"
       },
       {
         "id": "d",
@@ -1249,16 +1296,18 @@ export const productionQuestions = [
     ],
     "explanation": "VLANs logically segment a switch network; traffic between VLANs normally requires Layer 3 routing.",
     "distractorExplanations": {
-      "a": "Incorrect. DNS recursion does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. physical fiber conversion does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. automatic Internet encryption does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for Logical Layer 2 segmentation into separate broadcast domains.",
+      "c": "Incorrect. Fiber carries light, is immune to EMI, and supports long distances/high bandwidth. The stem instead calls for Logical Layer 2 segmentation into separate broadcast domains.",
+      "d": "Incorrect. The Internet is the worldwide public internetwork. The stem instead calls for Logical Layer 2 segmentation into separate broadcast domains."
     },
     "tags": [
       "2.1",
       "define-characteristics-of-local-area-networks-(lans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-intervlan"
     ]
   },
   {
@@ -1270,20 +1319,20 @@ export const productionQuestions = [
     "prompt": "A public web server is placed in a network separated from the internal LAN by firewall controls. What is this area commonly called?",
     "options": [
       {
-        "id": "a",
-        "text": "DMZ/perimeter network"
+        "id": "d",
+        "text": "peer-to-peer segment"
       },
       {
         "id": "b",
         "text": "loopback network"
       },
       {
-        "id": "c",
-        "text": "broadcast storm"
+        "id": "a",
+        "text": "DMZ/perimeter network"
       },
       {
-        "id": "d",
-        "text": "peer-to-peer segment"
+        "id": "c",
+        "text": "broadcast storm"
       }
     ],
     "correctOptionIds": [
@@ -1291,16 +1340,18 @@ export const productionQuestions = [
     ],
     "explanation": "A DMZ/perimeter network isolates public-facing services from the trusted internal network.",
     "distractorExplanations": {
-      "b": "Incorrect. loopback network does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. broadcast storm does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. peer-to-peer segment does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. Loopback tests stay inside the local host and do not verify the external LAN path. The stem instead calls for DMZ/perimeter network.",
+      "c": "Incorrect. Broadcast targets all hosts in the local broadcast domain. The stem instead calls for DMZ/perimeter network.",
+      "d": "Incorrect. Peer-to-peer allows endpoints to share resources directly without requiring a dedicated central server. The stem instead calls for DMZ/perimeter network."
     },
     "tags": [
       "2.1",
       "define-characteristics-of-local-area-networks-(lans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-intervlan"
     ]
   },
   {
@@ -1312,20 +1363,20 @@ export const productionQuestions = [
     "prompt": "Which statement about a wired LAN is most accurate?",
     "options": [
       {
-        "id": "a",
-        "text": "It must use satellite service"
-      },
-      {
-        "id": "b",
-        "text": "It cannot use VLANs"
-      },
-      {
         "id": "c",
         "text": "It always spans multiple cities"
       },
       {
         "id": "d",
         "text": "Endpoints commonly connect using Ethernet cabling and switches"
+      },
+      {
+        "id": "b",
+        "text": "It cannot use VLANs"
+      },
+      {
+        "id": "a",
+        "text": "It must use satellite service"
       }
     ],
     "correctOptionIds": [
@@ -1333,16 +1384,18 @@ export const productionQuestions = [
     ],
     "explanation": "Wired LANs commonly use Ethernet switches and copper/fiber cabling within a local site.",
     "distractorExplanations": {
-      "a": "Incorrect. It must use satellite service does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. It cannot use VLANs does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. It always spans multiple cities does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. Satellite WAN access uses a satellite link and is useful where terrestrial service is unavailable. The stem instead calls for Endpoints commonly connect using Ethernet cabling and switches.",
+      "b": "Incorrect. A VLAN creates logical Layer 2 segmentation and a separate broadcast domain. The stem instead calls for Endpoints commonly connect using Ethernet cabling and switches.",
+      "c": "Incorrect. The statement is too absolute for the evidence given. The correct conclusion is Endpoints commonly connect using Ethernet cabling and switches, as explained by the behavior described in the stem."
     },
     "tags": [
       "2.1",
       "define-characteristics-of-local-area-networks-(lans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-intervlan"
     ]
   },
   {
@@ -1354,12 +1407,12 @@ export const productionQuestions = [
     "prompt": "Which statement best describes a wireless LAN?",
     "options": [
       {
-        "id": "a",
-        "text": "It requires coaxial cable to every client"
-      },
-      {
         "id": "b",
         "text": "It is the same as Bluetooth only"
+      },
+      {
+        "id": "a",
+        "text": "It requires coaxial cable to every client"
       },
       {
         "id": "c",
@@ -1375,16 +1428,18 @@ export const productionQuestions = [
     ],
     "explanation": "A WLAN is a local-area network using wireless radio, typically IEEE 802.11 Wi-Fi.",
     "distractorExplanations": {
-      "a": "Incorrect. It requires coaxial cable to every client does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. It is the same as Bluetooth only does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. It is always a WAN does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: A WLAN is a local-area network using wireless radio, typically IEEE 802. The correct answer is It provides LAN connectivity over radio using Wi-Fi/802.11 technologies.",
+      "b": "Incorrect. That limitation is not valid here. The stem is testing It provides LAN connectivity over radio using Wi-Fi/802.11 technologies; the cited choice either describes a different function or adds an unsupported restriction.",
+      "d": "Incorrect. The statement is too absolute for the evidence given. The correct conclusion is It provides LAN connectivity over radio using Wi-Fi/802.11 technologies, as explained by the behavior described in the stem."
     },
     "tags": [
       "2.1",
       "define-characteristics-of-local-area-networks-(lans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-intervlan"
     ]
   },
   {
@@ -1396,16 +1451,16 @@ export const productionQuestions = [
     "prompt": "Select TWO reasons an organization might use VLANs.",
     "options": [
       {
-        "id": "a",
-        "text": "Eliminate the need for routing between different IP networks"
-      },
-      {
         "id": "b",
         "text": "Separate broadcast domains logically"
       },
       {
         "id": "c",
         "text": "Segment groups without requiring separate physical switches for every group"
+      },
+      {
+        "id": "a",
+        "text": "Eliminate the need for routing between different IP networks"
       },
       {
         "id": "d",
@@ -1418,15 +1473,17 @@ export const productionQuestions = [
     ],
     "explanation": "VLANs support logical segmentation and reduce Layer 2 broadcast scope.",
     "distractorExplanations": {
-      "a": "Incorrect for this item. Eliminate the need for routing between different IP networks is not one of the required selections.",
-      "d": "Incorrect for this item. Increase the speed of light in fiber is not one of the required selections."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: VLANs support logical segmentation and reduce Layer 2 broadcast scope. The correct answer is Separate broadcast domains logically / Segment groups without requiring separate physical switches for every group.",
+      "d": "Incorrect. Fiber carries light, is immune to EMI, and supports long distances/high bandwidth. The stem instead calls for Separate broadcast domains logically / Segment groups without requiring separate physical switches for every group."
     },
     "tags": [
       "2.1",
       "define-characteristics-of-local-area-networks-(lans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-intervlan"
     ]
   },
   {
@@ -1438,20 +1495,20 @@ export const productionQuestions = [
     "prompt": "Traffic from VLAN 10 needs to reach VLAN 20. What function is required?",
     "options": [
       {
-        "id": "a",
-        "text": "Layer 3 routing/inter-VLAN routing"
-      },
-      {
-        "id": "b",
-        "text": "a hub only"
-      },
-      {
         "id": "c",
         "text": "a toner probe"
       },
       {
         "id": "d",
         "text": "DNS CNAME"
+      },
+      {
+        "id": "b",
+        "text": "a hub only"
+      },
+      {
+        "id": "a",
+        "text": "Layer 3 routing/inter-VLAN routing"
       }
     ],
     "correctOptionIds": [
@@ -1459,16 +1516,18 @@ export const productionQuestions = [
     ],
     "explanation": "Different VLANs are separate Layer 2 broadcast domains, so Layer 3 forwarding is needed between them.",
     "distractorExplanations": {
-      "b": "Incorrect. a hub only does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. a toner probe does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. DNS CNAME does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. That limitation is not valid here. The stem is testing Layer 3 routing/inter-VLAN routing; the cited choice either describes a different function or adds an unsupported restriction.",
+      "c": "Incorrect. A toner helps identify or trace a particular copper cable. The stem instead calls for Layer 3 routing/inter-VLAN routing.",
+      "d": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for Layer 3 routing/inter-VLAN routing."
     },
     "tags": [
       "2.1",
       "define-characteristics-of-local-area-networks-(lans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-intervlan"
     ]
   },
   {
@@ -1480,20 +1539,20 @@ export const productionQuestions = [
     "prompt": "Why place an Internet-facing service in a DMZ rather than directly inside the trusted LAN?",
     "options": [
       {
-        "id": "a",
-        "text": "To make DNS unnecessary"
-      },
-      {
         "id": "b",
         "text": "To create a loopback address"
+      },
+      {
+        "id": "d",
+        "text": "To reduce exposure of the trusted internal network if the public service is compromised"
       },
       {
         "id": "c",
         "text": "To force half-duplex"
       },
       {
-        "id": "d",
-        "text": "To reduce exposure of the trusted internal network if the public service is compromised"
+        "id": "a",
+        "text": "To make DNS unnecessary"
       }
     ],
     "correctOptionIds": [
@@ -1501,16 +1560,18 @@ export const productionQuestions = [
     ],
     "explanation": "A DMZ creates a controlled security zone between untrusted and trusted networks.",
     "distractorExplanations": {
-      "a": "Incorrect. To make DNS unnecessary does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. To create a loopback address does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. To force half-duplex does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for To reduce exposure of the trusted internal network if the public service is compromised.",
+      "b": "Incorrect. Loopback tests stay inside the local host and do not verify the external LAN path. The stem instead calls for To reduce exposure of the trusted internal network if the public service is compromised.",
+      "c": "Incorrect. This choice conflicts with the defining fact in the item: A DMZ creates a controlled security zone between untrusted and trusted networks. The correct answer is To reduce exposure of the trusted internal network if the public service is compromised."
     },
     "tags": [
       "2.1",
       "define-characteristics-of-local-area-networks-(lans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-intervlan"
     ]
   },
   {
@@ -1522,6 +1583,10 @@ export const productionQuestions = [
     "prompt": "Which network scope best describes devices connected within one office building using local Ethernet and Wi-Fi?",
     "options": [
       {
+        "id": "d",
+        "text": "WAN"
+      },
+      {
         "id": "a",
         "text": "Internet backbone"
       },
@@ -1532,10 +1597,6 @@ export const productionQuestions = [
       {
         "id": "c",
         "text": "LAN"
-      },
-      {
-        "id": "d",
-        "text": "WAN"
       }
     ],
     "correctOptionIds": [
@@ -1543,16 +1604,18 @@ export const productionQuestions = [
     ],
     "explanation": "A LAN serves a limited local geographic area such as a building or campus segment.",
     "distractorExplanations": {
-      "a": "Incorrect. Internet backbone does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. site-to-site VPN itself does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. WAN does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. The Internet is the worldwide public internetwork. The stem instead calls for LAN.",
+      "b": "Incorrect. A VPN provides protected network connectivity through a logical tunnel across another network. The stem instead calls for LAN.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: A LAN serves a limited local geographic area such as a building or campus segment. The correct answer is LAN."
     },
     "tags": [
       "2.1",
       "define-characteristics-of-local-area-networks-(lans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-intervlan"
     ]
   },
   {
@@ -1568,16 +1631,16 @@ export const productionQuestions = [
         "text": "fiber OTDR"
       },
       {
-        "id": "b",
-        "text": "DSL"
+        "id": "d",
+        "text": "Bluetooth"
       },
       {
         "id": "c",
         "text": "satellite"
       },
       {
-        "id": "d",
-        "text": "Bluetooth"
+        "id": "b",
+        "text": "DSL"
       }
     ],
     "correctOptionIds": [
@@ -1585,16 +1648,18 @@ export const productionQuestions = [
     ],
     "explanation": "DSL uses existing telephone copper infrastructure for broadband data.",
     "distractorExplanations": {
-      "a": "Incorrect. fiber OTDR does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. satellite does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. Bluetooth does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. Fiber carries light, is immune to EMI, and supports long distances/high bandwidth. The stem instead calls for DSL.",
+      "c": "Incorrect. Satellite WAN access uses a satellite link and is useful where terrestrial service is unavailable. The stem instead calls for DSL.",
+      "d": "Incorrect. Bluetooth is primarily a short-range personal-area wireless technology. The stem instead calls for DSL."
     },
     "tags": [
       "2.2",
       "define-characteristics-of-wide-area-networks-(wans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-dsl",
+      "ibm-networking"
     ]
   },
   {
@@ -1606,20 +1671,20 @@ export const productionQuestions = [
     "prompt": "Which WAN access method typically uses a provider coaxial cable network and a cable modem?",
     "options": [
       {
-        "id": "a",
-        "text": "Cable broadband"
-      },
-      {
         "id": "b",
         "text": "DSL only"
+      },
+      {
+        "id": "d",
+        "text": "ad hoc Wi-Fi"
       },
       {
         "id": "c",
         "text": "Bluetooth"
       },
       {
-        "id": "d",
-        "text": "ad hoc Wi-Fi"
+        "id": "a",
+        "text": "Cable broadband"
       }
     ],
     "correctOptionIds": [
@@ -1627,16 +1692,18 @@ export const productionQuestions = [
     ],
     "explanation": "Cable Internet service commonly uses coaxial access and a cable modem.",
     "distractorExplanations": {
-      "b": "Incorrect. DSL only does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. Bluetooth does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. ad hoc Wi-Fi does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. DSL provides broadband over telephone copper pairs. The stem instead calls for Cable broadband.",
+      "c": "Incorrect. Bluetooth is primarily a short-range personal-area wireless technology. The stem instead calls for Cable broadband.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: Cable Internet service commonly uses coaxial access and a cable modem. The correct answer is Cable broadband."
     },
     "tags": [
       "2.2",
       "define-characteristics-of-wide-area-networks-(wans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-dsl",
+      "ibm-networking"
     ]
   },
   {
@@ -1648,20 +1715,20 @@ export const productionQuestions = [
     "prompt": "A rural site has no practical wired provider service but has a clear view of the sky. Which WAN option may be appropriate?",
     "options": [
       {
-        "id": "a",
-        "text": "VLAN trunk"
-      },
-      {
-        "id": "b",
-        "text": "loopback"
+        "id": "d",
+        "text": "Satellite"
       },
       {
         "id": "c",
         "text": "Ethernet hub"
       },
       {
-        "id": "d",
-        "text": "Satellite"
+        "id": "a",
+        "text": "VLAN trunk"
+      },
+      {
+        "id": "b",
+        "text": "loopback"
       }
     ],
     "correctOptionIds": [
@@ -1669,16 +1736,18 @@ export const productionQuestions = [
     ],
     "explanation": "Satellite can provide WAN connectivity where terrestrial infrastructure is limited.",
     "distractorExplanations": {
-      "a": "Incorrect. VLAN trunk does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. loopback does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. Ethernet hub does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. A trunk carries traffic for multiple VLANs between network devices. The stem instead calls for Satellite.",
+      "b": "Incorrect. Loopback tests stay inside the local host and do not verify the external LAN path. The stem instead calls for Satellite.",
+      "c": "Incorrect. A hub repeats incoming bits to other ports and does not make MAC-based forwarding decisions. The stem instead calls for Satellite."
     },
     "tags": [
       "2.2",
       "define-characteristics-of-wide-area-networks-(wans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-dsl",
+      "ibm-networking"
     ]
   },
   {
@@ -1690,20 +1759,20 @@ export const productionQuestions = [
     "prompt": "Which technologies are generations of cellular mobile networking?",
     "options": [
       {
-        "id": "a",
-        "text": "FTP, SMTP, and DNS"
-      },
-      {
-        "id": "b",
-        "text": "CAT5, CAT6, and CAT7"
+        "id": "d",
+        "text": "802.3, 802.1Q, and STP"
       },
       {
         "id": "c",
         "text": "3G, 4G, and 5G"
       },
       {
-        "id": "d",
-        "text": "802.3, 802.1Q, and STP"
+        "id": "b",
+        "text": "CAT5, CAT6, and CAT7"
+      },
+      {
+        "id": "a",
+        "text": "FTP, SMTP, and DNS"
       }
     ],
     "correctOptionIds": [
@@ -1711,16 +1780,18 @@ export const productionQuestions = [
     ],
     "explanation": "3G, 4G, and 5G are cellular network generations.",
     "distractorExplanations": {
-      "a": "Incorrect. FTP, SMTP, and DNS does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. CAT5, CAT6, and CAT7 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. 802.3, 802.1Q, and STP does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for 3G, 4G, and 5G.",
+      "b": "Incorrect. This choice conflicts with the defining fact in the item: 3G, 4G, and 5G are cellular network generations. The correct answer is 3G, 4G, and 5G.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: 3G, 4G, and 5G are cellular network generations. The correct answer is 3G, 4G, and 5G."
     },
     "tags": [
       "2.2",
       "define-characteristics-of-wide-area-networks-(wans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-dsl",
+      "ibm-networking"
     ]
   },
   {
@@ -1732,20 +1803,20 @@ export const productionQuestions = [
     "prompt": "Two offices exchange private traffic through a persistent tunnel over their Internet links. Which WAN concept best describes the arrangement?",
     "options": [
       {
-        "id": "a",
-        "text": "an access VLAN"
-      },
-      {
         "id": "b",
         "text": "Site-to-site connectivity/VPN"
       },
       {
-        "id": "c",
-        "text": "peer-to-peer file sharing only"
+        "id": "a",
+        "text": "an access VLAN"
       },
       {
         "id": "d",
         "text": "a local broadcast"
+      },
+      {
+        "id": "c",
+        "text": "peer-to-peer file sharing only"
       }
     ],
     "correctOptionIds": [
@@ -1753,16 +1824,18 @@ export const productionQuestions = [
     ],
     "explanation": "Site-to-site connections link separate networks across a WAN, often using VPN tunneling over the Internet.",
     "distractorExplanations": {
-      "a": "Incorrect. an access VLAN does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. peer-to-peer file sharing only does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. a local broadcast does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. A VLAN creates logical Layer 2 segmentation and a separate broadcast domain. The stem instead calls for Site-to-site connectivity/VPN.",
+      "c": "Incorrect. That limitation is not valid here. The stem is testing Site-to-site connectivity/VPN; the cited choice either describes a different function or adds an unsupported restriction.",
+      "d": "Incorrect. Broadcast targets all hosts in the local broadcast domain. The stem instead calls for Site-to-site connectivity/VPN."
     },
     "tags": [
       "2.2",
       "define-characteristics-of-wide-area-networks-(wans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-dsl",
+      "ibm-networking"
     ]
   },
   {
@@ -1774,20 +1847,20 @@ export const productionQuestions = [
     "prompt": "Select TWO WAN access methods that can work without a wired last-mile cable to the customer premises.",
     "options": [
       {
-        "id": "a",
-        "text": "Satellite"
-      },
-      {
-        "id": "b",
-        "text": "Cellular"
+        "id": "d",
+        "text": "Cable modem"
       },
       {
         "id": "c",
         "text": "DSL"
       },
       {
-        "id": "d",
-        "text": "Cable modem"
+        "id": "b",
+        "text": "Cellular"
+      },
+      {
+        "id": "a",
+        "text": "Satellite"
       }
     ],
     "correctOptionIds": [
@@ -1796,15 +1869,17 @@ export const productionQuestions = [
     ],
     "explanation": "Satellite and cellular use radio links for the access path; DSL and cable rely on wired provider infrastructure.",
     "distractorExplanations": {
-      "c": "Incorrect for this item. DSL is not one of the required selections.",
-      "d": "Incorrect for this item. Cable modem is not one of the required selections."
+      "c": "Incorrect. DSL provides broadband over telephone copper pairs. The stem instead calls for Cellular / Satellite.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: Satellite and cellular use radio links for the access path; DSL and cable rely on wired provider infrastructure. The correct answer is Cellular / Satellite."
     },
     "tags": [
       "2.2",
       "define-characteristics-of-wide-area-networks-(wans)"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-dsl",
+      "ibm-networking"
     ]
   },
   {
@@ -1816,20 +1891,20 @@ export const productionQuestions = [
     "prompt": "Which IEEE family defines Wi-Fi wireless LAN standards?",
     "options": [
       {
-        "id": "a",
-        "text": "802.15.1 only"
-      },
-      {
-        "id": "b",
-        "text": "802.11"
+        "id": "d",
+        "text": "802.1D only"
       },
       {
         "id": "c",
         "text": "802.3"
       },
       {
-        "id": "d",
-        "text": "802.1D only"
+        "id": "a",
+        "text": "802.15.1 only"
+      },
+      {
+        "id": "b",
+        "text": "802.11"
       }
     ],
     "correctOptionIds": [
@@ -1837,16 +1912,18 @@ export const productionQuestions = [
     ],
     "explanation": "IEEE 802.11 is the family of wireless LAN standards used for Wi-Fi.",
     "distractorExplanations": {
-      "a": "Incorrect. 802.15.1 only does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. 802.3 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. 802.1D only does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: IEEE 802. The correct answer is 802.11.",
+      "c": "Incorrect. This choice conflicts with the defining fact in the item: IEEE 802. The correct answer is 802.11.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: IEEE 802. The correct answer is 802.11."
     },
     "tags": [
       "2.3",
       "identify-wireless-networking-methods-and-characteristics"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-wifi-rf",
+      "microsoft-8021x"
     ]
   },
   {
@@ -1858,20 +1935,20 @@ export const productionQuestions = [
     "prompt": "Which technology is designed primarily for short-range personal-area connections such as headsets and peripherals?",
     "options": [
       {
-        "id": "a",
-        "text": "Bluetooth"
-      },
-      {
         "id": "b",
         "text": "DSL"
       },
       {
-        "id": "c",
-        "text": "RDP"
-      },
-      {
         "id": "d",
         "text": "TDR"
+      },
+      {
+        "id": "a",
+        "text": "Bluetooth"
+      },
+      {
+        "id": "c",
+        "text": "RDP"
       }
     ],
     "correctOptionIds": [
@@ -1879,16 +1956,18 @@ export const productionQuestions = [
     ],
     "explanation": "Bluetooth is a short-range wireless personal-area networking technology.",
     "distractorExplanations": {
-      "b": "Incorrect. DSL does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. RDP does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. TDR does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. DSL provides broadband over telephone copper pairs. The stem instead calls for Bluetooth.",
+      "c": "Incorrect. RDP is Microsoft’s Remote Desktop Protocol and commonly uses TCP 3389 by default. The stem instead calls for Bluetooth.",
+      "d": "Incorrect. A TDR locates copper-cable faults by analyzing signal reflections and distance. The stem instead calls for Bluetooth."
     },
     "tags": [
       "2.3",
       "identify-wireless-networking-methods-and-characteristics"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-wifi-rf",
+      "microsoft-8021x"
     ]
   },
   {
@@ -1921,16 +2000,18 @@ export const productionQuestions = [
     ],
     "explanation": "WEP has serious cryptographic weaknesses and is obsolete for secure WLANs.",
     "distractorExplanations": {
-      "a": "Incorrect. WPA2 does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. 802.1X authentication does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. modern AES-based protection does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. WPA2 is a WLAN security generation commonly associated with AES/CCMP. The stem instead calls for WEP.",
+      "b": "Incorrect. 802.1X provides port-based network access authentication/control. The stem instead calls for WEP.",
+      "c": "Incorrect. This choice conflicts with the defining fact in the item: WEP has serious cryptographic weaknesses and is obsolete for secure WLANs. The correct answer is WEP."
     },
     "tags": [
       "2.3",
       "identify-wireless-networking-methods-and-characteristics"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-wifi-rf",
+      "microsoft-8021x"
     ]
   },
   {
@@ -1950,12 +2031,12 @@ export const productionQuestions = [
         "text": "RDP"
       },
       {
-        "id": "c",
-        "text": "WPA2"
-      },
-      {
         "id": "d",
         "text": "WEP"
+      },
+      {
+        "id": "c",
+        "text": "WPA2"
       }
     ],
     "correctOptionIds": [
@@ -1963,16 +2044,18 @@ export const productionQuestions = [
     ],
     "explanation": "WPA2 improved WLAN security and is commonly associated with AES-CCMP.",
     "distractorExplanations": {
-      "a": "Incorrect. ARP does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. RDP does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. WEP does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. ARP maps local IPv4 addresses to Layer 2 MAC addresses. The stem instead calls for WPA2.",
+      "b": "Incorrect. RDP is Microsoft’s Remote Desktop Protocol and commonly uses TCP 3389 by default. The stem instead calls for WPA2.",
+      "d": "Incorrect. WEP is an obsolete and weak WLAN security method. The stem instead calls for WPA2."
     },
     "tags": [
       "2.3",
       "identify-wireless-networking-methods-and-characteristics"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-wifi-rf",
+      "microsoft-8021x"
     ]
   },
   {
@@ -1984,20 +2067,20 @@ export const productionQuestions = [
     "prompt": "What is 802.1X primarily used for in enterprise network access?",
     "options": [
       {
-        "id": "a",
-        "text": "DNS reverse lookup"
-      },
-      {
-        "id": "b",
-        "text": "Port-based network access authentication"
-      },
-      {
         "id": "c",
         "text": "wireless channel numbering"
       },
       {
+        "id": "a",
+        "text": "DNS reverse lookup"
+      },
+      {
         "id": "d",
         "text": "IPv4 subnetting"
+      },
+      {
+        "id": "b",
+        "text": "Port-based network access authentication"
       }
     ],
     "correctOptionIds": [
@@ -2005,16 +2088,18 @@ export const productionQuestions = [
     ],
     "explanation": "802.1X provides an authentication framework for controlling access to network ports/WLANs.",
     "distractorExplanations": {
-      "a": "Incorrect. DNS reverse lookup does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. wireless channel numbering does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. IPv4 subnetting does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for Port-based network access authentication.",
+      "c": "Incorrect. A ring topology forms a loop. The stem instead calls for Port-based network access authentication.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: 802. The correct answer is Port-based network access authentication."
     },
     "tags": [
       "2.3",
       "identify-wireless-networking-methods-and-characteristics"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-wifi-rf",
+      "microsoft-8021x"
     ]
   },
   {
@@ -2022,41 +2107,43 @@ export const productionQuestions = [
     "objectiveId": "2.3",
     "domainId": "2",
     "type": "scenario",
-    "difficulty": "easy",
-    "prompt": "Two wireless devices communicate directly without a normal infrastructure access point. What topology is this?",
+    "difficulty": "medium",
+    "prompt": "Two laptops in a temporary field office must exchange files directly over Wi-Fi. There is no wireless access point or router available. Which wireless arrangement best fits?",
     "options": [
       {
-        "id": "a",
-        "text": "Ad hoc"
+        "id": "c",
+        "text": "Wireless bridge between two wired LANs"
       },
       {
         "id": "b",
-        "text": "DMZ"
+        "text": "Ad hoc wireless network"
       },
       {
-        "id": "c",
-        "text": "star-wired only"
+        "id": "a",
+        "text": "Infrastructure WLAN through an access point"
       },
       {
         "id": "d",
-        "text": "trunking"
+        "text": "Site-to-site VPN"
       }
     ],
     "correctOptionIds": [
-      "a"
+      "b"
     ],
-    "explanation": "An ad hoc wireless network allows peers to communicate directly without a conventional infrastructure AP.",
+    "explanation": "An ad hoc wireless network allows wireless peers to communicate directly without a normal infrastructure access point.",
     "distractorExplanations": {
-      "b": "Incorrect. DMZ does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. star-wired only does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. trunking does not best satisfy the scenario or definition being tested."
+      "a": "Infrastructure mode depends on an access point coordinating client access.",
+      "c": "A wireless bridge is used to join network segments, not simply two peer laptops with no AP.",
+      "d": "A site-to-site VPN connects networks through gateways; it is not a Wi-Fi operating arrangement."
     },
     "tags": [
       "2.3",
       "identify-wireless-networking-methods-and-characteristics"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-wifi-rf",
+      "microsoft-8021x"
     ]
   },
   {
@@ -2065,82 +2152,86 @@ export const productionQuestions = [
     "domainId": "2",
     "type": "scenario",
     "difficulty": "medium",
-    "prompt": "A wireless link is used to connect two buildings directly. Which term best fits?",
+    "prompt": "A warehouse and an office 150 meters apart need a dedicated wireless link between rooftop devices so the two sites can exchange LAN traffic. Which wireless method is the best match?",
     "options": [
       {
-        "id": "a",
-        "text": "broadcast-only Ethernet"
-      },
-      {
         "id": "b",
-        "text": "loopback"
+        "text": "Point-to-point wireless link"
       },
       {
         "id": "c",
-        "text": "WINS"
+        "text": "Bluetooth personal-area network"
       },
       {
         "id": "d",
-        "text": "Point-to-point wireless"
+        "text": "802.1X authentication"
+      },
+      {
+        "id": "a",
+        "text": "Ad hoc client network"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "b"
     ],
-    "explanation": "Point-to-point wireless links connect two endpoints/sites by radio.",
+    "explanation": "A point-to-point wireless link connects two fixed endpoints/sites directly and is commonly used for building-to-building connectivity.",
     "distractorExplanations": {
-      "a": "Incorrect. broadcast-only Ethernet does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. loopback does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. WINS does not best satisfy the scenario or definition being tested."
+      "a": "Ad hoc describes peers communicating without an infrastructure AP and is not the best term for a fixed building-to-building link.",
+      "c": "Bluetooth is designed mainly for short-range personal-area connectivity.",
+      "d": "802.1X is an access-control/authentication framework, not a link topology."
     },
     "tags": [
       "2.3",
       "identify-wireless-networking-methods-and-characteristics"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-wifi-rf",
+      "microsoft-8021x"
     ]
   },
   {
     "id": "ITS-NET-2.3-008",
     "objectiveId": "2.3",
     "domainId": "2",
-    "type": "single-choice",
+    "type": "scenario",
     "difficulty": "medium",
-    "prompt": "Two separate wired LAN segments are joined using a wireless link between bridge devices. What is this called?",
+    "prompt": "A remote workshop already has a wired Ethernet LAN. An access point in bridge mode connects that LAN over Wi-Fi to the main building LAN. What function is the wireless equipment providing?",
     "options": [
       {
         "id": "a",
-        "text": "PAT"
-      },
-      {
-        "id": "b",
-        "text": "half-duplex hubbing"
-      },
-      {
-        "id": "c",
         "text": "Wireless bridging"
       },
       {
         "id": "d",
-        "text": "DNS recursion"
+        "text": "DNS forwarding"
+      },
+      {
+        "id": "b",
+        "text": "NAT overload/PAT"
+      },
+      {
+        "id": "c",
+        "text": "Ad hoc networking"
       }
     ],
     "correctOptionIds": [
-      "c"
+      "a"
     ],
-    "explanation": "Wireless bridging extends/connects Layer 2 network segments over a wireless link.",
+    "explanation": "Wireless bridging extends or joins LAN segments across a wireless link while preserving the bridging role at the local-link level.",
     "distractorExplanations": {
-      "a": "Incorrect. PAT does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. half-duplex hubbing does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. DNS recursion does not best satisfy the scenario or definition being tested."
+      "b": "PAT translates addresses/ports and is unrelated to joining LAN segments over radio.",
+      "c": "Ad hoc networking is direct peer wireless communication without infrastructure APs.",
+      "d": "DNS forwarding resolves names; it does not bridge LAN traffic."
     },
     "tags": [
       "2.3",
       "identify-wireless-networking-methods-and-characteristics"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-wifi-rf",
+      "microsoft-8021x"
     ]
   },
   {
@@ -2148,41 +2239,43 @@ export const productionQuestions = [
     "objectiveId": "2.3",
     "domainId": "2",
     "type": "scenario",
-    "difficulty": "medium",
-    "prompt": "A 2.4 GHz WLAN becomes unreliable when a microwave oven is operating nearby. What is the likely issue?",
+    "difficulty": "hard",
+    "prompt": "Users report good Wi-Fi signal strength but poor throughput whenever the break-room microwave is running. The affected clients are connected on 2.4 GHz. What should the technician investigate first?",
     "options": [
       {
-        "id": "a",
-        "text": "VLAN tagging error"
-      },
-      {
-        "id": "b",
-        "text": "Wireless interference"
-      },
-      {
         "id": "c",
-        "text": "DNS cache poisoning"
+        "text": "A missing DNS PTR record"
       },
       {
         "id": "d",
-        "text": "IPv4 loopback failure"
+        "text": "A failed fiber transceiver"
+      },
+      {
+        "id": "a",
+        "text": "A duplicate IPv4 default gateway"
+      },
+      {
+        "id": "b",
+        "text": "Radio-frequency interference on the WLAN channel"
       }
     ],
     "correctOptionIds": [
       "b"
     ],
-    "explanation": "Other radio-frequency sources can interfere with Wi-Fi, especially in shared/unlicensed spectrum.",
+    "explanation": "Microwave ovens can interfere with 2.4-GHz Wi-Fi. Strong signal strength does not rule out RF interference or channel contention.",
     "distractorExplanations": {
-      "a": "Incorrect. VLAN tagging error does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. DNS cache poisoning does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. IPv4 loopback failure does not best satisfy the scenario or definition being tested."
+      "a": "A duplicate/default-gateway problem would not normally correlate with the microwave operating.",
+      "c": "PTR records affect reverse DNS, not RF throughput.",
+      "d": "A fiber-transceiver failure would not be expected to appear only when a microwave runs."
     },
     "tags": [
       "2.3",
       "identify-wireless-networking-methods-and-characteristics"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-wifi-rf",
+      "microsoft-8021x"
     ]
   },
   {
@@ -2190,41 +2283,43 @@ export const productionQuestions = [
     "objectiveId": "2.3",
     "domainId": "2",
     "type": "multiple-choice",
-    "difficulty": "medium",
-    "prompt": "Select TWO valid ways to improve a WLAN suffering from radio interference.",
+    "difficulty": "hard",
+    "prompt": "A 2.4-GHz WLAN has heavy co-channel interference from nearby access points. Select TWO actions that are most directly appropriate.",
     "options": [
       {
-        "id": "a",
-        "text": "Change to a less congested channel/band"
-      },
-      {
-        "id": "b",
-        "text": "Relocate or reorient the access point away from interference sources"
-      },
-      {
         "id": "c",
-        "text": "Enable WEP because it increases signal strength"
+        "text": "Downgrade security from WPA2 to WEP"
       },
       {
         "id": "d",
-        "text": "Convert the default gateway to 127.0.0.1"
+        "text": "Increase the number of APs on the exact same 2.4-GHz channel without planning"
+      },
+      {
+        "id": "a",
+        "text": "Move supported dual-band clients to a less-congested 5-GHz WLAN"
+      },
+      {
+        "id": "b",
+        "text": "Choose a better non-overlapping 2.4-GHz channel after a site/channel survey"
       }
     ],
     "correctOptionIds": [
       "a",
       "b"
     ],
-    "explanation": "Channel/band planning and AP placement can reduce interference; encryption choice does not increase RF signal quality.",
+    "explanation": "Reducing channel contention by selecting a cleaner channel and moving capable clients to a less-congested band are direct RF remedies. Security downgrade and unplanned same-channel AP density do not solve the interference problem.",
     "distractorExplanations": {
-      "c": "Incorrect for this item. Enable WEP because it increases signal strength is not one of the required selections.",
-      "d": "Incorrect for this item. Convert the default gateway to 127.0.0.1 is not one of the required selections."
+      "c": "WEP is obsolete and weak; changing to it does not improve RF interference.",
+      "d": "Adding APs on the same channel can increase co-channel contention rather than reduce it."
     },
     "tags": [
       "2.3",
       "identify-wireless-networking-methods-and-characteristics"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-wifi-rf",
+      "microsoft-8021x"
     ]
   },
   {
@@ -2236,10 +2331,6 @@ export const productionQuestions = [
     "prompt": "In which physical topology do endpoints connect to a central device such as a switch?",
     "options": [
       {
-        "id": "a",
-        "text": "full mesh"
-      },
-      {
         "id": "b",
         "text": "Star"
       },
@@ -2250,6 +2341,10 @@ export const productionQuestions = [
       {
         "id": "d",
         "text": "ring"
+      },
+      {
+        "id": "a",
+        "text": "full mesh"
       }
     ],
     "correctOptionIds": [
@@ -2257,16 +2352,17 @@ export const productionQuestions = [
     ],
     "explanation": "A star topology uses a central connection point.",
     "distractorExplanations": {
-      "a": "Incorrect. full mesh does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. bus does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. ring does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. A mesh topology provides multiple interconnections/redundant paths. The stem instead calls for Star.",
+      "c": "Incorrect. A bus topology uses one shared backbone medium. The stem instead calls for Star.",
+      "d": "Incorrect. A ring topology forms a loop. The stem instead calls for Star."
     },
     "tags": [
       "2.4",
       "compare-and-contrast-network-topologies-and-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-topology"
     ]
   },
   {
@@ -2278,16 +2374,16 @@ export const productionQuestions = [
     "prompt": "Which topology provides many redundant paths by interconnecting nodes with multiple other nodes?",
     "options": [
       {
-        "id": "a",
-        "text": "Mesh"
+        "id": "c",
+        "text": "simple ring"
       },
       {
         "id": "b",
         "text": "bus"
       },
       {
-        "id": "c",
-        "text": "simple ring"
+        "id": "a",
+        "text": "Mesh"
       },
       {
         "id": "d",
@@ -2299,16 +2395,17 @@ export const productionQuestions = [
     ],
     "explanation": "Mesh topologies provide multiple paths and can improve resiliency.",
     "distractorExplanations": {
-      "b": "Incorrect. bus does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. simple ring does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. single-star without redundancy does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. A bus topology uses one shared backbone medium. The stem instead calls for Mesh.",
+      "c": "Incorrect. A ring topology forms a loop. The stem instead calls for Mesh.",
+      "d": "Incorrect. A star topology connects endpoints to a central device. The stem instead calls for Mesh."
     },
     "tags": [
       "2.4",
       "compare-and-contrast-network-topologies-and-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-topology"
     ]
   },
   {
@@ -2320,20 +2417,20 @@ export const productionQuestions = [
     "prompt": "Which classic topology connects devices along one shared backbone medium?",
     "options": [
       {
-        "id": "a",
-        "text": "star"
-      },
-      {
         "id": "b",
         "text": "mesh"
+      },
+      {
+        "id": "d",
+        "text": "Bus"
       },
       {
         "id": "c",
         "text": "point-to-point only"
       },
       {
-        "id": "d",
-        "text": "Bus"
+        "id": "a",
+        "text": "star"
       }
     ],
     "correctOptionIds": [
@@ -2341,16 +2438,17 @@ export const productionQuestions = [
     ],
     "explanation": "A bus topology uses a shared backbone segment.",
     "distractorExplanations": {
-      "a": "Incorrect. star does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. mesh does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. point-to-point only does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. A star topology connects endpoints to a central device. The stem instead calls for Bus.",
+      "b": "Incorrect. A mesh topology provides multiple interconnections/redundant paths. The stem instead calls for Bus.",
+      "c": "Incorrect. This choice conflicts with the defining fact in the item: A bus topology uses a shared backbone segment. The correct answer is Bus."
     },
     "tags": [
       "2.4",
       "compare-and-contrast-network-topologies-and-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-topology"
     ]
   },
   {
@@ -2362,20 +2460,20 @@ export const productionQuestions = [
     "prompt": "Which topology concept describes how devices are actually cabled, regardless of how data logically flows?",
     "options": [
       {
-        "id": "a",
-        "text": "DNS topology"
+        "id": "c",
+        "text": "Physical topology"
       },
       {
         "id": "b",
         "text": "routing metric"
       },
       {
-        "id": "c",
-        "text": "Physical topology"
-      },
-      {
         "id": "d",
         "text": "logical topology"
+      },
+      {
+        "id": "a",
+        "text": "DNS topology"
       }
     ],
     "correctOptionIds": [
@@ -2383,16 +2481,17 @@ export const productionQuestions = [
     ],
     "explanation": "Physical topology is the real arrangement of links and devices; logical topology describes data-flow relationships.",
     "distractorExplanations": {
-      "a": "Incorrect. DNS topology does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. routing metric does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. logical topology does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for Physical topology.",
+      "b": "Incorrect. This choice conflicts with the defining fact in the item: Physical topology is the real arrangement of links and devices; logical topology describes data-flow relationships. The correct answer is Physical topology.",
+      "d": "Incorrect. Logical topology describes how communication behaves independent of the physical layout. The stem instead calls for Physical topology."
     },
     "tags": [
       "2.4",
       "compare-and-contrast-network-topologies-and-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-topology"
     ]
   },
   {
@@ -2404,20 +2503,20 @@ export const productionQuestions = [
     "prompt": "A network is physically wired as a star but a technology makes frames appear to circulate in a defined logical sequence. What distinction is being illustrated?",
     "options": [
       {
-        "id": "a",
-        "text": "WANs cannot have topology"
-      },
-      {
         "id": "b",
         "text": "Physical and logical topologies can differ"
       },
       {
-        "id": "c",
-        "text": "All stars are always logical buses"
-      },
-      {
         "id": "d",
         "text": "A VLAN is a cable type"
+      },
+      {
+        "id": "a",
+        "text": "WANs cannot have topology"
+      },
+      {
+        "id": "c",
+        "text": "All stars are always logical buses"
       }
     ],
     "correctOptionIds": [
@@ -2425,16 +2524,17 @@ export const productionQuestions = [
     ],
     "explanation": "Physical layout and logical traffic flow are separate concepts.",
     "distractorExplanations": {
-      "a": "Incorrect. WANs cannot have topology does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. All stars are always logical buses does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. A VLAN is a cable type does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: Physical layout and logical traffic flow are separate concepts. The correct answer is Physical and logical topologies can differ.",
+      "c": "Incorrect. The statement is too absolute for the evidence given. The correct conclusion is Physical and logical topologies can differ, as explained by the behavior described in the stem.",
+      "d": "Incorrect. A VLAN creates logical Layer 2 segmentation and a separate broadcast domain. The stem instead calls for Physical and logical topologies can differ."
     },
     "tags": [
       "2.4",
       "compare-and-contrast-network-topologies-and-access-methods"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "ibm-topology"
     ]
   },
   {
@@ -2446,10 +2546,6 @@ export const productionQuestions = [
     "prompt": "What is the normal role of an access port on a managed switch?",
     "options": [
       {
-        "id": "a",
-        "text": "Carry traffic for one access VLAN to an endpoint"
-      },
-      {
         "id": "b",
         "text": "carry every VLAN by default"
       },
@@ -2460,6 +2556,10 @@ export const productionQuestions = [
       {
         "id": "d",
         "text": "measure cable voltage"
+      },
+      {
+        "id": "a",
+        "text": "Carry traffic for one access VLAN to an endpoint"
       }
     ],
     "correctOptionIds": [
@@ -2467,16 +2567,19 @@ export const productionQuestions = [
     ],
     "explanation": "An access port normally places endpoint traffic into one VLAN.",
     "distractorExplanations": {
-      "b": "Incorrect. carry every VLAN by default does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. perform DNS resolution does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. measure cable voltage does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. A VLAN creates logical Layer 2 segmentation and a separate broadcast domain. The stem instead calls for Carry traffic for one access VLAN to an endpoint.",
+      "c": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for Carry traffic for one access VLAN to an endpoint.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: An access port normally places endpoint traffic into one VLAN. The correct answer is Carry traffic for one access VLAN to an endpoint."
     },
     "tags": [
       "3.1",
       "describe-characteristics-of-switches"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-mac",
+      "cisco-stp"
     ]
   },
   {
@@ -2488,8 +2591,8 @@ export const productionQuestions = [
     "prompt": "What is the normal role of a trunk port?",
     "options": [
       {
-        "id": "a",
-        "text": "connect only one untagged endpoint VLAN in all cases"
+        "id": "d",
+        "text": "Carry traffic for multiple VLANs between network devices"
       },
       {
         "id": "b",
@@ -2500,8 +2603,8 @@ export const productionQuestions = [
         "text": "assign DHCP leases"
       },
       {
-        "id": "d",
-        "text": "Carry traffic for multiple VLANs between network devices"
+        "id": "a",
+        "text": "connect only one untagged endpoint VLAN in all cases"
       }
     ],
     "correctOptionIds": [
@@ -2509,16 +2612,19 @@ export const productionQuestions = [
     ],
     "explanation": "Trunks transport multiple VLANs, commonly using VLAN tagging.",
     "distractorExplanations": {
-      "a": "Incorrect. connect only one untagged endpoint VLAN in all cases does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. act as an OTDR does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. assign DHCP leases does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. That limitation is not valid here. The stem is testing Carry traffic for multiple VLANs between network devices; the cited choice either describes a different function or adds an unsupported restriction.",
+      "b": "Incorrect. An OTDR locates fiber events/faults by analyzing optical reflections/backscatter. The stem instead calls for Carry traffic for multiple VLANs between network devices.",
+      "c": "Incorrect. This choice conflicts with the defining fact in the item: Trunks transport multiple VLANs, commonly using VLAN tagging. The correct answer is Carry traffic for multiple VLANs between network devices."
     },
     "tags": [
       "3.1",
       "describe-characteristics-of-switches"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-mac",
+      "cisco-stp"
     ]
   },
   {
@@ -2530,20 +2636,20 @@ export const productionQuestions = [
     "prompt": "Which switch type allows configuration of features such as VLANs, STP, and port security?",
     "options": [
       {
-        "id": "a",
-        "text": "passive patch panel"
-      },
-      {
-        "id": "b",
-        "text": "cable modem"
-      },
-      {
         "id": "c",
         "text": "Managed switch"
       },
       {
         "id": "d",
         "text": "unmanaged hub"
+      },
+      {
+        "id": "b",
+        "text": "cable modem"
+      },
+      {
+        "id": "a",
+        "text": "passive patch panel"
       }
     ],
     "correctOptionIds": [
@@ -2551,226 +2657,246 @@ export const productionQuestions = [
     ],
     "explanation": "Managed switches expose configuration and monitoring capabilities.",
     "distractorExplanations": {
-      "a": "Incorrect. passive patch panel does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. cable modem does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. unmanaged hub does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: Managed switches expose configuration and monitoring capabilities. The correct answer is Managed switch.",
+      "b": "Incorrect. This choice conflicts with the defining fact in the item: Managed switches expose configuration and monitoring capabilities. The correct answer is Managed switch.",
+      "d": "Incorrect. A hub repeats incoming bits to other ports and does not make MAC-based forwarding decisions. The stem instead calls for Managed switch."
     },
     "tags": [
       "3.1",
       "describe-characteristics-of-switches"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-mac",
+      "cisco-stp"
     ]
   },
   {
     "id": "ITS-NET-3.1-004",
     "objectiveId": "3.1",
     "domainId": "3",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "What does a Layer 2 switch primarily use to forward Ethernet frames?",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "A switch receives a frame in VLAN 20 with destination MAC 00AA.BBCC.DDEE. Based on the table, which port should transmit the frame?",
+    "context": "Vlan   Mac Address       Type       Ports\n----   -----------       --------   -----\n20     0011.2233.4455    DYNAMIC    Gi1/0/3\n20     00aa.bbcc.ddee    DYNAMIC    Gi1/0/8\n30     00ff.eedd.ccbb    DYNAMIC    Gi1/0/12",
     "options": [
       {
-        "id": "a",
-        "text": "subnet masks only"
-      },
-      {
         "id": "b",
-        "text": "Destination MAC address and MAC table"
+        "text": "Gi1/0/8 only"
       },
       {
         "id": "c",
-        "text": "DNS MX records"
+        "text": "Every port in every VLAN"
       },
       {
         "id": "d",
-        "text": "TCP port 3389 only"
+        "text": "The frame must be sent to a router first"
+      },
+      {
+        "id": "a",
+        "text": "Gi1/0/3 only"
       }
     ],
     "correctOptionIds": [
       "b"
     ],
-    "explanation": "Layer 2 switches learn source MAC addresses and forward frames using their MAC/CAM table.",
+    "explanation": "A Layer 2 switch forwards a known unicast frame using the destination MAC entry for that VLAN. The table maps 00AA.BBCC.DDEE in VLAN 20 to Gi1/0/8.",
     "distractorExplanations": {
-      "a": "Incorrect. subnet masks only does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. DNS MX records does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. TCP port 3389 only does not best satisfy the scenario or definition being tested."
+      "a": "Gi1/0/3 is associated with a different MAC address.",
+      "c": "A known unicast is not flooded to every port or every VLAN.",
+      "d": "Routing is needed for inter-network/inter-VLAN traffic, not for a known Layer 2 destination in the same VLAN."
     },
     "tags": [
       "3.1",
       "describe-characteristics-of-switches"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-mac",
+      "cisco-stp"
     ]
   },
   {
     "id": "ITS-NET-3.1-005",
     "objectiveId": "3.1",
     "domainId": "3",
-    "type": "single-choice",
+    "type": "scenario",
     "difficulty": "medium",
-    "prompt": "Which feature distinguishes a Layer 3 switch from a purely Layer 2 switch?",
+    "prompt": "Hosts in VLAN 10 and VLAN 20 are connected to the same multilayer switch. The design requires the switch itself to route between the two VLAN subnets. Which capability is required?",
     "options": [
       {
-        "id": "a",
-        "text": "Ability to perform IP routing between networks/VLANs"
-      },
-      {
-        "id": "b",
-        "text": "ability to use Ethernet ports at all"
+        "id": "d",
+        "text": "An unmanaged-only switch"
       },
       {
         "id": "c",
-        "text": "ability to learn MAC addresses"
+        "text": "Half-duplex Ethernet"
       },
       {
-        "id": "d",
-        "text": "ability to operate full duplex"
+        "id": "b",
+        "text": "Hub repeater mode"
+      },
+      {
+        "id": "a",
+        "text": "Layer 3 switching/routing"
       }
     ],
     "correctOptionIds": [
       "a"
     ],
-    "explanation": "Layer 3 switches add routing functions to switching.",
+    "explanation": "A Layer 3 switch can perform routing between IP networks/VLAN interfaces in addition to Layer 2 switching.",
     "distractorExplanations": {
-      "b": "Incorrect. ability to use Ethernet ports at all does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. ability to learn MAC addresses does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. ability to operate full duplex does not best satisfy the scenario or definition being tested."
+      "b": "A hub repeats bits and cannot route between VLANs.",
+      "c": "Duplex mode does not create Layer 3 routing capability.",
+      "d": "An unmanaged switch normally lacks the configuration/routing features required."
     },
     "tags": [
       "3.1",
       "describe-characteristics-of-switches"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-mac",
+      "cisco-stp"
     ]
   },
   {
     "id": "ITS-NET-3.1-006",
     "objectiveId": "3.1",
     "domainId": "3",
-    "type": "single-choice",
+    "type": "scenario",
     "difficulty": "medium",
-    "prompt": "Compared with a hub, what is a key benefit of a switch?",
+    "prompt": "Twenty PCs share an old Ethernet hub and collisions increase as traffic rises. Replacing the hub with a full-duplex switch most directly changes which behavior?",
     "options": [
       {
-        "id": "a",
-        "text": "all ports share one collision domain intentionally"
-      },
-      {
-        "id": "b",
-        "text": "switches cannot operate full duplex"
-      },
-      {
         "id": "c",
-        "text": "switches broadcast every unicast frame permanently"
+        "text": "Broadcast frames are no longer forwarded inside the VLAN"
       },
       {
         "id": "d",
-        "text": "Each switched port can be its own collision domain"
+        "text": "Every frame is repeated out every switch port"
+      },
+      {
+        "id": "a",
+        "text": "Each switched port becomes its own collision domain and full-duplex eliminates normal CSMA/CD collisions on that link"
+      },
+      {
+        "id": "b",
+        "text": "All PCs are placed into separate IP subnets automatically"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "a"
     ],
-    "explanation": "Switches isolate collision domains per port and support full-duplex Ethernet.",
+    "explanation": "A switch isolates collision domains per port, and full-duplex switched Ethernet does not use normal collision detection on that point-to-point link.",
     "distractorExplanations": {
-      "a": "Incorrect. all ports share one collision domain intentionally does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. switches cannot operate full duplex does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. switches broadcast every unicast frame permanently does not best satisfy the scenario or definition being tested."
+      "b": "A switch does not automatically create a separate IP subnet for every port.",
+      "c": "Broadcasts are still forwarded within the same VLAN/broadcast domain.",
+      "d": "Repeating every frame is hub behavior, not normal switch forwarding."
     },
     "tags": [
       "3.1",
       "describe-characteristics-of-switches"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-mac",
+      "cisco-stp"
     ]
   },
   {
     "id": "ITS-NET-3.1-007",
     "objectiveId": "3.1",
     "domainId": "3",
-    "type": "single-choice",
+    "type": "scenario",
     "difficulty": "medium",
-    "prompt": "What happens to the broadcast domain when several Layer 2 switch ports remain in the same VLAN?",
+    "prompt": "A 48-port Layer 2 switch has all access ports assigned to VLAN 30. How many Layer 2 broadcast domains do those VLAN 30 ports form?",
     "options": [
       {
-        "id": "a",
-        "text": "broadcasting is impossible"
+        "id": "d",
+        "text": "One per learned MAC address"
       },
       {
-        "id": "b",
-        "text": "the switch becomes a router"
+        "id": "a",
+        "text": "One"
       },
       {
         "id": "c",
-        "text": "They remain in the same broadcast domain"
+        "text": "Two: one transmit and one receive"
       },
       {
-        "id": "d",
-        "text": "each port automatically becomes a new IP network"
+        "id": "b",
+        "text": "Forty-eight"
       }
     ],
     "correctOptionIds": [
-      "c"
+      "a"
     ],
-    "explanation": "A VLAN generally defines a Layer 2 broadcast domain.",
+    "explanation": "A VLAN is a Layer 2 broadcast domain. Ports in the same VLAN share that broadcast domain even though each switch port is a separate collision domain.",
     "distractorExplanations": {
-      "a": "Incorrect. broadcasting is impossible does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. the switch becomes a router does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. each port automatically becomes a new IP network does not best satisfy the scenario or definition being tested."
+      "b": "Separate switch ports create separate collision domains, not separate broadcast domains when they remain in the same VLAN.",
+      "c": "Transmit/receive direction does not define broadcast domains.",
+      "d": "MAC-table entries identify destinations; they do not create broadcast domains."
     },
     "tags": [
       "3.1",
       "describe-characteristics-of-switches"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-mac",
+      "cisco-stp"
     ]
   },
   {
     "id": "ITS-NET-3.1-008",
     "objectiveId": "3.1",
     "domainId": "3",
-    "type": "scenario",
-    "difficulty": "medium",
-    "prompt": "Two switches are connected by redundant Layer 2 links and broadcast traffic begins multiplying rapidly. Which protocol is designed to prevent this?",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "After a technician adds a second Layer 2 cable between two switches, users see severe instability. Switch logs show the same source MAC rapidly alternating between two trunk ports and broadcast traffic spikes. Which feature is intended to prevent this condition?",
+    "context": "SW1 log excerpt\nMAC 00aa.bbcc.ddee VLAN 20 learned on Gi1/0/47\nMAC 00aa.bbcc.ddee VLAN 20 moved to Gi1/0/48\nMAC 00aa.bbcc.ddee VLAN 20 moved to Gi1/0/47\nBroadcast rate: rapidly increasing",
     "options": [
       {
-        "id": "a",
-        "text": "DHCP"
-      },
-      {
-        "id": "b",
-        "text": "Spanning Tree Protocol (STP)"
-      },
-      {
         "id": "c",
-        "text": "SMTP"
+        "text": "Port Address Translation"
       },
       {
         "id": "d",
-        "text": "RDP"
+        "text": "DHCP relay"
+      },
+      {
+        "id": "a",
+        "text": "Spanning Tree Protocol (STP)"
+      },
+      {
+        "id": "b",
+        "text": "DNS round robin"
       }
     ],
     "correctOptionIds": [
-      "b"
+      "a"
     ],
-    "explanation": "STP blocks redundant Layer 2 paths as needed to prevent switching loops.",
+    "explanation": "Redundant Layer 2 paths can form a switching loop. STP blocks selected redundant paths to create a loop-free logical topology while retaining redundancy.",
     "distractorExplanations": {
-      "a": "Incorrect. DHCP does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. SMTP does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. RDP does not best satisfy the scenario or definition being tested."
+      "b": "DNS round robin distributes name resolution answers; it does not stop Ethernet loops.",
+      "c": "PAT translates transport sessions and addresses; it does not control Layer 2 loops.",
+      "d": "DHCP relay forwards DHCP messages across subnets and does not prevent loops."
     },
     "tags": [
       "3.1",
       "describe-characteristics-of-switches"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-mac",
+      "cisco-stp"
     ]
   },
   {
@@ -2782,12 +2908,12 @@ export const productionQuestions = [
     "prompt": "Why can a single central switch be a single point of failure in a star LAN?",
     "options": [
       {
-        "id": "a",
-        "text": "If it fails, many attached devices can lose connectivity"
-      },
-      {
         "id": "b",
         "text": "because switches always erase IP addresses"
+      },
+      {
+        "id": "a",
+        "text": "If it fails, many attached devices can lose connectivity"
       },
       {
         "id": "c",
@@ -2803,16 +2929,19 @@ export const productionQuestions = [
     ],
     "explanation": "A central switch concentrates connectivity, so its failure can affect all dependent endpoints.",
     "distractorExplanations": {
-      "b": "Incorrect. because switches always erase IP addresses does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. because STP disables every port does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. because DNS uses UDP does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. The statement is too absolute for the evidence given. The correct conclusion is If it fails, many attached devices can lose connectivity, as explained by the behavior described in the stem.",
+      "c": "Incorrect. This choice conflicts with the defining fact in the item: A central switch concentrates connectivity, so its failure can affect all dependent endpoints. The correct answer is If it fails, many attached devices can lose connectivity.",
+      "d": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for If it fails, many attached devices can lose connectivity."
     },
     "tags": [
       "3.1",
       "describe-characteristics-of-switches"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-mac",
+      "cisco-stp"
     ]
   },
   {
@@ -2820,83 +2949,89 @@ export const productionQuestions = [
     "objectiveId": "3.1",
     "domainId": "3",
     "type": "multiple-choice",
-    "difficulty": "medium",
-    "prompt": "Select TWO accurate statements about hubs and switches.",
+    "difficulty": "hard",
+    "prompt": "Select TWO statements that correctly distinguish common Ethernet hub and switch behavior.",
     "options": [
       {
-        "id": "a",
-        "text": "A switch can forward known unicasts only toward the appropriate destination port."
+        "id": "c",
+        "text": "A switch always creates a separate broadcast domain for every physical port"
       },
       {
         "id": "b",
-        "text": "A hub creates one collision domain per port."
-      },
-      {
-        "id": "c",
-        "text": "A switch requires half-duplex on every port."
+        "text": "A switch learns source MAC addresses and normally forwards known unicast frames only toward the destination port"
       },
       {
         "id": "d",
-        "text": "A hub repeats traffic to its ports at Layer 1."
+        "text": "A hub provides full-duplex dedicated bandwidth to every attached station"
+      },
+      {
+        "id": "a",
+        "text": "A hub repeats incoming traffic to its other ports and attached devices share a collision domain"
       }
     ],
     "correctOptionIds": [
       "a",
-      "d"
+      "b"
     ],
-    "explanation": "Hubs repeat bits broadly; switches make Layer 2 forwarding decisions and isolate collisions per port.",
+    "explanation": "Hubs are repeaters that share collision behavior, while switches learn MAC locations and selectively forward known unicast frames. VLANs—not individual switch ports by themselves—define Layer 2 broadcast domains.",
     "distractorExplanations": {
-      "b": "Incorrect for this item. A hub creates one collision domain per port. is not one of the required selections.",
-      "c": "Incorrect for this item. A switch requires half-duplex on every port. is not one of the required selections."
+      "c": "A switch port is a separate collision domain, but ports in the same VLAN remain in the same broadcast domain.",
+      "d": "Classic hubs are shared, half-duplex repeater devices; they do not provide dedicated full-duplex links."
     },
     "tags": [
       "3.1",
       "describe-characteristics-of-switches"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-mac",
+      "cisco-stp"
     ]
   },
   {
     "id": "ITS-NET-3.1-011",
     "objectiveId": "3.1",
     "domainId": "3",
-    "type": "single-choice",
+    "type": "scenario",
     "difficulty": "hard",
-    "prompt": "A switch receives a frame whose destination MAC is not in its table. What does a normal Layer 2 switch do?",
+    "prompt": "A switch receives a unicast Ethernet frame on Gi1/0/1 in VLAN 10. The destination MAC address is not yet in the MAC table. What is the normal forwarding action?",
     "options": [
       {
-        "id": "a",
-        "text": "send a DNS query"
-      },
-      {
-        "id": "b",
-        "text": "route it using the default gateway"
-      },
-      {
         "id": "c",
-        "text": "Flood the frame out appropriate ports in that VLAN except the incoming port"
+        "text": "Flood the frame to all switch ports in every VLAN"
       },
       {
         "id": "d",
-        "text": "drop all unknown destinations permanently"
+        "text": "Send an ARP request to the Internet default gateway before forwarding"
+      },
+      {
+        "id": "b",
+        "text": "Drop every unknown unicast frame by default"
+      },
+      {
+        "id": "a",
+        "text": "Flood the frame to other forwarding ports in VLAN 10, except the ingress port"
       }
     ],
     "correctOptionIds": [
-      "c"
+      "a"
     ],
-    "explanation": "Unknown unicast frames are flooded within the relevant VLAN while the switch learns addresses.",
+    "explanation": "With normal flood-and-learn Ethernet switching, an unknown unicast destination is flooded to the other forwarding ports in the same VLAN. The switch can later learn locations from source MAC addresses it sees.",
     "distractorExplanations": {
-      "a": "Incorrect. send a DNS query does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. route it using the default gateway does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. drop all unknown destinations permanently does not best satisfy the scenario or definition being tested."
+      "b": "Unknown unicast is normally flooded rather than universally dropped.",
+      "c": "VLAN boundaries constrain Layer 2 flooding; the frame is not sent into unrelated VLANs.",
+      "d": "ARP is an IP-to-MAC resolution mechanism; the switch does not need to query an Internet gateway to flood an unknown Layer 2 destination."
     },
     "tags": [
       "3.1",
       "describe-characteristics-of-switches"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-vlan",
+      "cisco-mac",
+      "cisco-stp"
     ]
   },
   {
@@ -2908,16 +3043,16 @@ export const productionQuestions = [
     "prompt": "What route is automatically known because a router interface is configured in that network and operational?",
     "options": [
       {
-        "id": "a",
-        "text": "Directly connected route"
-      },
-      {
         "id": "b",
         "text": "static route entered by an admin"
       },
       {
         "id": "c",
         "text": "dynamic route from a protocol only"
+      },
+      {
+        "id": "a",
+        "text": "Directly connected route"
       },
       {
         "id": "d",
@@ -2929,16 +3064,17 @@ export const productionQuestions = [
     ],
     "explanation": "Routers install connected routes for networks attached to active interfaces.",
     "distractorExplanations": {
-      "b": "Incorrect. static route entered by an admin does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. dynamic route from a protocol only does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. default route only does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. A static route is manually configured. The stem instead calls for Directly connected route.",
+      "c": "Incorrect. That limitation is not valid here. The stem is testing Directly connected route; the cited choice either describes a different function or adds an unsupported restriction.",
+      "d": "Incorrect. That limitation is not valid here. The stem is testing Directly connected route; the cited choice either describes a different function or adds an unsupported restriction."
     },
     "tags": [
       "3.2",
       "describe-characteristics-of-routers"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-routing"
     ]
   },
   {
@@ -2954,16 +3090,16 @@ export const productionQuestions = [
         "text": "a route learned automatically from a dynamic routing protocol"
       },
       {
-        "id": "b",
-        "text": "a MAC table entry"
+        "id": "d",
+        "text": "A route manually configured by an administrator"
       },
       {
         "id": "c",
         "text": "a DNS PTR record"
       },
       {
-        "id": "d",
-        "text": "A route manually configured by an administrator"
+        "id": "b",
+        "text": "a MAC table entry"
       }
     ],
     "correctOptionIds": [
@@ -2971,16 +3107,17 @@ export const productionQuestions = [
     ],
     "explanation": "Static routes are explicitly configured rather than dynamically learned.",
     "distractorExplanations": {
-      "a": "Incorrect. a route learned automatically from a dynamic routing protocol does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. a MAC table entry does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. a DNS PTR record does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. Dynamic routing protocols exchange reachability and adapt to topology changes. The stem instead calls for A route manually configured by an administrator.",
+      "b": "Incorrect. A switch MAC/CAM table maps learned MAC addresses to switch ports. The stem instead calls for A route manually configured by an administrator.",
+      "c": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for A route manually configured by an administrator."
     },
     "tags": [
       "3.2",
       "describe-characteristics-of-routers"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-routing"
     ]
   },
   {
@@ -2992,20 +3129,20 @@ export const productionQuestions = [
     "prompt": "What is a main purpose of a dynamic routing protocol?",
     "options": [
       {
-        "id": "a",
-        "text": "test copper continuity"
+        "id": "d",
+        "text": "assign hostnames"
       },
       {
-        "id": "b",
-        "text": "encrypt RDP"
+        "id": "a",
+        "text": "test copper continuity"
       },
       {
         "id": "c",
         "text": "Exchange reachability information and adapt routes as topology changes"
       },
       {
-        "id": "d",
-        "text": "assign hostnames"
+        "id": "b",
+        "text": "encrypt RDP"
       }
     ],
     "correctOptionIds": [
@@ -3013,16 +3150,17 @@ export const productionQuestions = [
     ],
     "explanation": "Dynamic routing protocols learn and update paths automatically.",
     "distractorExplanations": {
-      "a": "Incorrect. test copper continuity does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. encrypt RDP does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. assign hostnames does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: Dynamic routing protocols learn and update paths automatically. The correct answer is Exchange reachability information and adapt routes as topology changes.",
+      "b": "Incorrect. RDP is Microsoft’s Remote Desktop Protocol and commonly uses TCP 3389 by default. The stem instead calls for Exchange reachability information and adapt routes as topology changes.",
+      "d": "Incorrect. Hostname prints the local system name. The stem instead calls for Exchange reachability information and adapt routes as topology changes."
     },
     "tags": [
       "3.2",
       "describe-characteristics-of-routers"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-routing"
     ]
   },
   {
@@ -3034,20 +3172,20 @@ export const productionQuestions = [
     "prompt": "What does a default route represent?",
     "options": [
       {
-        "id": "a",
-        "text": "a DNS root server record"
-      },
-      {
-        "id": "b",
-        "text": "A catch-all route used when no more specific route matches"
+        "id": "d",
+        "text": "a VLAN access port"
       },
       {
         "id": "c",
         "text": "a route only to 127.0.0.1"
       },
       {
-        "id": "d",
-        "text": "a VLAN access port"
+        "id": "b",
+        "text": "A catch-all route used when no more specific route matches"
+      },
+      {
+        "id": "a",
+        "text": "a DNS root server record"
       }
     ],
     "correctOptionIds": [
@@ -3055,226 +3193,233 @@ export const productionQuestions = [
     ],
     "explanation": "The default route is the least-specific fallback route, commonly /0.",
     "distractorExplanations": {
-      "a": "Incorrect. a DNS root server record does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. a route only to 127.0.0.1 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. a VLAN access port does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for A catch-all route used when no more specific route matches.",
+      "c": "Incorrect. That limitation is not valid here. The stem is testing A catch-all route used when no more specific route matches; the cited choice either describes a different function or adds an unsupported restriction.",
+      "d": "Incorrect. An access port normally carries one access VLAN toward an endpoint. The stem instead calls for A catch-all route used when no more specific route matches."
     },
     "tags": [
       "3.2",
       "describe-characteristics-of-routers"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-routing"
     ]
   },
   {
     "id": "ITS-NET-3.2-005",
     "objectiveId": "3.2",
     "domainId": "3",
-    "type": "scenario",
+    "type": "command-output",
     "difficulty": "hard",
-    "prompt": "A router has matching routes 10.0.0.0/8, 10.20.0.0/16, and 0.0.0.0/0 for destination 10.20.4.8. Which route is preferred?",
+    "prompt": "A router must forward a packet to 10.20.4.8. Which route from the table is selected?",
+    "context": "Destination       Next hop\n0.0.0.0/0         192.0.2.1\n10.0.0.0/8        192.0.2.2\n10.20.0.0/16      192.0.2.3",
     "options": [
       {
+        "id": "c",
+        "text": "10.20.0.0/16 via 192.0.2.3"
+      },
+      {
         "id": "a",
-        "text": "10.20.0.0/16"
+        "text": "0.0.0.0/0 via 192.0.2.1"
       },
       {
         "id": "b",
-        "text": "10.0.0.0/8"
-      },
-      {
-        "id": "c",
-        "text": "0.0.0.0/0"
+        "text": "10.0.0.0/8 via 192.0.2.2"
       },
       {
         "id": "d",
-        "text": "all are equally specific"
+        "text": "The router must use all three routes equally"
       }
     ],
     "correctOptionIds": [
-      "a"
+      "c"
     ],
-    "explanation": "Routing uses the longest matching prefix; /16 is more specific than /8 or /0.",
+    "explanation": "All three prefixes match 10.20.4.8, but /16 is the longest (most specific) matching prefix, so it is preferred for forwarding.",
     "distractorExplanations": {
-      "b": "Incorrect. 10.0.0.0/8 does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. 0.0.0.0/0 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. all are equally specific does not best satisfy the scenario or definition being tested."
+      "a": "The default route is used only when no more-specific matching route is preferred.",
+      "b": "10.0.0.0/8 matches, but it is less specific than 10.20.0.0/16.",
+      "d": "Equal use is not implied; longest-prefix match selects the most specific route."
     },
     "tags": [
       "3.2",
       "describe-characteristics-of-routers"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-routing"
     ]
   },
   {
     "id": "ITS-NET-3.2-006",
     "objectiveId": "3.2",
     "domainId": "3",
-    "type": "single-choice",
+    "type": "scenario",
     "difficulty": "medium",
-    "prompt": "Which feature forwards incoming traffic on a specific public port to an internal host/service?",
+    "prompt": "A small business has one public IPv4 address. Internet users must reach an internal HTTPS server at 192.168.10.20 when they connect to the public address on TCP 443. Which router feature is required?",
     "options": [
       {
         "id": "a",
-        "text": "STP"
-      },
-      {
-        "id": "b",
-        "text": "VLAN access mode"
-      },
-      {
-        "id": "c",
-        "text": "ARP cache timeout"
+        "text": "Port forwarding/static destination mapping for TCP 443"
       },
       {
         "id": "d",
-        "text": "Port forwarding"
+        "text": "A Layer 2 access port"
+      },
+      {
+        "id": "b",
+        "text": "A DNS PTR record only"
+      },
+      {
+        "id": "c",
+        "text": "Spanning Tree Protocol"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "a"
     ],
-    "explanation": "Port forwarding maps inbound traffic to a designated internal destination.",
+    "explanation": "Port forwarding maps traffic arriving on a specific public address/port to an internal host/service. Firewall policy must also permit the traffic.",
     "distractorExplanations": {
-      "a": "Incorrect. STP does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. VLAN access mode does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. ARP cache timeout does not best satisfy the scenario or definition being tested."
+      "b": "PTR records support reverse DNS and do not forward inbound connections.",
+      "c": "STP prevents Layer 2 loops and is unrelated to publishing an internal service.",
+      "d": "An access port places a switch endpoint in a VLAN; it does not perform Internet port forwarding."
     },
     "tags": [
       "3.2",
       "describe-characteristics-of-routers"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-routing"
     ]
   },
   {
     "id": "ITS-NET-3.2-007",
     "objectiveId": "3.2",
     "domainId": "3",
-    "type": "single-choice",
+    "type": "scenario",
     "difficulty": "medium",
-    "prompt": "What is Quality of Service (QoS) used for?",
+    "prompt": "During large file transfers, VoIP calls become choppy because the WAN link is congested. Which router capability is designed to give delay-sensitive voice traffic preferential treatment?",
     "options": [
       {
-        "id": "a",
-        "text": "measure fiber breaks"
-      },
-      {
-        "id": "b",
-        "text": "create private IPv4 ranges"
+        "id": "d",
+        "text": "DNS CNAME records"
       },
       {
         "id": "c",
-        "text": "Prioritize or manage traffic classes when network resources are constrained"
+        "text": "Spanning Tree Protocol"
       },
       {
-        "id": "d",
-        "text": "translate hostnames to IP addresses"
+        "id": "b",
+        "text": "ARP cache aging"
+      },
+      {
+        "id": "a",
+        "text": "Quality of Service (QoS)"
       }
     ],
     "correctOptionIds": [
-      "c"
+      "a"
     ],
-    "explanation": "QoS can classify, prioritize, shape, or queue traffic to improve service for important applications.",
+    "explanation": "QoS classifies and manages traffic so important delay-sensitive flows can receive appropriate priority or bandwidth treatment during congestion.",
     "distractorExplanations": {
-      "a": "Incorrect. measure fiber breaks does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. create private IPv4 ranges does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. translate hostnames to IP addresses does not best satisfy the scenario or definition being tested."
+      "b": "ARP cache aging concerns local IP-to-MAC mappings, not WAN traffic prioritization.",
+      "c": "STP controls Layer 2 topology loops.",
+      "d": "CNAME records create DNS aliases and do not schedule network traffic."
     },
     "tags": [
       "3.2",
       "describe-characteristics-of-routers"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-routing"
     ]
   },
   {
     "id": "ITS-NET-3.2-008",
     "objectiveId": "3.2",
     "domainId": "3",
-    "type": "single-choice",
+    "type": "scenario",
     "difficulty": "medium",
-    "prompt": "Why does routing between subnets support network segmentation?",
+    "prompt": "Accounting and guest devices are placed in different VLANs and IP subnets. Policy requires traffic between them to pass through a Layer 3 device where rules can be applied. What design concept is being used?",
     "options": [
       {
         "id": "a",
-        "text": "it requires hubs"
-      },
-      {
-        "id": "b",
-        "text": "It creates Layer 3 boundaries where traffic can be controlled between networks"
-      },
-      {
-        "id": "c",
-        "text": "it merges all broadcasts into one domain"
+        "text": "Network segmentation"
       },
       {
         "id": "d",
-        "text": "it removes IP addresses"
+        "text": "Wireless ad hoc mode"
+      },
+      {
+        "id": "b",
+        "text": "A single collision domain"
+      },
+      {
+        "id": "c",
+        "text": "Peer-to-peer file sharing"
       }
     ],
     "correctOptionIds": [
-      "b"
+      "a"
     ],
-    "explanation": "Routers separate IP networks and provide policy/control points between them.",
+    "explanation": "Network segmentation separates networks/broadcast domains and forces inter-segment traffic through routing/policy boundaries where controls can be applied.",
     "distractorExplanations": {
-      "a": "Incorrect. it requires hubs does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. it merges all broadcasts into one domain does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. it removes IP addresses does not best satisfy the scenario or definition being tested."
+      "b": "Segmentation reduces rather than creates one shared collision domain.",
+      "c": "Peer-to-peer is an application/resource-sharing model, not network segmentation.",
+      "d": "Ad hoc describes direct wireless peers and does not describe routed subnet separation."
     },
     "tags": [
       "3.2",
       "describe-characteristics-of-routers"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-routing"
     ]
   },
   {
     "id": "ITS-NET-3.2-009",
     "objectiveId": "3.2",
     "domainId": "3",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "After a link failure, routing protocols exchange updates until routers agree on usable paths again. What is this process called?",
+    "type": "scenario",
+    "difficulty": "hard",
+    "prompt": "A routed link fails. Neighboring routers exchange routing updates, calculate alternate paths, and eventually agree on stable reachable routes. What has occurred when the routing information stabilizes?",
     "options": [
+      {
+        "id": "d",
+        "text": "MAC learning"
+      },
       {
         "id": "a",
         "text": "Convergence"
       },
       {
-        "id": "b",
-        "text": "crosstalk"
-      },
-      {
         "id": "c",
-        "text": "ARP poisoning"
+        "text": "NAT overload"
       },
       {
-        "id": "d",
-        "text": "broadcasting"
+        "id": "b",
+        "text": "Broadcast flooding"
       }
     ],
     "correctOptionIds": [
       "a"
     ],
-    "explanation": "Convergence is the process of routing information stabilizing after a topology change.",
+    "explanation": "Routing convergence is the process/state in which routers update and settle on consistent usable routes after a topology change.",
     "distractorExplanations": {
-      "b": "Incorrect. crosstalk does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. ARP poisoning does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. broadcasting does not best satisfy the scenario or definition being tested."
+      "b": "Broadcast flooding is a Layer 2 forwarding behavior.",
+      "c": "NAT overload/PAT translates many sessions through fewer public addresses.",
+      "d": "MAC learning is a switch function, not a routing-protocol stabilization process."
     },
     "tags": [
       "3.2",
       "describe-characteristics-of-routers"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-routing"
     ]
   },
   {
@@ -3283,40 +3428,41 @@ export const productionQuestions = [
     "domainId": "3",
     "type": "scenario",
     "difficulty": "medium",
-    "prompt": "A small router is overloaded because all Internet-bound traffic must pass through it. What characteristic is being demonstrated?",
+    "prompt": "All traffic between a branch LAN and the Internet must traverse one low-performance router. CPU utilization reaches 100% and throughput collapses even though the access links are faster. What router characteristic does this demonstrate?",
     "options": [
       {
-        "id": "a",
-        "text": "routers eliminate bottlenecks by definition"
-      },
-      {
         "id": "b",
-        "text": "the problem must be DNS"
-      },
-      {
-        "id": "c",
-        "text": "the router has become a hub"
+        "text": "The router has created an Ethernet loop"
       },
       {
         "id": "d",
-        "text": "A router can become a network bottleneck"
+        "text": "The router automatically disables subnetting"
+      },
+      {
+        "id": "c",
+        "text": "The router is functioning as a DNS alias"
+      },
+      {
+        "id": "a",
+        "text": "The router can become a network bottleneck"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "a"
     ],
-    "explanation": "A device on a critical forwarding path can bottleneck traffic if its capacity is insufficient.",
+    "explanation": "A router through which all traffic must pass can become a bottleneck when its forwarding capacity is below the offered traffic load.",
     "distractorExplanations": {
-      "a": "Incorrect. routers eliminate bottlenecks by definition does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. the problem must be DNS does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. the router has become a hub does not best satisfy the scenario or definition being tested."
+      "b": "An Ethernet loop is a Layer 2 topology problem and is not implied by CPU saturation on the router.",
+      "c": "DNS aliases are CNAME records, not router forwarding behavior.",
+      "d": "Subnetting is an addressing design and is not automatically disabled by high load."
     },
     "tags": [
       "3.2",
       "describe-characteristics-of-routers"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-routing"
     ]
   },
   {
@@ -3328,20 +3474,20 @@ export const productionQuestions = [
     "prompt": "Which medium is generally immune to electromagnetic interference because it carries light rather than electrical signals?",
     "options": [
       {
-        "id": "a",
-        "text": "Fiber-optic cable"
-      },
-      {
         "id": "b",
         "text": "unshielded twisted pair"
       },
       {
-        "id": "c",
-        "text": "coaxial copper only"
+        "id": "a",
+        "text": "Fiber-optic cable"
       },
       {
         "id": "d",
         "text": "CAT5 UTP"
+      },
+      {
+        "id": "c",
+        "text": "coaxial copper only"
       }
     ],
     "correctOptionIds": [
@@ -3349,58 +3495,62 @@ export const productionQuestions = [
     ],
     "explanation": "Fiber carries optical signals and is resistant to EMI.",
     "distractorExplanations": {
-      "b": "Incorrect. unshielded twisted pair does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. coaxial copper only does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. CAT5 UTP does not best satisfy the scenario or definition being tested."
+      "b": "Incorrect. This choice conflicts with the defining fact in the item: Fiber carries optical signals and is resistant to EMI. The correct answer is Fiber-optic cable.",
+      "c": "Incorrect. That limitation is not valid here. The stem is testing Fiber-optic cable; the cited choice either describes a different function or adds an unsupported restriction.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: Fiber carries optical signals and is resistant to EMI. The correct answer is Fiber-optic cable."
     },
     "tags": [
       "3.3",
       "describe-characteristics-of-physical-media"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-auto-mdix",
+      "cisco-cabling"
     ]
   },
   {
     "id": "ITS-NET-3.3-002",
     "objectiveId": "3.3",
     "domainId": "3",
-    "type": "single-choice",
+    "type": "scenario",
     "difficulty": "medium",
-    "prompt": "What is a purpose of shielding in shielded twisted-pair cabling?",
+    "prompt": "A copper Ethernet run must pass near motors and other sources of electromagnetic noise. Which cable characteristic can help reduce external interference pickup?",
     "options": [
       {
-        "id": "a",
-        "text": "increase DNS speed"
-      },
-      {
         "id": "b",
-        "text": "provide optical signaling"
+        "text": "Removing all twists from the pairs"
       },
       {
-        "id": "c",
-        "text": "replace VLAN tagging"
+        "id": "a",
+        "text": "Shielded twisted pair (STP)"
       },
       {
         "id": "d",
-        "text": "Reduce susceptibility to electromagnetic interference"
+        "text": "Replacing copper with a DNS server"
+      },
+      {
+        "id": "c",
+        "text": "Using an unshielded cable solely because it is thinner"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "a"
     ],
-    "explanation": "Shielding helps protect copper signals from external electromagnetic noise.",
+    "explanation": "STP adds shielding around the pairs/cable to improve resistance to electromagnetic interference. Twisting itself also helps control noise and crosstalk.",
     "distractorExplanations": {
-      "a": "Incorrect. increase DNS speed does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. provide optical signaling does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. replace VLAN tagging does not best satisfy the scenario or definition being tested."
+      "b": "Twisting helps reject interference and reduce crosstalk; removing twists makes performance worse.",
+      "c": "UTP may work in many environments, but shielding is the characteristic specifically intended to improve EMI resistance.",
+      "d": "DNS is a network service, not a physical transmission medium."
     },
     "tags": [
       "3.3",
       "describe-characteristics-of-physical-media"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-auto-mdix",
+      "cisco-cabling"
     ]
   },
   {
@@ -3416,16 +3566,16 @@ export const productionQuestions = [
         "text": "routing convergence"
       },
       {
-        "id": "b",
-        "text": "DNS recursion"
+        "id": "d",
+        "text": "IPv6 abbreviation"
       },
       {
         "id": "c",
         "text": "Crosstalk and electromagnetic interference"
       },
       {
-        "id": "d",
-        "text": "IPv6 abbreviation"
+        "id": "b",
+        "text": "DNS recursion"
       }
     ],
     "correctOptionIds": [
@@ -3433,16 +3583,18 @@ export const productionQuestions = [
     ],
     "explanation": "Twisted pairs reduce electromagnetic coupling and crosstalk.",
     "distractorExplanations": {
-      "a": "Incorrect. routing convergence does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. DNS recursion does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. IPv6 abbreviation does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: Twisted pairs reduce electromagnetic coupling and crosstalk. The correct answer is Crosstalk and electromagnetic interference.",
+      "b": "Incorrect. DNS resolves names and stores resource records; it is not a physical-layer diagnostic. The stem instead calls for Crosstalk and electromagnetic interference.",
+      "d": "Incorrect. This choice conflicts with the defining fact in the item: Twisted pairs reduce electromagnetic coupling and crosstalk. The correct answer is Crosstalk and electromagnetic interference."
     },
     "tags": [
       "3.3",
       "describe-characteristics-of-physical-media"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-auto-mdix",
+      "cisco-cabling"
     ]
   },
   {
@@ -3454,20 +3606,20 @@ export const productionQuestions = [
     "prompt": "Which cabling categories listed in the objectives are forms of twisted-pair Ethernet media?",
     "options": [
       {
-        "id": "a",
-        "text": "3G through 5G"
-      },
-      {
-        "id": "b",
-        "text": "CAT5 through CAT7"
-      },
-      {
         "id": "c",
         "text": "only fiber OS1/OS2"
       },
       {
         "id": "d",
         "text": "RDP and SSH"
+      },
+      {
+        "id": "a",
+        "text": "3G through 5G"
+      },
+      {
+        "id": "b",
+        "text": "CAT5 through CAT7"
       }
     ],
     "correctOptionIds": [
@@ -3475,58 +3627,62 @@ export const productionQuestions = [
     ],
     "explanation": "CAT5-CAT7 are categories of balanced twisted-pair cabling.",
     "distractorExplanations": {
-      "a": "Incorrect. 3G through 5G does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. only fiber OS1/OS2 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. RDP and SSH does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. This choice conflicts with the defining fact in the item: CAT5-CAT7 are categories of balanced twisted-pair cabling. The correct answer is CAT5 through CAT7.",
+      "c": "Incorrect. That limitation is not valid here. The stem is testing CAT5 through CAT7; the cited choice either describes a different function or adds an unsupported restriction.",
+      "d": "Incorrect. RDP is Microsoft’s Remote Desktop Protocol and commonly uses TCP 3389 by default. The stem instead calls for CAT5 through CAT7."
     },
     "tags": [
       "3.3",
       "describe-characteristics-of-physical-media"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-auto-mdix",
+      "cisco-cabling"
     ]
   },
   {
     "id": "ITS-NET-3.3-005",
     "objectiveId": "3.3",
     "domainId": "3",
-    "type": "single-choice",
+    "type": "scenario",
     "difficulty": "medium",
-    "prompt": "Historically, which cable wiring pattern was used to directly connect similar Ethernet devices when auto-MDI/MDIX was not available?",
+    "prompt": "Two older switches without auto-MDI-X must be connected directly with copper Ethernet. Which legacy wiring choice is expected?",
     "options": [
+      {
+        "id": "b",
+        "text": "Straight-through cable"
+      },
       {
         "id": "a",
         "text": "Crossover cable"
       },
       {
-        "id": "b",
-        "text": "straight-through cable in every case"
-      },
-      {
         "id": "c",
-        "text": "fiber patch with no transceivers"
+        "text": "Single-mode fiber only"
       },
       {
         "id": "d",
-        "text": "telephone DSL filter"
+        "text": "Coaxial WAN cable"
       }
     ],
     "correctOptionIds": [
       "a"
     ],
-    "explanation": "Crossover wiring swaps transmit/receive pairs and was used for direct similar-device links on older Ethernet equipment.",
+    "explanation": "Before auto-MDI-X became common, like Ethernet devices such as switch-to-switch links typically required crossover wiring so transmit and receive pairs were crossed.",
     "distractorExplanations": {
-      "b": "Incorrect. straight-through cable in every case does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. fiber patch with no transceivers does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. telephone DSL filter does not best satisfy the scenario or definition being tested."
+      "b": "Straight-through was the classic choice for unlike roles such as endpoint-to-switch; auto-MDI-X on modern devices often removes this practical distinction.",
+      "c": "Fiber may be used when interfaces support it, but the question asks the legacy copper wiring choice.",
+      "d": "Coaxial WAN cable is not the described twisted-pair Ethernet connection."
     },
     "tags": [
       "3.3",
       "describe-characteristics-of-physical-media"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-auto-mdix",
+      "cisco-cabling"
     ]
   },
   {
@@ -3538,20 +3694,20 @@ export const productionQuestions = [
     "prompt": "Historically, which copper cable type was commonly used from an endpoint to a switch port?",
     "options": [
       {
-        "id": "a",
-        "text": "crossover in every case"
-      },
-      {
-        "id": "b",
-        "text": "OTDR fiber trace"
+        "id": "d",
+        "text": "Straight-through Ethernet cable"
       },
       {
         "id": "c",
         "text": "satellite coax feed only"
       },
       {
-        "id": "d",
-        "text": "Straight-through Ethernet cable"
+        "id": "b",
+        "text": "OTDR fiber trace"
+      },
+      {
+        "id": "a",
+        "text": "crossover in every case"
       }
     ],
     "correctOptionIds": [
@@ -3559,58 +3715,62 @@ export const productionQuestions = [
     ],
     "explanation": "Straight-through cabling was the conventional endpoint-to-switch wiring pattern.",
     "distractorExplanations": {
-      "a": "Incorrect. crossover in every case does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. OTDR fiber trace does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. satellite coax feed only does not best satisfy the scenario or definition being tested."
+      "a": "Incorrect. A crossover cable historically connects like MDI/MDI-X roles when auto-MDI-X is unavailable. The stem instead calls for Straight-through Ethernet cable.",
+      "b": "Incorrect. Fiber carries light, is immune to EMI, and supports long distances/high bandwidth. The stem instead calls for Straight-through Ethernet cable.",
+      "c": "Incorrect. That limitation is not valid here. The stem is testing Straight-through Ethernet cable; the cited choice either describes a different function or adds an unsupported restriction."
     },
     "tags": [
       "3.3",
       "describe-characteristics-of-physical-media"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-auto-mdix",
+      "cisco-cabling"
     ]
   },
   {
     "id": "ITS-NET-3.3-007",
     "objectiveId": "3.3",
     "domainId": "3",
-    "type": "single-choice",
+    "type": "scenario",
     "difficulty": "medium",
-    "prompt": "Why must cable segment length be considered when choosing network media?",
+    "prompt": "A technician proposes a 180-meter horizontal copper Ethernet run using ordinary twisted-pair Ethernet equipment designed for a 100-meter channel. What is the primary concern?",
     "options": [
       {
-        "id": "a",
-        "text": "distance changes DNS records"
-      },
-      {
         "id": "b",
-        "text": "segment length affects only hostnames"
+        "text": "IP addresses cannot be used on cables longer than 100 meters"
       },
       {
-        "id": "c",
-        "text": "Standards specify distance limits beyond which signal quality may not meet requirements"
+        "id": "a",
+        "text": "The segment exceeds the normal design distance and may not meet Ethernet performance requirements"
       },
       {
         "id": "d",
-        "text": "longer cables automatically create VLANs"
+        "text": "DNS will stop returning AAAA records"
+      },
+      {
+        "id": "c",
+        "text": "The cable will automatically become single-mode fiber"
       }
     ],
     "correctOptionIds": [
-      "c"
+      "a"
     ],
-    "explanation": "Each physical technology has practical/standard distance limits tied to signal attenuation and performance.",
+    "explanation": "Media standards have maximum segment/channel lengths. A run beyond the supported length can suffer excessive attenuation/timing problems and should use an appropriate design such as an intermediate switch or suitable fiber.",
     "distractorExplanations": {
-      "a": "Incorrect. distance changes DNS records does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. segment length affects only hostnames does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. longer cables automatically create VLANs does not best satisfy the scenario or definition being tested."
+      "b": "IP addressing is independent of cable length; the physical link must simply meet its media specifications.",
+      "c": "Copper does not transform into fiber because it is long.",
+      "d": "DNS record behavior is unrelated to physical copper segment length."
     },
     "tags": [
       "3.3",
       "describe-characteristics-of-physical-media"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-auto-mdix",
+      "cisco-cabling"
     ]
   },
   {
@@ -3618,167 +3778,173 @@ export const productionQuestions = [
     "objectiveId": "3.3",
     "domainId": "3",
     "type": "multiple-choice",
-    "difficulty": "medium",
-    "prompt": "Select TWO security/reliability characteristics of copper versus fiber media.",
+    "difficulty": "hard",
+    "prompt": "Select TWO statements that correctly compare fiber-optic and twisted-pair copper media.",
     "options": [
       {
         "id": "a",
-        "text": "UTP is completely immune to electromagnetic interference."
+        "text": "Fiber is immune to electromagnetic interference because it carries optical signals"
       },
       {
         "id": "b",
-        "text": "Copper can be susceptible to EMI and crosstalk."
+        "text": "Copper twisted-pair can be affected by EMI/crosstalk, with shielding/twisting used to reduce susceptibility"
       },
       {
         "id": "c",
-        "text": "Fiber is generally harder to tap casually and is immune to EMI."
+        "text": "Fiber normally carries Ethernet by sending electrical voltage down the glass"
       },
       {
         "id": "d",
-        "text": "Fiber transmits using electrical voltage on copper pairs."
+        "text": "Copper cannot carry full-duplex Ethernet"
       }
     ],
     "correctOptionIds": [
-      "b",
-      "c"
+      "a",
+      "b"
     ],
-    "explanation": "Copper is electrically susceptible to interference; fiber uses light and offers strong EMI resistance.",
+    "explanation": "Fiber uses light and is immune to EMI, while copper uses electrical signaling and can be affected by EMI/crosstalk. Twisting and optional shielding help reduce those effects.",
     "distractorExplanations": {
-      "a": "Incorrect for this item. UTP is completely immune to electromagnetic interference. is not one of the required selections.",
-      "d": "Incorrect for this item. Fiber transmits using electrical voltage on copper pairs. is not one of the required selections."
+      "c": "Fiber carries optical rather than electrical signals through the glass.",
+      "d": "Modern switched copper Ethernet commonly operates full-duplex."
     },
     "tags": [
       "3.3",
       "describe-characteristics-of-physical-media"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-auto-mdix",
+      "cisco-cabling"
     ]
   },
   {
     "id": "ITS-NET-4.1-001",
     "objectiveId": "4.1",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which OSI layer is responsible for end-to-end transport functions such as TCP and UDP?",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "prompt": "Select THREE correct OSI layer/function associations.",
     "options": [
       {
         "id": "a",
-        "text": "Layer 2 — Data Link"
-      },
-      {
-        "id": "b",
-        "text": "Layer 3 — Network"
-      },
-      {
-        "id": "c",
-        "text": "Layer 7 — Application"
+        "text": "Layer 1 Physical — signals, connectors, and media"
       },
       {
         "id": "d",
-        "text": "Layer 4 — Transport"
+        "text": "Layer 3 Network — Ethernet MAC-table learning"
+      },
+      {
+        "id": "c",
+        "text": "Layer 6 Presentation — data representation/encryption/compression concepts"
+      },
+      {
+        "id": "b",
+        "text": "Layer 4 Transport — TCP/UDP and end-to-end transport"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "a",
+      "b",
+      "c"
     ],
-    "explanation": "TCP and UDP operate at the Transport layer in the OSI model.",
+    "explanation": "Physical covers the transmission medium/signals, Transport contains TCP/UDP and end-to-end delivery functions, and Presentation models representation/encoding/encryption/compression. MAC-table learning is a Data Link (Layer 2) function.",
     "distractorExplanations": {
-      "a": "Incorrect. Layer 2 — Data Link does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. Layer 3 — Network does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. Layer 7 — Application does not best satisfy the scenario or definition being tested."
+      "d": "Ethernet MAC switching belongs at Layer 2 Data Link, not Layer 3."
     },
     "tags": [
       "4.1",
       "describe-the-osi-model"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-arp"
     ]
   },
   {
     "id": "ITS-NET-4.1-002",
     "objectiveId": "4.1",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "At which OSI layer are IP routing and logical IP addressing primarily associated?",
+    "type": "scenario",
+    "difficulty": "medium",
+    "prompt": "A workstation has link lights and can exchange Ethernet frames locally, but it has an incorrect IP default gateway and cannot reach remote networks. Which OSI layer is the primary configuration problem?",
     "options": [
       {
-        "id": "a",
-        "text": "Layer 2 — Data Link"
-      },
-      {
         "id": "b",
-        "text": "Layer 6 — Presentation"
+        "text": "Layer 2 Data Link"
       },
       {
-        "id": "c",
-        "text": "Layer 3 — Network"
+        "id": "a",
+        "text": "Layer 1 Physical"
       },
       {
         "id": "d",
-        "text": "Layer 1 — Physical"
+        "text": "Layer 7 Application"
+      },
+      {
+        "id": "c",
+        "text": "Layer 3 Network"
       }
     ],
     "correctOptionIds": [
       "c"
     ],
-    "explanation": "The Network layer handles logical addressing and routing.",
+    "explanation": "IP addressing, default gateways, and routing are Network-layer (Layer 3) functions. The working link and local Ethernet communication indicate the lower layers are functioning.",
     "distractorExplanations": {
-      "a": "Incorrect. Layer 2 — Data Link does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. Layer 6 — Presentation does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. Layer 1 — Physical does not best satisfy the scenario or definition being tested."
+      "a": "Physical connectivity is present because link is up and frames can be exchanged.",
+      "b": "Local Ethernet frame delivery works, so the described fault is not primarily Layer 2.",
+      "d": "The failure occurs at IP routing before an application-layer service is reached."
     },
     "tags": [
       "4.1",
       "describe-the-osi-model"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-arp"
     ]
   },
   {
     "id": "ITS-NET-4.1-003",
     "objectiveId": "4.1",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "At which OSI layer is a MAC address primarily used for local Ethernet frame delivery?",
+    "type": "command-output",
+    "difficulty": "medium",
+    "prompt": "The table below is from a switch. Which OSI layer does the address used for the forwarding decision belong to?",
+    "context": "Vlan   Mac Address       Ports\n10     00aa.bbcc.0011    Gi1/0/4\n10     00aa.bbcc.0022    Gi1/0/9",
     "options": [
       {
+        "id": "d",
+        "text": "Layer 4 Transport"
+      },
+      {
         "id": "a",
-        "text": "Layer 7 — Application"
+        "text": "Layer 1 Physical"
       },
       {
         "id": "b",
-        "text": "Layer 2 — Data Link"
+        "text": "Layer 2 Data Link"
       },
       {
         "id": "c",
-        "text": "Layer 4 — Transport"
-      },
-      {
-        "id": "d",
-        "text": "Layer 5 — Session"
+        "text": "Layer 3 Network"
       }
     ],
     "correctOptionIds": [
       "b"
     ],
-    "explanation": "MAC addressing is a Data Link layer concept used for local frame delivery.",
+    "explanation": "The table contains Ethernet MAC addresses, which are Data Link-layer (Layer 2) addresses used for local frame forwarding.",
     "distractorExplanations": {
-      "a": "Incorrect. Layer 7 — Application does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. Layer 4 — Transport does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. Layer 5 — Session does not best satisfy the scenario or definition being tested."
+      "a": "Physical deals with bits/signals/media, not MAC addressing.",
+      "c": "Layer 3 uses logical network addressing such as IP.",
+      "d": "Layer 4 uses transport protocols and port numbers."
     },
     "tags": [
       "4.1",
       "describe-the-osi-model"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-arp"
     ]
   },
   {
@@ -3786,41 +3952,42 @@ export const productionQuestions = [
     "objectiveId": "4.1",
     "domainId": "4",
     "type": "multiple-choice",
-    "difficulty": "medium",
-    "prompt": "Select TWO correct OSI associations.",
+    "difficulty": "hard",
+    "prompt": "Select THREE correct OSI associations.",
     "options": [
       {
-        "id": "a",
-        "text": "Layer 1 deals with physical signaling/media."
+        "id": "d",
+        "text": "Layer 2 Data Link — TCP and UDP port numbers"
       },
       {
         "id": "b",
-        "text": "Layer 7 provides network services closest to user applications."
+        "text": "Layer 5 Session — session/dialog management concepts"
       },
       {
         "id": "c",
-        "text": "Layer 3 is where Ethernet MAC tables are the only addressing mechanism."
+        "text": "Layer 3 Network — IP routing"
       },
       {
-        "id": "d",
-        "text": "Layer 4 is the physical cabling layer."
+        "id": "a",
+        "text": "Layer 7 Application — network services such as HTTP/DNS"
       }
     ],
     "correctOptionIds": [
       "a",
-      "b"
+      "b",
+      "c"
     ],
-    "explanation": "Layer 1 is Physical and Layer 7 is Application. MAC switching is primarily Layer 2, and Transport is Layer 4.",
+    "explanation": "Application models services used by applications, Session models dialog/session management, and Network covers logical addressing/routing. TCP/UDP ports belong to the Transport layer.",
     "distractorExplanations": {
-      "c": "Incorrect for this item. Layer 3 is where Ethernet MAC tables are the only addressing mechanism. is not one of the required selections.",
-      "d": "Incorrect for this item. Layer 4 is the physical cabling layer. is not one of the required selections."
+      "d": "TCP and UDP are Layer 4 Transport protocols; their ports are transport-layer identifiers."
     },
     "tags": [
       "4.1",
       "describe-the-osi-model"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "cisco-arp"
     ]
   },
   {
@@ -3828,251 +3995,261 @@ export const productionQuestions = [
     "objectiveId": "4.2",
     "domainId": "4",
     "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which TCP/IP model layer contains IP?",
+    "difficulty": "medium",
+    "prompt": "In the four-layer TCP/IP model, which layer provides logical internetwork addressing and carries IPv4/IPv6 packets between networks?",
     "options": [
       {
-        "id": "a",
-        "text": "Transport layer"
+        "id": "d",
+        "text": "Link/Network Access"
       },
       {
         "id": "b",
-        "text": "Application layer"
+        "text": "Transport"
       },
       {
         "id": "c",
-        "text": "Link layer only"
+        "text": "Internet"
       },
       {
-        "id": "d",
-        "text": "Internet layer"
+        "id": "a",
+        "text": "Application"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "c"
     ],
-    "explanation": "IP provides internetwork addressing/routing at the Internet layer.",
+    "explanation": "The Internet layer contains IP and provides internetwork addressing/routing. It broadly corresponds to the OSI Network layer.",
     "distractorExplanations": {
-      "a": "Incorrect. Transport layer does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. Application layer does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. Link layer only does not best satisfy the scenario or definition being tested."
+      "a": "Application contains services such as DNS/HTTP/SMTP.",
+      "b": "Transport contains TCP/UDP and end-to-end transport.",
+      "d": "Link/Network Access handles local-link framing/media access."
     },
     "tags": [
       "4.2",
       "describe-the-tcp/ip-model"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1122"
     ]
   },
   {
     "id": "ITS-NET-4.2-002",
     "objectiveId": "4.2",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which TCP/IP model layer contains TCP and UDP?",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "prompt": "Select TWO protocols that belong to the TCP/IP Transport layer.",
     "options": [
       {
-        "id": "a",
-        "text": "Link layer"
-      },
-      {
-        "id": "b",
-        "text": "Application layer only"
-      },
-      {
         "id": "c",
-        "text": "Transport layer"
+        "text": "IPv4"
+      },
+      {
+        "id": "a",
+        "text": "TCP"
       },
       {
         "id": "d",
-        "text": "Internet layer"
+        "text": "Ethernet"
+      },
+      {
+        "id": "b",
+        "text": "UDP"
       }
     ],
     "correctOptionIds": [
-      "c"
+      "a",
+      "b"
     ],
-    "explanation": "TCP and UDP are transport protocols.",
+    "explanation": "TCP and UDP are transport protocols. IPv4 belongs to the Internet layer, and Ethernet is a Link/Network Access technology.",
     "distractorExplanations": {
-      "a": "Incorrect. Link layer does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. Application layer only does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. Internet layer does not best satisfy the scenario or definition being tested."
+      "c": "IPv4 is an Internet-layer protocol.",
+      "d": "Ethernet belongs to the Link/Network Access layer."
     },
     "tags": [
       "4.2",
       "describe-the-tcp/ip-model"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1122"
     ]
   },
   {
     "id": "ITS-NET-4.2-003",
     "objectiveId": "4.2",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "HTTP, DNS, and SMTP are normally grouped in which TCP/IP model layer?",
+    "type": "scenario",
+    "difficulty": "medium",
+    "prompt": "A browser uses HTTPS over TCP. In the TCP/IP model, which pairing is correct?",
     "options": [
       {
         "id": "a",
-        "text": "Physical-only layer"
-      },
-      {
-        "id": "b",
-        "text": "Application layer"
+        "text": "HTTPS = Application; TCP = Transport"
       },
       {
         "id": "c",
-        "text": "Internet layer"
+        "text": "HTTPS = Transport; TCP = Application"
+      },
+      {
+        "id": "b",
+        "text": "HTTPS = Internet; TCP = Link"
       },
       {
         "id": "d",
-        "text": "Link layer"
+        "text": "HTTPS = Link; TCP = Internet"
       }
     ],
     "correctOptionIds": [
-      "b"
+      "a"
     ],
-    "explanation": "The TCP/IP Application layer includes user/application protocols such as HTTP, DNS, and SMTP.",
+    "explanation": "HTTPS is an application-layer protocol/service, while TCP provides transport for the application data.",
     "distractorExplanations": {
-      "a": "Incorrect. Physical-only layer does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. Internet layer does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. Link layer does not best satisfy the scenario or definition being tested."
+      "b": "HTTPS is not an Internet-layer protocol and TCP is not Link-layer.",
+      "c": "The layer assignments are reversed.",
+      "d": "Neither assignment is correct."
     },
     "tags": [
       "4.2",
       "describe-the-tcp/ip-model"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1122"
     ]
   },
   {
     "id": "ITS-NET-4.2-004",
     "objectiveId": "4.2",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "Ethernet and local-link delivery are most closely associated with which TCP/IP layer?",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "prompt": "Select TWO correct TCP/IP-to-OSI crosswalk statements.",
     "options": [
       {
-        "id": "a",
-        "text": "Link/Network Access layer"
-      },
-      {
-        "id": "b",
-        "text": "Application"
-      },
-      {
         "id": "c",
-        "text": "Transport"
+        "text": "TCP/IP Transport combines OSI Layers 5-7"
       },
       {
         "id": "d",
-        "text": "Internet only"
+        "text": "TCP/IP Application is equivalent only to OSI Layer 4"
+      },
+      {
+        "id": "b",
+        "text": "TCP/IP Link/Network Access broadly covers OSI Layers 1-2 functions"
+      },
+      {
+        "id": "a",
+        "text": "TCP/IP Internet broadly corresponds to OSI Layer 3 Network"
       }
     ],
     "correctOptionIds": [
-      "a"
+      "a",
+      "b"
     ],
-    "explanation": "The Link (Network Access) layer handles local network framing and media access.",
+    "explanation": "The Internet layer maps broadly to OSI Network, while Link/Network Access covers local-link and physical-delivery functions. TCP/IP Application absorbs upper-layer functions, and Transport maps to OSI Layer 4.",
     "distractorExplanations": {
-      "b": "Incorrect. Application does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. Transport does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. Internet only does not best satisfy the scenario or definition being tested."
+      "c": "TCP/IP Transport corresponds broadly to OSI Layer 4, not Layers 5-7.",
+      "d": "TCP/IP Application covers upper application/session/presentation-style functions, not OSI Transport."
     },
     "tags": [
       "4.2",
       "describe-the-tcp/ip-model"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1122"
     ]
   },
   {
     "id": "ITS-NET-4.3-001",
     "objectiveId": "4.3",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which IPv4 range is private?",
+    "type": "scenario",
+    "difficulty": "medium",
+    "prompt": "A legacy document describes 192.168.50.0 as a Class C network with a default /24 mask. A modern routing table instead lists 192.168.50.0/27. Which statement best explains the difference?",
     "options": [
       {
-        "id": "a",
-        "text": "11.0.0.0/8"
+        "id": "c",
+        "text": "A /27 is an IPv6 prefix only"
       },
       {
         "id": "b",
-        "text": "100.0.0.0/8"
-      },
-      {
-        "id": "c",
-        "text": "127.0.0.0/8"
+        "text": "Classless addressing cannot subnet Class C space"
       },
       {
         "id": "d",
-        "text": "10.0.0.0/8"
+        "text": "Classful addressing always used /27 for Class C"
+      },
+      {
+        "id": "a",
+        "text": "Classful addressing used fixed default masks by class; classless/CIDR addressing carries an explicit prefix length"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "a"
     ],
-    "explanation": "RFC 1918 defines 10.0.0.0/8 as private. 127.0.0.0/8 is loopback, not an RFC 1918 private block.",
+    "explanation": "Legacy classful addressing associated Class C with a /24 default. CIDR/classless addressing uses explicit prefix lengths such as /27 independent of the old class boundary.",
     "distractorExplanations": {
-      "a": "Incorrect. 11.0.0.0/8 does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. 100.0.0.0/8 does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. 127.0.0.0/8 does not best satisfy the scenario or definition being tested."
+      "b": "CIDR is specifically what allows flexible prefix lengths/subnetting beyond classful defaults.",
+      "c": "/27 is a valid IPv4 CIDR prefix.",
+      "d": "The legacy Class C default was /24, not /27."
     },
     "tags": [
       "4.3",
       "describe-ipv4-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1918",
+      "rfc3927",
+      "rfc4632"
     ]
   },
   {
     "id": "ITS-NET-4.3-002",
     "objectiveId": "4.3",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "Which IPv4 range is the private Class B-sized block?",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "prompt": "Select THREE IPv4 addresses that are inside RFC1918 private address space.",
     "options": [
       {
         "id": "a",
-        "text": "169.254.0.0/16"
+        "text": "10.55.1.8"
       },
       {
         "id": "b",
-        "text": "192.0.0.0/8"
+        "text": "172.20.10.5"
       },
       {
         "id": "c",
-        "text": "172.16.0.0/12"
+        "text": "192.168.50.9"
       },
       {
         "id": "d",
-        "text": "172.0.0.0/8"
+        "text": "172.40.10.5"
       }
     ],
     "correctOptionIds": [
+      "a",
+      "b",
       "c"
     ],
-    "explanation": "Private 172 space is specifically 172.16.0.0 through 172.31.255.255 (/12), not all 172/8.",
+    "explanation": "RFC1918 private IPv4 space is 10.0.0.0/8, 172.16.0.0/12 (172.16 through 172.31), and 192.168.0.0/16.",
     "distractorExplanations": {
-      "a": "Incorrect. 169.254.0.0/16 does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. 192.0.0.0/8 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. 172.0.0.0/8 does not best satisfy the scenario or definition being tested."
+      "d": "172.40.10.5 is outside 172.16.0.0/12 and is not in RFC1918 private space."
     },
     "tags": [
       "4.3",
       "describe-ipv4-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1918",
+      "rfc3927",
+      "rfc4632"
     ]
   },
   {
@@ -4081,40 +4258,43 @@ export const productionQuestions = [
     "domainId": "4",
     "type": "subnetting",
     "difficulty": "medium",
-    "prompt": "A host is configured as 192.168.10.70/26. What is its network address?",
+    "prompt": "A host has IPv4 address 192.168.10.70 with prefix /26. What is the network address?",
     "options": [
       {
+        "id": "c",
+        "text": "192.168.10.70"
+      },
+      {
         "id": "a",
-        "text": "192.168.10.128"
+        "text": "192.168.10.0"
       },
       {
         "id": "b",
         "text": "192.168.10.64"
       },
       {
-        "id": "c",
-        "text": "192.168.10.0"
-      },
-      {
         "id": "d",
-        "text": "192.168.10.70"
+        "text": "192.168.10.127"
       }
     ],
     "correctOptionIds": [
       "b"
     ],
-    "explanation": "/26 has a block size of 64 in the last octet: 0-63, 64-127, 128-191, 192-255. Address .70 is in the .64/26 subnet.",
+    "explanation": "/26 is 255.255.255.192, giving a block size of 64 in the last octet. Address 70 falls in the 64-127 block, so the network address is 192.168.10.64.",
     "distractorExplanations": {
-      "a": "Incorrect. 192.168.10.128 does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. 192.168.10.0 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. 192.168.10.70 does not best satisfy the scenario or definition being tested."
+      "a": "The 0-63 range is the preceding /26 subnet.",
+      "c": "The host address is not the network address.",
+      "d": "127 is the broadcast address of this /26 subnet, not its network address."
     },
     "tags": [
       "4.3",
       "describe-ipv4-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1918",
+      "rfc3927",
+      "rfc4632"
     ]
   },
   {
@@ -4123,40 +4303,43 @@ export const productionQuestions = [
     "domainId": "4",
     "type": "subnetting",
     "difficulty": "hard",
-    "prompt": "What is the broadcast address of 10.1.4.128/27?",
+    "prompt": "What is the broadcast address for subnet 10.1.4.128/27?",
     "options": [
       {
-        "id": "a",
+        "id": "d",
+        "text": "10.1.4.160"
+      },
+      {
+        "id": "c",
         "text": "10.1.4.159"
       },
       {
         "id": "b",
+        "text": "10.1.4.143"
+      },
+      {
+        "id": "a",
         "text": "10.1.4.127"
-      },
-      {
-        "id": "c",
-        "text": "10.1.4.160"
-      },
-      {
-        "id": "d",
-        "text": "10.1.4.255"
       }
     ],
     "correctOptionIds": [
-      "a"
+      "c"
     ],
-    "explanation": "/27 blocks are 32 addresses. The block beginning at .128 ends at .159, which is its broadcast address.",
+    "explanation": "/27 is 255.255.255.224, a block size of 32. The subnet beginning at .128 spans .128 through .159, so .159 is the broadcast address.",
     "distractorExplanations": {
-      "b": "Incorrect. 10.1.4.127 does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. 10.1.4.160 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. 10.1.4.255 does not best satisfy the scenario or definition being tested."
+      "a": ".127 is the broadcast of the preceding /27 subnet.",
+      "b": ".143 is a usable address inside the subnet, not the broadcast.",
+      "d": ".160 is the network address of the next /27 subnet."
     },
     "tags": [
       "4.3",
       "describe-ipv4-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1918",
+      "rfc3927",
+      "rfc4632"
     ]
   },
   {
@@ -4165,40 +4348,43 @@ export const productionQuestions = [
     "domainId": "4",
     "type": "subnetting",
     "difficulty": "medium",
-    "prompt": "Using traditional IPv4 subnetting, how many usable host addresses are in a /28 subnet?",
+    "prompt": "A /28 subnet is used for an ordinary IPv4 LAN. Using the traditional network/broadcast reservation rule, how many usable host addresses are available?",
     "options": [
       {
-        "id": "a",
-        "text": "16"
-      },
-      {
-        "id": "b",
+        "id": "d",
         "text": "30"
       },
       {
-        "id": "c",
-        "text": "6"
+        "id": "b",
+        "text": "14"
       },
       {
-        "id": "d",
-        "text": "14"
+        "id": "c",
+        "text": "16"
+      },
+      {
+        "id": "a",
+        "text": "8"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "b"
     ],
-    "explanation": "A /28 has 16 total addresses. Traditionally, network and broadcast addresses are not assigned to hosts, leaving 14 usable addresses.",
+    "explanation": "/28 leaves 4 host bits: 2^4 = 16 total addresses. Subtract the network and broadcast addresses to get 14 traditional usable host addresses.",
     "distractorExplanations": {
-      "a": "Incorrect. 16 does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. 30 does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. 6 does not best satisfy the scenario or definition being tested."
+      "a": "Eight total addresses corresponds to /29, not /28.",
+      "c": "Sixteen is the total address count before reserving network and broadcast.",
+      "d": "Thirty traditional usable hosts corresponds to /27."
     },
     "tags": [
       "4.3",
       "describe-ipv4-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1918",
+      "rfc3927",
+      "rfc4632"
     ]
   },
   {
@@ -4206,41 +4392,44 @@ export const productionQuestions = [
     "objectiveId": "4.3",
     "domainId": "4",
     "type": "multiple-choice",
-    "difficulty": "medium",
-    "prompt": "Select TWO correct IPv4 statements.",
+    "difficulty": "hard",
+    "prompt": "A PC is configured as 192.168.40.25/24 with default gateway 192.168.40.1. Select TWO correct statements.",
     "options": [
       {
-        "id": "a",
-        "text": "169.254.0.0/16 is one of the three RFC 1918 private ranges."
-      },
-      {
         "id": "b",
-        "text": "A subnet mask identifies a DNS mail exchanger."
+        "text": "Traffic to 192.168.50.90 is off-subnet and is sent toward the default gateway"
       },
       {
         "id": "c",
-        "text": "127.0.0.1 is commonly used as a local loopback test address."
+        "text": "169.254.10.20 is an RFC1918 private address"
+      },
+      {
+        "id": "a",
+        "text": "Traffic to 192.168.40.90 is on the same subnet and can be delivered locally after Layer 2 address resolution"
       },
       {
         "id": "d",
-        "text": "A default gateway is used to reach destinations outside the local subnet."
+        "text": "A socket is only a MAC address with no port information"
       }
     ],
     "correctOptionIds": [
-      "c",
-      "d"
+      "a",
+      "b"
     ],
-    "explanation": "Loopback tests the local IP stack, and the default gateway forwards off-subnet traffic. 169.254/16 is IPv4 link-local, not RFC 1918 private space.",
+    "explanation": "With /24, 192.168.40.x addresses share the local subnet. A destination in 192.168.50.0/24 is remote, so the host forwards toward its default gateway. IPv4 link-local 169.254/16 is not RFC1918, and a socket endpoint combines an IP address with a transport port.",
     "distractorExplanations": {
-      "a": "Incorrect for this item. 169.254.0.0/16 is one of the three RFC 1918 private ranges. is not one of the required selections.",
-      "b": "Incorrect for this item. A subnet mask identifies a DNS mail exchanger. is not one of the required selections."
+      "c": "169.254.0.0/16 is IPv4 link-local/APIPA space, not RFC1918 private space.",
+      "d": "A network socket endpoint is commonly identified by an IP address plus a transport port number."
     },
     "tags": [
       "4.3",
       "describe-ipv4-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1918",
+      "rfc3927",
+      "rfc4632"
     ]
   },
   {
@@ -4248,83 +4437,87 @@ export const productionQuestions = [
     "objectiveId": "4.4",
     "domainId": "4",
     "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "How long is an IPv6 address?",
+    "difficulty": "medium",
+    "prompt": "Which is the best compressed form of 2001:0db8:0000:0000:0000:0000:0000:0042?",
     "options": [
       {
+        "id": "d",
+        "text": "2001:0db8::0000::0042"
+      },
+      {
         "id": "a",
-        "text": "32 bits"
+        "text": "2001:db8::42"
       },
       {
         "id": "b",
-        "text": "48 bits"
+        "text": "2001::db8::42"
       },
       {
         "id": "c",
-        "text": "64 bits"
-      },
-      {
-        "id": "d",
-        "text": "128 bits"
+        "text": "2001:db8:0:0:0:0:0:0042:0"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "a"
     ],
-    "explanation": "IPv6 addresses are 128 bits long.",
+    "explanation": "Leading zeros can be removed, and one contiguous run of zero hextets can be compressed with a single ::. Therefore 2001:db8::42 is valid and concise.",
     "distractorExplanations": {
-      "a": "Incorrect. 32 bits does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. 48 bits does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. 64 bits does not best satisfy the scenario or definition being tested."
+      "b": "An IPv6 address cannot contain two :: compression markers.",
+      "c": "This form has the wrong number/placement of hextets.",
+      "d": "It uses :: more than once, which is invalid."
     },
     "tags": [
       "4.4",
       "describe-ipv6-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc4291",
+      "rfc5952"
     ]
   },
   {
     "id": "ITS-NET-4.4-002",
     "objectiveId": "4.4",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which IPv6 address is the loopback address?",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "prompt": "Select THREE correct IPv6 address/group mappings.",
     "options": [
       {
-        "id": "a",
-        "text": "FF02::1"
-      },
-      {
         "id": "b",
-        "text": "::FFFF"
+        "text": "FE80::/10 — link-local"
       },
       {
         "id": "c",
-        "text": "::1"
+        "text": "FF02::1 — all nodes on the local link"
+      },
+      {
+        "id": "a",
+        "text": "::1 — loopback"
       },
       {
         "id": "d",
-        "text": "FE80::1"
+        "text": "FF02::2 — all end-user hosts only, excluding routers"
       }
     ],
     "correctOptionIds": [
+      "a",
+      "b",
       "c"
     ],
-    "explanation": "IPv6 loopback is ::1.",
+    "explanation": "IPv6 loopback is ::1, link-local addresses are FE80::/10, and FF02::1 is the all-nodes multicast group on the local link. FF02::2 is the all-routers local-link group.",
     "distractorExplanations": {
-      "a": "Incorrect. FF02::1 does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. ::FFFF does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. FE80::1 does not best satisfy the scenario or definition being tested."
+      "d": "FF02::2 identifies all routers on the local link, not all end-user hosts."
     },
     "tags": [
       "4.4",
       "describe-ipv6-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc4291",
+      "rfc5952"
     ]
   },
   {
@@ -4333,40 +4526,42 @@ export const productionQuestions = [
     "domainId": "4",
     "type": "multiple-choice",
     "difficulty": "medium",
-    "prompt": "Select TWO correct IPv6 statements.",
+    "prompt": "Select TWO correct statements about IPv6.",
     "options": [
       {
-        "id": "a",
-        "text": "The IPv6 loopback address is 127.0.0.1."
-      },
-      {
         "id": "b",
-        "text": "FE80::/10 is link-local address space."
+        "text": "An IPv6 socket can combine an IPv6 address with a transport port"
       },
       {
         "id": "c",
-        "text": "FF02::1 identifies the all-nodes multicast group on the local link."
+        "text": "FE80::/10 is a globally routable public prefix"
+      },
+      {
+        "id": "a",
+        "text": "IPv6 uses multicast rather than an IPv4-style broadcast address"
       },
       {
         "id": "d",
-        "text": "IPv6 uses broadcast addresses like 255.255.255.255."
+        "text": "IPv6 addresses are 32 bits long"
       }
     ],
     "correctOptionIds": [
-      "b",
-      "c"
+      "a",
+      "b"
     ],
-    "explanation": "IPv6 defines link-local addresses in FE80::/10 and uses multicast rather than broadcast; ::1 is loopback.",
+    "explanation": "IPv6 has no broadcast address and uses multicast for group delivery. Socket concepts still combine an IP address with a transport-layer port. Link-local FE80::/10 is not globally routed, and IPv6 addresses are 128 bits.",
     "distractorExplanations": {
-      "a": "Incorrect for this item. The IPv6 loopback address is 127.0.0.1. is not one of the required selections.",
-      "d": "Incorrect for this item. IPv6 uses broadcast addresses like 255.255.255.255. is not one of the required selections."
+      "c": "FE80::/10 is link-local and is not routed beyond the local link.",
+      "d": "IPv6 addresses are 128 bits, not 32."
     },
     "tags": [
       "4.4",
       "describe-ipv6-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc4291",
+      "rfc5952"
     ]
   },
   {
@@ -4374,41 +4569,43 @@ export const productionQuestions = [
     "objectiveId": "4.4",
     "domainId": "4",
     "type": "scenario",
-    "difficulty": "medium",
-    "prompt": "A network runs IPv4 and IPv6 simultaneously on hosts during migration. Which transition method is this?",
+    "difficulty": "hard",
+    "prompt": "An organization enables both IPv4 and IPv6 natively on its hosts and routers during migration. A different remote site later carries IPv6 packets through an IPv4-only provider path by encapsulating them. Which TWO transition concepts are being used?",
     "options": [
+      {
+        "id": "b",
+        "text": "Tunneling"
+      },
       {
         "id": "a",
         "text": "Dual stack"
       },
       {
-        "id": "b",
-        "text": "WEP"
-      },
-      {
         "id": "c",
-        "text": "PAT only"
+        "text": "Static NAT only"
       },
       {
         "id": "d",
-        "text": "STP"
+        "text": "WINS"
       }
     ],
     "correctOptionIds": [
-      "a"
+      "a",
+      "b"
     ],
-    "explanation": "Dual stack lets systems operate IPv4 and IPv6 at the same time. Tunneling is another transition approach.",
+    "explanation": "Running both protocol families at the same time is dual stack. Encapsulating IPv6 across an IPv4-only portion of the path is tunneling. A tunnel broker may provision such a tunnel but is not required by the first scenario.",
     "distractorExplanations": {
-      "b": "Incorrect. WEP does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. PAT only does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. STP does not best satisfy the scenario or definition being tested."
+      "c": "Static NAT is an address-translation concept and does not describe these IPv4/IPv6 transition methods.",
+      "d": "WINS is a legacy NetBIOS name-resolution service."
     },
     "tags": [
       "4.4",
       "describe-ipv6-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc4291",
+      "rfc5952"
     ]
   },
   {
@@ -4417,82 +4614,84 @@ export const productionQuestions = [
     "domainId": "4",
     "type": "multiple-choice",
     "difficulty": "medium",
-    "prompt": "Select TWO correct protocol/port mappings.",
+    "prompt": "Select TWO correct web protocol/default-port mappings.",
     "options": [
       {
-        "id": "a",
-        "text": "HTTPS — TCP 443"
+        "id": "d",
+        "text": "HTTPS — TCP 25"
       },
       {
-        "id": "b",
-        "text": "DNS — TCP/UDP 3389"
+        "id": "a",
+        "text": "HTTP — TCP 80"
       },
       {
         "id": "c",
-        "text": "RDP — TCP 25"
+        "text": "HTTP — TCP 22"
       },
       {
-        "id": "d",
-        "text": "SSH — TCP 22"
+        "id": "b",
+        "text": "HTTPS — TCP 443"
       }
     ],
     "correctOptionIds": [
       "a",
-      "d"
+      "b"
     ],
-    "explanation": "SSH uses port 22 and HTTPS uses 443. RDP commonly uses 3389; SMTP uses 25; DNS uses 53.",
+    "explanation": "HTTP is conventionally mapped to TCP 80 and HTTPS to TCP 443.",
     "distractorExplanations": {
-      "b": "Incorrect for this item. DNS — TCP/UDP 3389 is not one of the required selections.",
-      "c": "Incorrect for this item. RDP — TCP 25 is not one of the required selections."
+      "c": "TCP 22 is SSH.",
+      "d": "TCP 25 is SMTP."
     },
     "tags": [
       "4.5",
       "identify-well-known-ports"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "iana-ports"
     ]
   },
   {
     "id": "ITS-NET-4.5-002",
     "objectiveId": "4.5",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which well-known port is associated with DNS queries?",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "prompt": "Select TWO correct remote administration/file-transfer control mappings.",
     "options": [
       {
-        "id": "a",
-        "text": "80"
-      },
-      {
         "id": "b",
-        "text": "143"
+        "text": "FTP control — TCP 21"
       },
       {
-        "id": "c",
-        "text": "53"
+        "id": "a",
+        "text": "SSH — TCP 22"
       },
       {
         "id": "d",
-        "text": "21"
+        "text": "FTP control — TCP 53"
+      },
+      {
+        "id": "c",
+        "text": "SSH — TCP 3389"
       }
     ],
     "correctOptionIds": [
-      "c"
+      "a",
+      "b"
     ],
-    "explanation": "DNS uses port 53 (UDP and TCP depending on operation).",
+    "explanation": "SSH uses TCP 22 and FTP control uses TCP 21. Traditional active-mode FTP data commonly uses TCP 20 as supplemental context, but control remains 21.",
     "distractorExplanations": {
-      "a": "Incorrect. 80 does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. 143 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. 21 does not best satisfy the scenario or definition being tested."
+      "c": "3389 is the default RDP service port.",
+      "d": "53 is DNS, not FTP control."
     },
     "tags": [
       "4.5",
       "identify-well-known-ports"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "iana-ports"
     ]
   },
   {
@@ -4501,82 +4700,84 @@ export const productionQuestions = [
     "domainId": "4",
     "type": "multiple-choice",
     "difficulty": "medium",
-    "prompt": "Select TWO correct mail/web protocol mappings.",
+    "prompt": "Select TWO correct mail protocol/default-port mappings.",
     "options": [
       {
-        "id": "a",
-        "text": "FTP control — TCP 443"
+        "id": "d",
+        "text": "IMAP — TCP 80"
       },
       {
         "id": "b",
-        "text": "SMTP — TCP 25"
-      },
-      {
-        "id": "c",
         "text": "IMAP — TCP 143"
       },
       {
-        "id": "d",
-        "text": "HTTP — TCP 22"
+        "id": "c",
+        "text": "SMTP — TCP 143"
+      },
+      {
+        "id": "a",
+        "text": "SMTP — TCP 25"
       }
     ],
     "correctOptionIds": [
-      "b",
-      "c"
+      "a",
+      "b"
     ],
-    "explanation": "SMTP uses 25 and IMAP 143 by default. HTTP uses 80, FTP control 21, SSH 22, HTTPS 443.",
+    "explanation": "SMTP is associated with TCP 25 for standard mail transfer and IMAP with TCP 143 for standard mailbox access.",
     "distractorExplanations": {
-      "a": "Incorrect for this item. FTP control — TCP 443 is not one of the required selections.",
-      "d": "Incorrect for this item. HTTP — TCP 22 is not one of the required selections."
+      "c": "TCP 143 is IMAP, not standard SMTP.",
+      "d": "TCP 80 is HTTP, not IMAP."
     },
     "tags": [
       "4.5",
       "identify-well-known-ports"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "iana-ports"
     ]
   },
   {
     "id": "ITS-NET-4.5-004",
     "objectiveId": "4.5",
     "domainId": "4",
-    "type": "scenario",
-    "difficulty": "medium",
-    "prompt": "A firewall must allow a standard Remote Desktop connection to a Windows host. Which default port is most directly relevant?",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "prompt": "Select TWO correct protocol/default-port statements.",
     "options": [
       {
-        "id": "a",
-        "text": "3389"
-      },
-      {
-        "id": "b",
-        "text": "25"
+        "id": "d",
+        "text": "RDP uses TCP 21 by default"
       },
       {
         "id": "c",
-        "text": "53"
+        "text": "DNS uses only TCP 443"
       },
       {
-        "id": "d",
-        "text": "143"
+        "id": "b",
+        "text": "RDP uses port 3389 by default"
+      },
+      {
+        "id": "a",
+        "text": "DNS uses port 53 over UDP and TCP"
       }
     ],
     "correctOptionIds": [
-      "a"
+      "a",
+      "b"
     ],
-    "explanation": "RDP commonly uses TCP 3389 by default.",
+    "explanation": "DNS uses port 53 with UDP and TCP. Remote Desktop uses 3389 by default (TCP, with modern RDP also able to use UDP).",
     "distractorExplanations": {
-      "b": "Incorrect. 25 does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. 53 does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. 143 does not best satisfy the scenario or definition being tested."
+      "c": "443 is HTTPS, and DNS is not TCP-only.",
+      "d": "TCP 21 is FTP control, not RDP."
     },
     "tags": [
       "4.5",
       "identify-well-known-ports"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "iana-ports"
     ]
   },
   {
@@ -4584,142 +4785,1263 @@ export const productionQuestions = [
     "objectiveId": "4.6",
     "domainId": "4",
     "type": "multiple-choice",
-    "difficulty": "medium",
-    "prompt": "Select TWO correct DNS record mappings.",
+    "difficulty": "hard",
+    "prompt": "Select THREE correct DNS resource-record mappings.",
     "options": [
       {
         "id": "a",
-        "text": "AAAA maps a name to an IPv6 address."
+        "text": "A — host name to IPv4 address"
       },
       {
         "id": "b",
-        "text": "MX performs a reverse pointer lookup to a hostname."
+        "text": "AAAA — host name to IPv6 address"
       },
       {
         "id": "c",
-        "text": "PTR identifies the authoritative start of a zone."
+        "text": "CNAME — alias to a canonical name"
       },
       {
         "id": "d",
-        "text": "A maps a name to an IPv4 address."
+        "text": "MX — reverse IPv4 lookup"
       }
     ],
     "correctOptionIds": [
       "a",
-      "d"
+      "b",
+      "c"
     ],
-    "explanation": "A/AAAA provide IPv4/IPv6 address mappings. PTR is used for reverse mappings; SOA contains zone authority metadata.",
+    "explanation": "A maps names to IPv4, AAAA maps names to IPv6, and CNAME creates an alias. MX identifies mail exchangers; reverse lookups normally use PTR.",
     "distractorExplanations": {
-      "b": "Incorrect for this item. MX performs a reverse pointer lookup to a hostname. is not one of the required selections.",
-      "c": "Incorrect for this item. PTR identifies the authoritative start of a zone. is not one of the required selections."
+      "d": "MX is a mail-exchanger record. PTR is the record associated with reverse lookup."
     },
     "tags": [
       "4.6",
       "describe-name-resolution-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1035",
+      "rfc3596",
+      "rfc2782",
+      "microsoft-dns-client",
+      "microsoft-wins"
     ]
   },
   {
     "id": "ITS-NET-4.6-002",
     "objectiveId": "4.6",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which DNS record identifies a mail exchanger for a domain?",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "prompt": "Select THREE correct DNS resource-record purposes.",
     "options": [
       {
-        "id": "a",
-        "text": "PTR"
+        "id": "c",
+        "text": "SRV — service discovery information including a target and port"
       },
       {
         "id": "b",
-        "text": "SRV"
-      },
-      {
-        "id": "c",
-        "text": "MX"
+        "text": "PTR — reverse lookup pointer"
       },
       {
         "id": "d",
-        "text": "CNAME"
+        "text": "SOA — alias from one host name to another"
+      },
+      {
+        "id": "a",
+        "text": "MX — mail exchanger for a domain"
       }
     ],
     "correctOptionIds": [
+      "a",
+      "b",
       "c"
     ],
-    "explanation": "MX records identify mail servers for a domain.",
+    "explanation": "MX identifies mail exchangers, PTR supports reverse lookup, and SRV advertises service-location details such as target and port. SOA stores authoritative zone metadata; CNAME is the alias record.",
     "distractorExplanations": {
-      "a": "Incorrect. PTR does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. SRV does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. CNAME does not best satisfy the scenario or definition being tested."
+      "d": "SOA is Start of Authority/zone metadata, not an alias record."
     },
     "tags": [
       "4.6",
       "describe-name-resolution-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1035",
+      "rfc3596",
+      "rfc2782",
+      "microsoft-dns-client",
+      "microsoft-wins"
     ]
   },
   {
     "id": "ITS-NET-4.6-003",
     "objectiveId": "4.6",
     "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "Which DNS record is used for reverse lookup from an IP-address representation toward a hostname?",
+    "type": "scenario",
+    "difficulty": "hard",
+    "prompt": "On a Windows client, a hostname has an incorrect entry in the local HOSTS file. The DNS server has the correct A record. What is the most likely result for that hostname on this client?",
     "options": [
       {
-        "id": "a",
-        "text": "CNAME"
+        "id": "d",
+        "text": "Reverse DNS will automatically repair the HOSTS file"
       },
       {
         "id": "b",
-        "text": "PTR"
+        "text": "The client must ignore HOSTS and always use WINS first"
+      },
+      {
+        "id": "a",
+        "text": "The local HOSTS mapping can override the DNS answer for that lookup"
       },
       {
         "id": "c",
-        "text": "A"
-      },
-      {
-        "id": "d",
-        "text": "AAAA"
+        "text": "The client will convert the A record into an MX record"
       }
     ],
     "correctOptionIds": [
-      "b"
+      "a"
     ],
-    "explanation": "PTR records provide pointer mappings used by reverse DNS lookups.",
+    "explanation": "HOSTS is a static local hostname mapping and is checked by the Windows resolver before querying DNS for that name. A stale HOSTS entry can therefore cause a client-specific wrong resolution result.",
     "distractorExplanations": {
-      "a": "Incorrect. CNAME does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. A does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. AAAA does not best satisfy the scenario or definition being tested."
+      "b": "WINS is a legacy NetBIOS name-resolution service; it is not universally used before HOSTS for DNS hostnames.",
+      "c": "DNS record types are not automatically converted this way.",
+      "d": "Reverse lookup does not edit the local HOSTS file."
     },
     "tags": [
       "4.6",
       "describe-name-resolution-concepts"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "rfc1035",
+      "rfc3596",
+      "rfc2782",
+      "microsoft-dns-client",
+      "microsoft-wins"
     ]
   },
   {
     "id": "ITS-NET-4.6-004",
     "objectiveId": "4.6",
     "domainId": "4",
-    "type": "scenario",
-    "difficulty": "medium",
-    "prompt": "A Windows PC can ping 8.8.8.8 but cannot resolve server.example.com. Which command should be used next to test DNS resolution?",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "A PC can reach a DNS server by IP, but the lookup below fails. Which conclusion is best supported by the output?",
+    "context": "C:\\> nslookup app.example.test 192.0.2.53\nServer:  dns1.example.test\nAddress: 192.0.2.53\n\n*** dns1.example.test can't find app.example.test: Non-existent domain",
     "options": [
       {
+        "id": "b",
+        "text": "The Ethernet cable is definitely disconnected"
+      },
+      {
+        "id": "d",
+        "text": "The PC must be using an incorrect subnet mask because NXDOMAIN always means routing failure"
+      },
+      {
         "id": "a",
-        "text": "nslookup server.example.com"
+        "text": "IP connectivity to the DNS server exists, but DNS has no answer for the queried name as shown"
+      },
+      {
+        "id": "c",
+        "text": "The local TCP/IP stack is definitely corrupt"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "The DNS server responded and returned NXDOMAIN, so the query reached DNS successfully but the requested name does not exist in DNS as queried (or is being negatively answered by that resolver). This differs from a DNS timeout/no response.",
+    "distractorExplanations": {
+      "b": "The server replied, which demonstrates that the path was not simply disconnected.",
+      "c": "A functioning DNS exchange does not support a conclusion that the local TCP/IP stack is corrupt.",
+      "d": "NXDOMAIN is a DNS response status, not proof of a subnet-mask/routing failure."
+    },
+    "tags": [
+      "4.6",
+      "describe-name-resolution-concepts"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "rfc1035",
+      "rfc3596",
+      "rfc2782",
+      "microsoft-dns-client",
+      "microsoft-wins"
+    ]
+  },
+  {
+    "id": "ITS-NET-4.7-001",
+    "objectiveId": "4.7",
+    "domainId": "4",
+    "type": "command-output",
+    "difficulty": "medium",
+    "prompt": "A new DHCP client has no address and begins the standard DHCP lease exchange. Which message order is correct?",
+    "context": "Client has just joined the LAN and has no usable IPv4 lease yet.",
+    "options": [
+      {
+        "id": "d",
+        "text": "Discover → Request → Offer → Acknowledge"
+      },
+      {
+        "id": "c",
+        "text": "Request → Offer → Discover → Acknowledge"
       },
       {
         "id": "b",
+        "text": "Offer → Discover → Acknowledge → Request"
+      },
+      {
+        "id": "a",
+        "text": "Discover → Offer → Request → Acknowledge"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "The common DHCP lease shorthand is DORA: Discover, Offer, Request, Acknowledge.",
+    "distractorExplanations": {
+      "b": "The server cannot normally offer before the new client initiates discovery in this basic exchange.",
+      "c": "The order begins with Discover, not Request.",
+      "d": "Offer precedes the client Request in the normal DORA sequence."
+    },
+    "tags": [
+      "4.7",
+      "identify-roles-of-networking-services"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "rfc2131",
+      "rfc3022"
+    ]
+  },
+  {
+    "id": "ITS-NET-4.7-002",
+    "objectiveId": "4.7",
+    "domainId": "4",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "prompt": "Select THREE correct NAT statements.",
+    "options": [
+      {
+        "id": "c",
+        "text": "PAT/NAPT can let many private sessions share one public address by translating port identifiers"
+      },
+      {
+        "id": "a",
+        "text": "Static NAT provides a stable one-to-one mapping"
+      },
+      {
+        "id": "b",
+        "text": "Dynamic NAT can choose a public address from an available pool"
+      },
+      {
+        "id": "d",
+        "text": "NAT is the same security function as a stateful firewall"
+      }
+    ],
+    "correctOptionIds": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Static NAT is fixed one-to-one, dynamic NAT allocates mappings from a pool, and PAT/NAPT multiplexes many sessions using address/port translation. NAT and firewalling are distinct functions even when implemented on the same device.",
+    "distractorExplanations": {
+      "d": "A firewall enforces traffic policy/state; NAT performs translation. One device may do both, but the functions are not equivalent."
+    },
+    "tags": [
+      "4.7",
+      "identify-roles-of-networking-services"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "rfc2131",
+      "rfc3022"
+    ]
+  },
+  {
+    "id": "ITS-NET-4.7-003",
+    "objectiveId": "4.7",
+    "domainId": "4",
+    "type": "scenario",
+    "difficulty": "hard",
+    "prompt": "A public-to-private port-forward rule exists for TCP 443 to an internal web server, but the perimeter firewall rule denies inbound TCP 443. What happens to a new Internet connection attempt?",
+    "options": [
+      {
+        "id": "b",
+        "text": "The NAT rule automatically overrides the firewall deny"
+      },
+      {
+        "id": "d",
+        "text": "DNS creates a new firewall allow rule"
+      },
+      {
+        "id": "c",
+        "text": "DHCP converts the connection to UDP"
+      },
+      {
+        "id": "a",
+        "text": "The connection is blocked by firewall policy even though a translation rule exists"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "Address/port translation does not automatically grant permission through a firewall. The traffic must satisfy both the translation configuration and the firewall policy.",
+    "distractorExplanations": {
+      "b": "NAT and firewall policy are separate functions; translation does not necessarily override an explicit deny.",
+      "c": "DHCP assigns host configuration and does not change an HTTPS connection into UDP.",
+      "d": "DNS resolves names and does not create firewall rules."
+    },
+    "tags": [
+      "4.7",
+      "identify-roles-of-networking-services"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "rfc2131",
+      "rfc3022"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.1-001",
+    "objectiveId": "5.1",
+    "domainId": "5",
+    "type": "scenario",
+    "difficulty": "medium",
+    "prompt": "A user reports, “The network is down.” Before changing any settings, what should the technician do first?",
+    "options": [
+      {
+        "id": "c",
+        "text": "Replace the router immediately"
+      },
+      {
+        "id": "b",
+        "text": "Factory-reset the nearest switch"
+      },
+      {
+        "id": "d",
+        "text": "Change DNS, DHCP, and VLAN settings at the same time"
+      },
+      {
+        "id": "a",
+        "text": "Define the problem and scope by gathering symptoms, affected users/devices, timing, and recent changes"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "Structured troubleshooting begins by identifying and scoping the problem. Evidence about what works, what fails, who is affected, and what changed prevents random disruptive fixes.",
+    "distractorExplanations": {
+      "b": "Resetting infrastructure before collecting evidence can cause unnecessary disruption and destroy useful state.",
+      "c": "Replacing hardware without evidence is premature.",
+      "d": "Making multiple unrelated changes at once makes root-cause analysis and rollback much harder."
+    },
+    "tags": [
+      "5.1",
+      "apply-troubleshooting-process-in-a-small-medium-business-network"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "cisco-troubleshooting"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.1-002",
+    "objectiveId": "5.1",
+    "domainId": "5",
+    "type": "scenario",
+    "difficulty": "medium",
+    "prompt": "Only one employee cannot access a shared server; nearby coworkers on the same VLAN can. What is the best next troubleshooting approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compare the affected host with a known-good host and test the most likely local causes"
+      },
+      {
+        "id": "c",
+        "text": "Immediately rebuild every switch VLAN"
+      },
+      {
+        "id": "b",
+        "text": "Assume the entire WAN provider is down"
+      },
+      {
+        "id": "d",
+        "text": "Tell the user the server is definitely broken"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "The limited scope strongly suggests checking host-specific configuration/connectivity and comparing against a known-good peer before escalating to network-wide causes.",
+    "distractorExplanations": {
+      "b": "A WAN outage would normally affect more than one local user when peers can reach the same server.",
+      "c": "Rebuilding VLANs is disproportionate and risky without evidence.",
+      "d": "The evidence does not establish a server failure because other users can reach it."
+    },
+    "tags": [
+      "5.1",
+      "apply-troubleshooting-process-in-a-small-medium-business-network"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "cisco-troubleshooting"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.1-003",
+    "objectiveId": "5.1",
+    "domainId": "5",
+    "type": "scenario",
+    "difficulty": "hard",
+    "prompt": "A technician tests a theory and confirms that a planned switch configuration change will restore service, but the change could briefly disconnect an entire department. What should happen before implementation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assess impact, obtain appropriate authorization/change window, and prepare rollback"
+      },
+      {
+        "id": "b",
+        "text": "Apply the change immediately without telling anyone"
+      },
+      {
+        "id": "c",
+        "text": "Delete the current configuration so rollback is impossible"
+      },
+      {
+        "id": "d",
+        "text": "Make several additional unrelated changes at the same time"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "A confirmed theory is followed by a controlled implementation plan. Risky production changes should consider impact, authorization, timing, and a rollback path.",
+    "distractorExplanations": {
+      "b": "Skipping communication/authorization can create avoidable business impact.",
+      "c": "Removing rollback capability increases risk.",
+      "d": "Unrelated simultaneous changes reduce causal clarity and complicate recovery."
+    },
+    "tags": [
+      "5.1",
+      "apply-troubleshooting-process-in-a-small-medium-business-network"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "cisco-troubleshooting"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.1-004",
+    "objectiveId": "5.1",
+    "domainId": "5",
+    "type": "scenario",
+    "difficulty": "medium",
+    "prompt": "A configuration change completes successfully and the original user can now open one website. What should the technician do before declaring the incident resolved?",
+    "options": [
+      {
+        "id": "b",
+        "text": "Assume success because the command returned no error"
+      },
+      {
+        "id": "c",
+        "text": "Erase all logs immediately"
+      },
+      {
+        "id": "a",
+        "text": "Verify full expected functionality and check for related side effects"
+      },
+      {
+        "id": "d",
+        "text": "Disable monitoring to prevent further alerts"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "Verification must confirm the original service and relevant related functionality, not merely that a command executed or one narrow test passed.",
+    "distractorExplanations": {
+      "b": "A successful command is not proof that end-to-end service is restored.",
+      "c": "Logs can be important evidence/documentation.",
+      "d": "Disabling monitoring would reduce visibility rather than verify service."
+    },
+    "tags": [
+      "5.1",
+      "apply-troubleshooting-process-in-a-small-medium-business-network"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "cisco-troubleshooting"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.1-005",
+    "objectiveId": "5.1",
+    "domainId": "5",
+    "type": "scenario",
+    "difficulty": "medium",
+    "prompt": "After restoring service, which documentation is most useful for future support?",
+    "options": [
+      {
+        "id": "d",
+        "text": "No documentation if the fix worked"
+      },
+      {
+        "id": "a",
+        "text": "Symptoms/scope, root cause, actions taken, verification, and follow-up/prevention"
+      },
+      {
+        "id": "b",
+        "text": "Only the technician’s name"
+      },
+      {
+        "id": "c",
+        "text": "Only the final command with no context"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "Good troubleshooting documentation records what happened, why, what was changed, and how restoration was verified so future incidents can be handled more efficiently.",
+    "distractorExplanations": {
+      "b": "The technician identity alone does not capture technical learning.",
+      "c": "A command without context does not explain cause, impact, or outcome.",
+      "d": "Successful incidents still benefit from documentation and knowledge capture."
+    },
+    "tags": [
+      "5.1",
+      "apply-troubleshooting-process-in-a-small-medium-business-network"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "cisco-troubleshooting"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.1-006",
+    "objectiveId": "5.1",
+    "domainId": "5",
+    "type": "scenario",
+    "difficulty": "medium",
+    "prompt": "A frustrated employee demands the administrator password so they can “fix it themselves” during an outage. What is the most professional response?",
+    "options": [
+      {
+        "id": "d",
+        "text": "Promise an exact restoration time even though the cause is unknown"
+      },
+      {
+        "id": "a",
+        "text": "Do not disclose credentials; explain the troubleshooting status calmly and provide realistic updates"
+      },
+      {
+        "id": "c",
+        "text": "Blame another team before investigating"
+      },
+      {
+        "id": "b",
+        "text": "Share the password because the user is upset"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "Professional conduct includes protecting credentials/confidential information, communicating respectfully, avoiding blame, and setting realistic expectations.",
+    "distractorExplanations": {
+      "b": "Administrative credentials must not be disclosed simply to satisfy a frustrated user.",
+      "c": "Blame is unprofessional and unsupported without evidence.",
+      "d": "An unsupported exact promise creates false expectations."
+    },
+    "tags": [
+      "5.1",
+      "apply-troubleshooting-process-in-a-small-medium-business-network"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "cisco-troubleshooting"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.2-001",
+    "objectiveId": "5.2",
+    "domainId": "5",
+    "type": "command-output",
+    "difficulty": "medium",
+    "prompt": "An Ethernet cable tester reports the wiremap below. Which tool is being used for the appropriate task?",
+    "context": "Pair 1-2: PASS\nPair 3-6: OPEN\nPair 4-5: PASS\nPair 7-8: PASS",
+    "options": [
+      {
+        "id": "d",
+        "text": "tracert"
+      },
+      {
+        "id": "c",
+        "text": "nslookup"
+      },
+      {
+        "id": "a",
+        "text": "Cable tester"
+      },
+      {
+        "id": "b",
+        "text": "OTDR"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "A cable tester checks copper continuity/wiremap and can reveal opens, shorts, reversals, and other termination faults depending on the model.",
+    "distractorExplanations": {
+      "b": "An OTDR analyzes optical fiber, not an RJ-45 copper wiremap.",
+      "c": "nslookup is a DNS software tool.",
+      "d": "tracert is a Layer 3 path-tracing command."
+    },
+    "tags": [
+      "5.2",
+      "use-appropriate-hardware-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "fluke-telecom",
+      "fluke-otdr"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.2-002",
+    "objectiveId": "5.2",
+    "domainId": "5",
+    "type": "scenario",
+    "difficulty": "medium",
+    "prompt": "A patch panel has 60 unlabeled copper cables. You need to identify which cable terminates at wall jack 3B without disconnecting every cable. Which tool is most appropriate?",
+    "options": [
+      {
+        "id": "d",
+        "text": "Multimeter"
+      },
+      {
+        "id": "c",
+        "text": "OTDR"
+      },
+      {
+        "id": "a",
+        "text": "Toner and probe"
+      },
+      {
+        "id": "b",
+        "text": "TDR"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "A toner injects a traceable signal onto a copper cable and a probe helps locate that specific cable in a bundle or patch panel.",
+    "distractorExplanations": {
+      "b": "A TDR locates copper faults by distance; it is not primarily for identifying one unlabeled cable among many.",
+      "c": "An OTDR is for fiber events/faults.",
+      "d": "A multimeter measures electrical quantities and is not the normal cable-identification tool."
+    },
+    "tags": [
+      "5.2",
+      "use-appropriate-hardware-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "fluke-telecom",
+      "fluke-otdr"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.2-003",
+    "objectiveId": "5.2",
+    "domainId": "5",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "A copper cable fails intermittently. A TDR reports a strong reflection approximately 37 meters from the tester. What should the technician investigate?",
+    "context": "TDR result\nPair: 1-2\nEstimated event distance: 37 m\nReflection: high",
+    "options": [
+      {
+        "id": "a",
+        "text": "A copper fault/impedance discontinuity near 37 meters from the test point"
+      },
+      {
+        "id": "c",
+        "text": "A fiber splice only"
+      },
+      {
+        "id": "d",
+        "text": "The Windows ARP cache"
+      },
+      {
+        "id": "b",
+        "text": "A DNS record 37 hops away"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "A TDR sends a signal down copper and measures reflections; the timing of the reflection is used to estimate distance to opens, shorts, or impedance changes.",
+    "distractorExplanations": {
+      "b": "TDR distance is physical cable distance, not IP hop count or DNS information.",
+      "c": "Fiber is tested with an OTDR rather than a copper TDR.",
+      "d": "ARP cache contents are unrelated to the physical reflection measurement."
+    },
+    "tags": [
+      "5.2",
+      "use-appropriate-hardware-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "fluke-telecom",
+      "fluke-otdr"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.2-004",
+    "objectiveId": "5.2",
+    "domainId": "5",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "An OTDR trace shows a sudden large loss event 420 meters from the launch point on a fiber run. Where should the technician inspect first?",
+    "context": "OTDR event table\n0 m       launch\n418-422 m major loss/reflection event\n610 m     end of fiber",
+    "options": [
+      {
+        "id": "b",
+        "text": "At the DNS server"
+      },
+      {
+        "id": "d",
+        "text": "In the Windows HOSTS file"
+      },
+      {
+        "id": "a",
+        "text": "Near the connector/splice/fiber section around the 420-meter location"
+      },
+      {
+        "id": "c",
+        "text": "At an RJ-45 copper punch-down exactly 4.2 meters away"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "An OTDR analyzes optical reflections/backscatter and reports events by distance along fiber. A large event near 420 meters directs inspection to that physical portion of the fiber path.",
+    "distractorExplanations": {
+      "b": "DNS is a logical name-resolution service and cannot explain an optical loss event by distance.",
+      "c": "OTDR measurements apply to fiber, not an RJ-45 copper punch-down.",
+      "d": "HOSTS is a software name-resolution file, not a fiber component."
+    },
+    "tags": [
+      "5.2",
+      "use-appropriate-hardware-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "fluke-telecom",
+      "fluke-otdr"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.2-005",
+    "objectiveId": "5.2",
+    "domainId": "5",
+    "type": "scenario",
+    "difficulty": "medium",
+    "prompt": "A network appliance is not powering on and the technician needs to verify DC supply voltage at its power terminals. Which tool is appropriate?",
+    "options": [
+      {
+        "id": "b",
+        "text": "Toner"
+      },
+      {
+        "id": "d",
+        "text": "Cable tester in wiremap mode"
+      },
+      {
+        "id": "a",
+        "text": "Multimeter"
+      },
+      {
+        "id": "c",
+        "text": "OTDR"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "A multimeter measures electrical quantities such as voltage and resistance, making it the appropriate choice for a power-supply voltage check.",
+    "distractorExplanations": {
+      "b": "A toner traces copper cabling and does not normally measure supply voltage.",
+      "c": "An OTDR analyzes optical fiber.",
+      "d": "A cable tester verifies cable wiring/continuity rather than appliance power voltage."
+    },
+    "tags": [
+      "5.2",
+      "use-appropriate-hardware-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "fluke-telecom",
+      "fluke-otdr"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.2-006",
+    "objectiveId": "5.2",
+    "domainId": "5",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "prompt": "Select THREE correct hardware tool/use pairs.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cable tester — verify copper wiremap/continuity"
+      },
+      {
+        "id": "d",
+        "text": "Multimeter — trace Layer 3 routing hops"
+      },
+      {
+        "id": "b",
+        "text": "Toner — identify a particular copper cable in a bundle"
+      },
+      {
+        "id": "c",
+        "text": "OTDR — locate fiber events/breaks by distance"
+      }
+    ],
+    "correctOptionIds": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Cable testers validate copper wiring, toners identify cable runs, and OTDRs locate optical events along fiber. A multimeter measures electrical values rather than IP route hops.",
+    "distractorExplanations": {
+      "d": "Layer 3 path discovery uses software tools such as tracert/traceroute, not a multimeter."
+    },
+    "tags": [
+      "5.2",
+      "use-appropriate-hardware-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "fluke-telecom",
+      "fluke-otdr"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.3-001",
+    "objectiveId": "5.3",
+    "domainId": "5",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "The PC cannot reach any remote network. What is the most important clue in this ipconfig output?",
+    "context": "C:\\> ipconfig\n\nEthernet adapter Ethernet:\n   IPv4 Address. . . . . . . . . . . : 169.254.34.77\n   Subnet Mask . . . . . . . . . . . : 255.255.0.0\n   Default Gateway . . . . . . . . . :",
+    "options": [
+      {
+        "id": "c",
+        "text": "The DNS suffix proves the switch is down"
+      },
+      {
+        "id": "b",
+        "text": "The default gateway proves Internet access is working"
+      },
+      {
+        "id": "d",
+        "text": "The MAC address is an IPv6 global address"
+      },
+      {
+        "id": "a",
+        "text": "The 169.254.x.x address indicates IPv4 link-local/APIPA and suggests the PC did not obtain the expected DHCP configuration"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "A 169.254.0.0/16 address is IPv4 link-local/APIPA. In a DHCP-managed LAN, seeing APIPA with no expected gateway strongly suggests the client did not obtain a usable DHCP lease or cannot reach DHCP infrastructure.",
+    "distractorExplanations": {
+      "b": "No default gateway is shown, and even a configured gateway would not by itself prove Internet access.",
+      "c": "A DNS suffix does not establish switch failure.",
+      "d": "A MAC address is a Layer 2 identifier, not an IPv6 global address."
+    },
+    "tags": [
+      "5.3",
+      "use-windows-software-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "microsoft-ipconfig",
+      "microsoft-ping",
+      "microsoft-tracert",
+      "microsoft-pathping",
+      "microsoft-nslookup",
+      "microsoft-netstat",
+      "microsoft-arp"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.3-002",
+    "objectiveId": "5.3",
+    "domainId": "5",
+    "type": "command-output",
+    "difficulty": "medium",
+    "prompt": "What does the successful test below prove?",
+    "context": "C:\\> ping 127.0.0.1\nReply from 127.0.0.1: bytes=32 time<1ms TTL=128\nReply from 127.0.0.1: bytes=32 time<1ms TTL=128",
+    "options": [
+      {
+        "id": "a",
+        "text": "The local TCP/IP stack can process IPv4 loopback traffic"
+      },
+      {
+        "id": "d",
+        "text": "DNS is definitely resolving names"
+      },
+      {
+        "id": "b",
+        "text": "The Ethernet cable and switch path are definitely good"
+      },
+      {
+        "id": "c",
+        "text": "The default gateway is definitely reachable"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "127.0.0.1 is the IPv4 loopback address. A successful reply verifies local TCP/IP loopback processing but does not exercise the NIC, cable, switch, gateway, or DNS.",
+    "distractorExplanations": {
+      "b": "Loopback traffic does not leave the host and therefore does not test the physical LAN.",
+      "c": "The gateway is not contacted by a loopback ping.",
+      "d": "No hostname lookup occurs in this test."
+    },
+    "tags": [
+      "5.3",
+      "use-windows-software-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "microsoft-ipconfig",
+      "microsoft-ping",
+      "microsoft-tracert",
+      "microsoft-pathping",
+      "microsoft-nslookup",
+      "microsoft-netstat",
+      "microsoft-arp"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.3-003",
+    "objectiveId": "5.3",
+    "domainId": "5",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "The remote IP is reachable, but its hostname fails. Which Windows tool should be used next to directly test name resolution?",
+    "context": "C:\\> ping 198.51.100.24\nReply from 198.51.100.24: bytes=32 time=18ms TTL=52\n\nC:\\> ping app.example.test\nPing request could not find host app.example.test.",
+    "options": [
+      {
+        "id": "b",
         "text": "arp -a"
+      },
+      {
+        "id": "d",
+        "text": "pathping 127.0.0.1"
+      },
+      {
+        "id": "c",
+        "text": "hostname"
+      },
+      {
+        "id": "a",
+        "text": "nslookup"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "Successful IP reachability shows that basic routing to the destination works. Failure only when using a hostname points toward name resolution, and nslookup directly queries DNS.",
+    "distractorExplanations": {
+      "b": "arp -a shows local IPv4-to-MAC neighbor mappings and does not directly query DNS.",
+      "c": "hostname prints the local computer name; it does not resolve the remote DNS name.",
+      "d": "pathping to loopback does not investigate remote DNS."
+    },
+    "tags": [
+      "5.3",
+      "use-windows-software-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "microsoft-ipconfig",
+      "microsoft-ping",
+      "microsoft-tracert",
+      "microsoft-pathping",
+      "microsoft-nslookup",
+      "microsoft-netstat",
+      "microsoft-arp"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.3-004",
+    "objectiveId": "5.3",
+    "domainId": "5",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "In this tracert output, hop 2 does not reply but later hops do. What is the best interpretation?",
+    "context": "C:\\> tracert 203.0.113.50\n  1     1 ms     1 ms     1 ms  192.168.1.1\n  2     *        *        *     Request timed out.\n  3    11 ms    10 ms    12 ms  198.51.100.9\n  4    18 ms    17 ms    18 ms  203.0.113.50",
+    "options": [
+      {
+        "id": "d",
+        "text": "The local NIC cannot transmit Ethernet frames"
+      },
+      {
+        "id": "c",
+        "text": "DNS must be broken at hop 2"
+      },
+      {
+        "id": "b",
+        "text": "Hop 2 definitely drops all transit traffic"
+      },
+      {
+        "id": "a",
+        "text": "Hop 2 may be forwarding traffic while choosing not to return the expected traceroute response"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "tracert relies on TTL-expired responses. A router may forward transit packets while filtering or not generating those diagnostic responses. Later responding hops prove traffic progressed beyond hop 2.",
+    "distractorExplanations": {
+      "b": "If hop 2 dropped all transit traffic, later hops would not be reached in this trace.",
+      "c": "The trace is already operating on IP addresses; a single silent hop is not proof of DNS failure.",
+      "d": "The trace reached multiple remote hops, so the local NIC is transmitting traffic."
+    },
+    "tags": [
+      "5.3",
+      "use-windows-software-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "microsoft-ipconfig",
+      "microsoft-ping",
+      "microsoft-tracert",
+      "microsoft-pathping",
+      "microsoft-nslookup",
+      "microsoft-netstat",
+      "microsoft-arp"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.3-005",
+    "objectiveId": "5.3",
+    "domainId": "5",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "Which Windows tool produced this style of output and is designed to combine route discovery with repeated per-hop loss/latency statistics?",
+    "context": "Computing statistics for 75 seconds...\nSource to Here   This Node/Link\nHop  RTT  Lost/Sent = Pct  Address\n 0              0/100 = 0%  client\n 1   1ms        0/100 = 0%  192.168.1.1\n 2  18ms       12/100 =12%  198.51.100.1\n 3  19ms       12/100 =12%  203.0.113.10",
+    "options": [
+      {
+        "id": "a",
+        "text": "pathping"
+      },
+      {
+        "id": "d",
+        "text": "ipconfig /flushdns"
+      },
+      {
+        "id": "c",
+        "text": "arp"
+      },
+      {
+        "id": "b",
+        "text": "hostname"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "pathping traces the route and then collects statistics over time to help identify loss/latency associated with routers or links along the path.",
+    "distractorExplanations": {
+      "b": "hostname only reports the local computer name.",
+      "c": "arp displays/manages local IPv4 ARP entries.",
+      "d": "ipconfig /flushdns clears the DNS resolver cache and does not measure path loss."
+    },
+    "tags": [
+      "5.3",
+      "use-windows-software-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "microsoft-ipconfig",
+      "microsoft-ping",
+      "microsoft-tracert",
+      "microsoft-pathping",
+      "microsoft-nslookup",
+      "microsoft-netstat",
+      "microsoft-arp"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.3-006",
+    "objectiveId": "5.3",
+    "domainId": "5",
+    "type": "command-output",
+    "difficulty": "easy",
+    "prompt": "Which Windows command produced the output shown?",
+    "context": "C:\\> hostname\nLAB-PC-07",
+    "options": [
+      {
+        "id": "a",
+        "text": "hostname"
+      },
+      {
+        "id": "c",
+        "text": "netstat -ano"
+      },
+      {
+        "id": "d",
+        "text": "tracert"
+      },
+      {
+        "id": "b",
+        "text": "nslookup"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "The hostname command prints the local computer name.",
+    "distractorExplanations": {
+      "b": "nslookup performs DNS queries and would show DNS response information.",
+      "c": "netstat -ano displays connections/listeners and PIDs.",
+      "d": "tracert displays routed hops."
+    },
+    "tags": [
+      "5.3",
+      "use-windows-software-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "microsoft-ipconfig",
+      "microsoft-ping",
+      "microsoft-tracert",
+      "microsoft-pathping",
+      "microsoft-nslookup",
+      "microsoft-netstat",
+      "microsoft-arp"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.3-007",
+    "objectiveId": "5.3",
+    "domainId": "5",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "What does the LISTENING entry below establish?",
+    "context": "C:\\> netstat -ano\nProto  Local Address          Foreign Address        State       PID\nTCP    0.0.0.0:3389           0.0.0.0:0              LISTENING   1260",
+    "options": [
+      {
+        "id": "a",
+        "text": "A local process is listening on TCP port 3389; it does not by itself prove remote clients can pass through firewalls/NAT to reach it"
+      },
+      {
+        "id": "d",
+        "text": "The host has no open TCP ports"
+      },
+      {
+        "id": "b",
+        "text": "RDP is guaranteed reachable from the Internet"
+      },
+      {
+        "id": "c",
+        "text": "DNS is listening on UDP 53"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "netstat can show local listening sockets. LISTENING on 0.0.0.0:3389 indicates a local TCP listener bound to port 3389 on all IPv4 interfaces; external reachability still depends on routing, firewall, NAT, and other controls.",
+    "distractorExplanations": {
+      "b": "A local listener is necessary but not sufficient for Internet reachability.",
+      "c": "The shown port is 3389 and protocol is TCP, not DNS UDP 53.",
+      "d": "The output explicitly shows a TCP listener."
+    },
+    "tags": [
+      "5.3",
+      "use-windows-software-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "microsoft-ipconfig",
+      "microsoft-ping",
+      "microsoft-tracert",
+      "microsoft-pathping",
+      "microsoft-nslookup",
+      "microsoft-netstat",
+      "microsoft-arp"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.3-008",
+    "objectiveId": "5.3",
+    "domainId": "5",
+    "type": "command-output",
+    "difficulty": "medium",
+    "prompt": "What information is the command output primarily showing?",
+    "context": "C:\\> arp -a\nInterface: 192.168.1.25 --- 0x9\n  Internet Address      Physical Address      Type\n  192.168.1.1           34-12-98-aa-bb-01     dynamic\n  192.168.1.50          88-77-66-55-44-33     dynamic",
+    "options": [
+      {
+        "id": "a",
+        "text": "IPv4 neighbor mappings between IP addresses and MAC addresses on the local link"
+      },
+      {
+        "id": "b",
+        "text": "DNS A and AAAA records from an authoritative server"
+      },
+      {
+        "id": "c",
+        "text": "All routed Internet hops"
+      },
+      {
+        "id": "d",
+        "text": "DHCP lease offers"
+      }
+    ],
+    "correctOptionIds": [
+      "a"
+    ],
+    "explanation": "arp -a displays the IPv4 ARP cache, mapping local-neighbor IPv4 addresses to Layer 2 MAC addresses.",
+    "distractorExplanations": {
+      "b": "DNS records are queried with tools such as nslookup.",
+      "c": "Routed hops are shown by tracert/pathping rather than ARP.",
+      "d": "DHCP lease exchange is not represented by the ARP table."
+    },
+    "tags": [
+      "5.3",
+      "use-windows-software-troubleshooting-tools"
+    ],
+    "sourceRefs": [
+      "official-objectives",
+      "microsoft-ipconfig",
+      "microsoft-ping",
+      "microsoft-tracert",
+      "microsoft-pathping",
+      "microsoft-nslookup",
+      "microsoft-netstat",
+      "microsoft-arp"
+    ]
+  },
+  {
+    "id": "ITS-NET-5.3-009",
+    "objectiveId": "5.3",
+    "domainId": "5",
+    "type": "scenario",
+    "difficulty": "hard",
+    "prompt": "A DNS A record was changed this morning. Other PCs resolve the new address, but one Windows PC still resolves the old address from its local resolver cache. Which command is the most direct local corrective test?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ipconfig /flushdns"
+      },
+      {
+        "id": "b",
+        "text": "arp -d *"
       },
       {
         "id": "c",
@@ -4733,1362 +6055,425 @@ export const productionQuestions = [
     "correctOptionIds": [
       "a"
     ],
-    "explanation": "Successful IP reachability suggests basic IP routing works. A hostname-only failure points to name resolution, and nslookup directly queries DNS.",
+    "explanation": "ipconfig /flushdns clears the Windows DNS resolver cache so the next lookup can obtain fresh resolution data. The authoritative record should still be verified if the problem persists.",
     "distractorExplanations": {
-      "b": "Incorrect. arp -a does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. hostname does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. tracert 127.0.0.1 does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "4.6",
-      "describe-name-resolution-concepts"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-4.7-001",
-    "objectiveId": "4.7",
-    "domainId": "4",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which service automatically provides hosts with IP configuration such as an address, mask, gateway, and DNS servers?",
-    "options": [
-      {
-        "id": "a",
-        "text": "DNS only"
-      },
-      {
-        "id": "b",
-        "text": "STP"
-      },
-      {
-        "id": "c",
-        "text": "FTP"
-      },
-      {
-        "id": "d",
-        "text": "DHCP"
-      }
-    ],
-    "correctOptionIds": [
-      "d"
-    ],
-    "explanation": "DHCP automates delivery of IP configuration parameters to clients.",
-    "distractorExplanations": {
-      "a": "Incorrect. DNS only does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. STP does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. FTP does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "4.7",
-      "identify-roles-of-networking-services"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-4.7-002",
-    "objectiveId": "4.7",
-    "domainId": "4",
-    "type": "scenario",
-    "difficulty": "medium",
-    "prompt": "Many private hosts share one public IPv4 address while sessions are distinguished by transport port numbers. What mechanism is this?",
-    "options": [
-      {
-        "id": "a",
-        "text": "DNS CNAME"
-      },
-      {
-        "id": "b",
-        "text": "STP"
-      },
-      {
-        "id": "c",
-        "text": "PAT (Port Address Translation)"
-      },
-      {
-        "id": "d",
-        "text": "static routing"
-      }
-    ],
-    "correctOptionIds": [
-      "c"
-    ],
-    "explanation": "PAT, often called NAT overload, differentiates multiple translated sessions using port numbers.",
-    "distractorExplanations": {
-      "a": "Incorrect. DNS CNAME does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. STP does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. static routing does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "4.7",
-      "identify-roles-of-networking-services"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-4.7-003",
-    "objectiveId": "4.7",
-    "domainId": "4",
-    "type": "multiple-choice",
-    "difficulty": "medium",
-    "prompt": "Select TWO accurate statements.",
-    "options": [
-      {
-        "id": "a",
-        "text": "A firewall’s purpose is to assign every host a MAC address."
-      },
-      {
-        "id": "b",
-        "text": "Static NAT can provide a fixed mapping between an inside and outside address."
-      },
-      {
-        "id": "c",
-        "text": "A firewall can allow or block traffic according to security policy."
-      },
-      {
-        "id": "d",
-        "text": "Dynamic NAT is a DNS record type."
-      }
-    ],
-    "correctOptionIds": [
-      "b",
-      "c"
-    ],
-    "explanation": "NAT translates addressing; static NAT uses stable mappings. Firewalls enforce traffic policy.",
-    "distractorExplanations": {
-      "a": "Incorrect for this item. A firewall’s purpose is to assign every host a MAC address. is not one of the required selections.",
-      "d": "Incorrect for this item. Dynamic NAT is a DNS record type. is not one of the required selections."
-    },
-    "tags": [
-      "4.7",
-      "identify-roles-of-networking-services"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.1-001",
-    "objectiveId": "5.1",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "What should normally happen first in a structured troubleshooting process?",
-    "options": [
-      {
-        "id": "a",
-        "text": "document the solution before testing"
-      },
-      {
-        "id": "b",
-        "text": "escalate without gathering information"
-      },
-      {
-        "id": "c",
-        "text": "Identify and clearly define the problem"
-      },
-      {
-        "id": "d",
-        "text": "replace several components immediately"
-      }
-    ],
-    "correctOptionIds": [
-      "c"
-    ],
-    "explanation": "Effective troubleshooting begins by identifying symptoms, scope, recent changes, and the actual problem.",
-    "distractorExplanations": {
-      "a": "Incorrect. document the solution before testing does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. escalate without gathering information does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. replace several components immediately does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.1",
-      "apply-troubleshooting-process-in-a-small-medium-business-network"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.1-002",
-    "objectiveId": "5.1",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "After forming a probable cause, what is the next logical troubleshooting action?",
-    "options": [
-      {
-        "id": "a",
-        "text": "erase all logs"
-      },
-      {
-        "id": "b",
-        "text": "Test the theory to determine whether it explains the problem"
-      },
-      {
-        "id": "c",
-        "text": "close the ticket immediately"
-      },
-      {
-        "id": "d",
-        "text": "change unrelated settings"
-      }
-    ],
-    "correctOptionIds": [
-      "b"
-    ],
-    "explanation": "A theory should be tested before implementing a broader fix.",
-    "distractorExplanations": {
-      "a": "Incorrect. erase all logs does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. close the ticket immediately does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. change unrelated settings does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.1",
-      "apply-troubleshooting-process-in-a-small-medium-business-network"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.1-003",
-    "objectiveId": "5.1",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "A theory is confirmed. What should happen before making a risky production change?",
-    "options": [
-      {
-        "id": "a",
-        "text": "Establish a plan of action and consider potential effects"
-      },
-      {
-        "id": "b",
-        "text": "skip planning because the cause is known"
-      },
-      {
-        "id": "c",
-        "text": "delete documentation"
-      },
-      {
-        "id": "d",
-        "text": "replace every network device"
-      }
-    ],
-    "correctOptionIds": [
-      "a"
-    ],
-    "explanation": "Plan the solution and account for impact before implementation.",
-    "distractorExplanations": {
-      "b": "Incorrect. skip planning because the cause is known does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. delete documentation does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. replace every network device does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.1",
-      "apply-troubleshooting-process-in-a-small-medium-business-network"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.1-004",
-    "objectiveId": "5.1",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "After implementing a fix, what step is essential?",
-    "options": [
-      {
-        "id": "a",
-        "text": "assume success if no error appears immediately"
-      },
-      {
-        "id": "b",
-        "text": "clear all evidence before testing"
-      },
-      {
-        "id": "c",
-        "text": "disable monitoring"
-      },
-      {
-        "id": "d",
-        "text": "Verify full functionality and confirm the issue is resolved"
-      }
-    ],
-    "correctOptionIds": [
-      "d"
-    ],
-    "explanation": "Always verify the solution and, where appropriate, preventive measures.",
-    "distractorExplanations": {
-      "a": "Incorrect. assume success if no error appears immediately does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. clear all evidence before testing does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. disable monitoring does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.1",
-      "apply-troubleshooting-process-in-a-small-medium-business-network"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.1-005",
-    "objectiveId": "5.1",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Why document findings, actions, and outcomes after resolving a problem?",
-    "options": [
-      {
-        "id": "a",
-        "text": "it replaces backups"
-      },
-      {
-        "id": "b",
-        "text": "it prevents every future outage"
-      },
-      {
-        "id": "c",
-        "text": "It preserves knowledge and supports future troubleshooting/auditability"
-      },
-      {
-        "id": "d",
-        "text": "it makes IP addresses private"
-      }
-    ],
-    "correctOptionIds": [
-      "c"
-    ],
-    "explanation": "Documentation records what happened, what changed, and what resolved the issue.",
-    "distractorExplanations": {
-      "a": "Incorrect. it replaces backups does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. it prevents every future outage does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. it makes IP addresses private does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.1",
-      "apply-troubleshooting-process-in-a-small-medium-business-network"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.1-006",
-    "objectiveId": "5.1",
-    "domainId": "5",
-    "type": "scenario",
-    "difficulty": "medium",
-    "prompt": "A user is frustrated during an outage. Which behavior best demonstrates professional troubleshooting etiquette?",
-    "options": [
-      {
-        "id": "a",
-        "text": "share private credentials for convenience"
-      },
-      {
-        "id": "b",
-        "text": "Communicate clearly, avoid blame, set realistic expectations, and protect confidential information"
-      },
-      {
-        "id": "c",
-        "text": "argue about who caused it"
-      },
-      {
-        "id": "d",
-        "text": "make promises you cannot keep"
-      }
-    ],
-    "correctOptionIds": [
-      "b"
-    ],
-    "explanation": "Professional conduct includes respectful communication, confidentiality, and realistic updates.",
-    "distractorExplanations": {
-      "a": "Incorrect. share private credentials for convenience does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. argue about who caused it does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. make promises you cannot keep does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.1",
-      "apply-troubleshooting-process-in-a-small-medium-business-network"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.2-001",
-    "objectiveId": "5.2",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which tool is best for checking basic copper cable pinout/continuity?",
-    "options": [
-      {
-        "id": "a",
-        "text": "OTDR"
-      },
-      {
-        "id": "b",
-        "text": "DNS resolver"
-      },
-      {
-        "id": "c",
-        "text": "Cable tester"
-      },
-      {
-        "id": "d",
-        "text": "toner only"
-      }
-    ],
-    "correctOptionIds": [
-      "c"
-    ],
-    "explanation": "A cable tester can verify continuity and wiring/pair mapping.",
-    "distractorExplanations": {
-      "a": "Incorrect. OTDR does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. DNS resolver does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. toner only does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.2",
-      "use-appropriate-hardware-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.2-002",
-    "objectiveId": "5.2",
-    "domainId": "5",
-    "type": "scenario",
-    "difficulty": "easy",
-    "prompt": "You need to identify which unlabeled cable in a bundle terminates at a particular wall jack. Which tool is best?",
-    "options": [
-      {
-        "id": "a",
-        "text": "traceroute"
-      },
-      {
-        "id": "b",
-        "text": "Toner and probe"
-      },
-      {
-        "id": "c",
-        "text": "TDR only"
-      },
-      {
-        "id": "d",
-        "text": "multimeter only"
-      }
-    ],
-    "correctOptionIds": [
-      "b"
-    ],
-    "explanation": "A toner injects a detectable signal so the cable can be traced/identified with a probe.",
-    "distractorExplanations": {
-      "a": "Incorrect. traceroute does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. TDR only does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. multimeter only does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.2",
-      "use-appropriate-hardware-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.2-003",
-    "objectiveId": "5.2",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "Which tool can estimate the distance to an open or short in a copper cable by analyzing reflected signals?",
-    "options": [
-      {
-        "id": "a",
-        "text": "TDR"
-      },
-      {
-        "id": "b",
-        "text": "OTDR"
-      },
-      {
-        "id": "c",
-        "text": "nslookup"
-      },
-      {
-        "id": "d",
-        "text": "loopback plug"
-      }
-    ],
-    "correctOptionIds": [
-      "a"
-    ],
-    "explanation": "A Time-Domain Reflectometer measures reflections on copper to locate faults by distance.",
-    "distractorExplanations": {
-      "b": "Incorrect. OTDR does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. nslookup does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. loopback plug does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.2",
-      "use-appropriate-hardware-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.2-004",
-    "objectiveId": "5.2",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "Which tool is used to locate breaks, losses, and events along a fiber-optic cable?",
-    "options": [
-      {
-        "id": "a",
-        "text": "TDR for copper only"
-      },
-      {
-        "id": "b",
-        "text": "multimeter across the fiber"
-      },
-      {
-        "id": "c",
-        "text": "ARP"
-      },
-      {
-        "id": "d",
-        "text": "OTDR"
-      }
-    ],
-    "correctOptionIds": [
-      "d"
-    ],
-    "explanation": "An Optical Time-Domain Reflectometer analyzes optical reflections to locate fiber events and faults.",
-    "distractorExplanations": {
-      "a": "Incorrect. TDR for copper only does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. multimeter across the fiber does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. ARP does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.2",
-      "use-appropriate-hardware-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.2-005",
-    "objectiveId": "5.2",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which tool is most appropriate for measuring electrical voltage or resistance?",
-    "options": [
-      {
-        "id": "a",
-        "text": "OTDR"
-      },
-      {
-        "id": "b",
-        "text": "DNS server"
-      },
-      {
-        "id": "c",
-        "text": "Multimeter"
-      },
-      {
-        "id": "d",
-        "text": "toner"
-      }
-    ],
-    "correctOptionIds": [
-      "c"
-    ],
-    "explanation": "A multimeter measures electrical quantities such as voltage, current, and resistance.",
-    "distractorExplanations": {
-      "a": "Incorrect. OTDR does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. DNS server does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. toner does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.2",
-      "use-appropriate-hardware-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.2-006",
-    "objectiveId": "5.2",
-    "domainId": "5",
-    "type": "multiple-choice",
-    "difficulty": "medium",
-    "prompt": "Select TWO correct tool/use pairs.",
-    "options": [
-      {
-        "id": "a",
-        "text": "Multimeter — discover IP route hops"
-      },
-      {
-        "id": "b",
-        "text": "Cable tester — verify wiremap/continuity"
-      },
-      {
-        "id": "c",
-        "text": "Toner — identify/trace a particular cable"
-      },
-      {
-        "id": "d",
-        "text": "OTDR — test Windows DNS cache"
-      }
-    ],
-    "correctOptionIds": [
-      "b",
-      "c"
-    ],
-    "explanation": "Cable testers verify cabling; toners identify cables. OTDR is for fiber and multimeters measure electrical values.",
-    "distractorExplanations": {
-      "a": "Incorrect for this item. Multimeter — discover IP route hops is not one of the required selections.",
-      "d": "Incorrect for this item. OTDR — test Windows DNS cache is not one of the required selections."
-    },
-    "tags": [
-      "5.2",
-      "use-appropriate-hardware-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.3-001",
-    "objectiveId": "5.3",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which Windows command displays detailed local TCP/IP configuration?",
-    "options": [
-      {
-        "id": "a",
-        "text": "arp -a"
-      },
-      {
-        "id": "b",
-        "text": "tracert"
-      },
-      {
-        "id": "c",
-        "text": "ipconfig /all"
-      },
-      {
-        "id": "d",
-        "text": "hostname"
-      }
-    ],
-    "correctOptionIds": [
-      "c"
-    ],
-    "explanation": "ipconfig /all shows addresses, masks, gateways, DNS settings, DHCP information, and adapter details.",
-    "distractorExplanations": {
-      "a": "Incorrect. arp -a does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. tracert does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. hostname does not best satisfy the scenario or definition being tested."
+      "b": "Clearing ARP affects local IPv4-to-MAC neighbor entries, not cached DNS names.",
+      "c": "hostname only reports the local computer name.",
+      "d": "Tracing loopback does not clear or retest the stale DNS cache."
     },
     "tags": [
       "5.3",
       "use-windows-software-troubleshooting-tools"
     ],
     "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.3-002",
-    "objectiveId": "5.3",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which Windows command tests basic IP reachability using ICMP Echo?",
-    "options": [
-      {
-        "id": "a",
-        "text": "nslookup"
-      },
-      {
-        "id": "b",
-        "text": "ping"
-      },
-      {
-        "id": "c",
-        "text": "netstat"
-      },
-      {
-        "id": "d",
-        "text": "hostname"
-      }
-    ],
-    "correctOptionIds": [
-      "b"
-    ],
-    "explanation": "ping sends ICMP Echo requests to test reachability and measure response time.",
-    "distractorExplanations": {
-      "a": "Incorrect. nslookup does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. netstat does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. hostname does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.3",
-      "use-windows-software-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.3-003",
-    "objectiveId": "5.3",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which Windows command shows the hop-by-hop Layer 3 path toward a destination?",
-    "options": [
-      {
-        "id": "a",
-        "text": "tracert"
-      },
-      {
-        "id": "b",
-        "text": "arp"
-      },
-      {
-        "id": "c",
-        "text": "ipconfig /flushdns"
-      },
-      {
-        "id": "d",
-        "text": "hostname"
-      }
-    ],
-    "correctOptionIds": [
-      "a"
-    ],
-    "explanation": "tracert uses increasing TTL values to reveal intermediate routed hops.",
-    "distractorExplanations": {
-      "b": "Incorrect. arp does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. ipconfig /flushdns does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. hostname does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.3",
-      "use-windows-software-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.3-004",
-    "objectiveId": "5.3",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "Which Windows tool combines route information with repeated measurements to help identify packet loss/latency along a path?",
-    "options": [
-      {
-        "id": "a",
-        "text": "hostname"
-      },
-      {
-        "id": "b",
-        "text": "arp -a"
-      },
-      {
-        "id": "c",
-        "text": "ipconfig /release"
-      },
-      {
-        "id": "d",
-        "text": "pathping"
-      }
-    ],
-    "correctOptionIds": [
-      "d"
-    ],
-    "explanation": "pathping combines path discovery with per-hop statistical measurements.",
-    "distractorExplanations": {
-      "a": "Incorrect. hostname does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. arp -a does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. ipconfig /release does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.3",
-      "use-windows-software-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.3-005",
-    "objectiveId": "5.3",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which Windows command directly queries DNS and is useful for testing name resolution?",
-    "options": [
-      {
-        "id": "a",
-        "text": "arp"
-      },
-      {
-        "id": "b",
-        "text": "hostname"
-      },
-      {
-        "id": "c",
-        "text": "nslookup"
-      },
-      {
-        "id": "d",
-        "text": "netstat"
-      }
-    ],
-    "correctOptionIds": [
-      "c"
-    ],
-    "explanation": "nslookup queries DNS servers and is a primary name-resolution diagnostic tool.",
-    "distractorExplanations": {
-      "a": "Incorrect. arp does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. hostname does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. netstat does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.3",
-      "use-windows-software-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.3-006",
-    "objectiveId": "5.3",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which Windows command displays the local computer name?",
-    "options": [
-      {
-        "id": "a",
-        "text": "tracert"
-      },
-      {
-        "id": "b",
-        "text": "hostname"
-      },
-      {
-        "id": "c",
-        "text": "pathping"
-      },
-      {
-        "id": "d",
-        "text": "arp -a"
-      }
-    ],
-    "correctOptionIds": [
-      "b"
-    ],
-    "explanation": "hostname prints the system hostname.",
-    "distractorExplanations": {
-      "a": "Incorrect. tracert does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. pathping does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. arp -a does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.3",
-      "use-windows-software-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.3-007",
-    "objectiveId": "5.3",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "Which Windows command can display active network connections and listening ports?",
-    "options": [
-      {
-        "id": "a",
-        "text": "netstat"
-      },
-      {
-        "id": "b",
-        "text": "ipconfig /renew"
-      },
-      {
-        "id": "c",
-        "text": "hostname"
-      },
-      {
-        "id": "d",
-        "text": "arp -d only"
-      }
-    ],
-    "correctOptionIds": [
-      "a"
-    ],
-    "explanation": "netstat reports network connections, listeners, and protocol statistics depending on options.",
-    "distractorExplanations": {
-      "b": "Incorrect. ipconfig /renew does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. hostname does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. arp -d only does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.3",
-      "use-windows-software-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.3-008",
-    "objectiveId": "5.3",
-    "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which Windows command displays the IPv4 ARP cache?",
-    "options": [
-      {
-        "id": "a",
-        "text": "nslookup"
-      },
-      {
-        "id": "b",
-        "text": "tracert"
-      },
-      {
-        "id": "c",
-        "text": "hostname"
-      },
-      {
-        "id": "d",
-        "text": "arp -a"
-      }
-    ],
-    "correctOptionIds": [
-      "d"
-    ],
-    "explanation": "arp -a displays IPv4-to-MAC neighbor mappings in the ARP cache.",
-    "distractorExplanations": {
-      "a": "Incorrect. nslookup does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. tracert does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. hostname does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.3",
-      "use-windows-software-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
-    ]
-  },
-  {
-    "id": "ITS-NET-5.3-009",
-    "objectiveId": "5.3",
-    "domainId": "5",
-    "type": "command-output",
-    "difficulty": "hard",
-    "prompt": "A Windows system successfully pings 127.0.0.1 but cannot ping its default gateway. What does the loopback success establish?",
-    "options": [
-      {
-        "id": "a",
-        "text": "DNS is definitely working"
-      },
-      {
-        "id": "b",
-        "text": "the remote gateway is definitely powered off"
-      },
-      {
-        "id": "c",
-        "text": "The local TCP/IP stack can process loopback traffic; the failure lies beyond that test"
-      },
-      {
-        "id": "d",
-        "text": "the physical cable is definitely good"
-      }
-    ],
-    "correctOptionIds": [
-      "c"
-    ],
-    "explanation": "127.0.0.1 tests the local IP stack. It does not prove the NIC, cabling, switch path, or gateway are functioning.",
-    "distractorExplanations": {
-      "a": "Incorrect. DNS is definitely working does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. the remote gateway is definitely powered off does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. the physical cable is definitely good does not best satisfy the scenario or definition being tested."
-    },
-    "tags": [
-      "5.3",
-      "use-windows-software-troubleshooting-tools"
-    ],
-    "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "microsoft-ipconfig",
+      "microsoft-ping",
+      "microsoft-tracert",
+      "microsoft-pathping",
+      "microsoft-nslookup",
+      "microsoft-netstat",
+      "microsoft-arp"
     ]
   },
   {
     "id": "ITS-NET-5.4-001",
     "objectiveId": "5.4",
     "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which Linux command shows interface IP addresses using the modern iproute2 toolset?",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "What is the most important interpretation of this `ip addr` output?",
+    "context": "$ ip addr show eth0\n2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500\n    inet 192.168.10.25/24 brd 192.168.10.255 scope global eth0",
     "options": [
       {
-        "id": "a",
-        "text": "host"
-      },
-      {
-        "id": "b",
-        "text": "arp only"
-      },
-      {
         "id": "c",
-        "text": "ip addr"
+        "text": "The default gateway is 192.168.10.25"
+      },
+      {
+        "id": "a",
+        "text": "eth0 is up and has IPv4 address 192.168.10.25/24"
       },
       {
         "id": "d",
-        "text": "dig"
+        "text": "DNS is confirmed working"
+      },
+      {
+        "id": "b",
+        "text": "eth0 is down and has no address"
       }
     ],
     "correctOptionIds": [
-      "c"
+      "a"
     ],
-    "explanation": "ip addr displays and manages protocol addresses on interfaces.",
+    "explanation": "`ip addr` displays interface state and addresses. The output shows eth0 UP with inet 192.168.10.25/24. It does not by itself show the default gateway or prove DNS operation.",
     "distractorExplanations": {
-      "a": "Incorrect. host does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. arp only does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. dig does not best satisfy the scenario or definition being tested."
+      "b": "The interface flags include UP and an inet address is present.",
+      "c": "An interface address is not automatically the default gateway; routing information would be checked separately.",
+      "d": "No DNS query appears in this output."
     },
     "tags": [
       "5.4",
       "use-linux-software-troubleshooting-tools"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "man7-ipaddr",
+      "man7-ping",
+      "man7-traceroute",
+      "man7-tracepath",
+      "bind-dig",
+      "ubuntu-host",
+      "man7-netstat"
     ]
   },
   {
     "id": "ITS-NET-5.4-002",
     "objectiveId": "5.4",
     "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which Linux command tests reachability with ICMP Echo?",
+    "type": "command-output",
+    "difficulty": "medium",
+    "prompt": "What does this output most directly show?",
+    "context": "$ ping -c 3 192.0.2.10\n64 bytes from 192.0.2.10: icmp_seq=1 ttl=56 time=12.4 ms\n64 bytes from 192.0.2.10: icmp_seq=2 ttl=56 time=12.1 ms\n64 bytes from 192.0.2.10: icmp_seq=3 ttl=56 time=12.3 ms\n3 packets transmitted, 3 received, 0% packet loss",
     "options": [
       {
-        "id": "a",
-        "text": "ip addr only"
-      },
-      {
         "id": "b",
-        "text": "ping"
+        "text": "DNS lookup of 192.0.2.10 failed"
       },
       {
-        "id": "c",
-        "text": "netstat"
+        "id": "a",
+        "text": "The host receives ICMP Echo replies from 192.0.2.10 with no packet loss in this sample"
       },
       {
         "id": "d",
-        "text": "host"
+        "text": "The route has exactly two routers"
+      },
+      {
+        "id": "c",
+        "text": "The ARP cache is empty"
       }
     ],
     "correctOptionIds": [
-      "b"
+      "a"
     ],
-    "explanation": "ping sends ICMP Echo requests.",
+    "explanation": "`ping` tests reachability using ICMP Echo. The replies and 0% packet loss show successful responses for this sample, though ping alone does not prove every application/service is available.",
     "distractorExplanations": {
-      "a": "Incorrect. ip addr only does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. netstat does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. host does not best satisfy the scenario or definition being tested."
+      "b": "No DNS name lookup is shown; the command targets an IP address.",
+      "c": "The output contains no ARP table.",
+      "d": "Ping does not enumerate routed hops."
     },
     "tags": [
       "5.4",
       "use-linux-software-troubleshooting-tools"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "man7-ipaddr",
+      "man7-ping",
+      "man7-traceroute",
+      "man7-tracepath",
+      "bind-dig",
+      "ubuntu-host",
+      "man7-netstat"
     ]
   },
   {
     "id": "ITS-NET-5.4-003",
     "objectiveId": "5.4",
     "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which Linux command is commonly used to trace the routed path toward a destination?",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "Hop 2 shows only asterisks, but later hops respond. What is the best conclusion?",
+    "context": "$ traceroute 203.0.113.50\n1  192.168.1.1  0.8 ms  0.7 ms  0.8 ms\n2  * * *\n3  198.51.100.9  10.4 ms  10.1 ms  10.6 ms\n4  203.0.113.50  17.8 ms  17.5 ms  17.7 ms",
     "options": [
       {
-        "id": "a",
-        "text": "traceroute"
-      },
-      {
         "id": "b",
-        "text": "arp"
+        "text": "Hop 2 definitely drops all forwarded traffic"
       },
       {
-        "id": "c",
-        "text": "dig"
+        "id": "a",
+        "text": "The path is not necessarily broken at hop 2; that device may not return traceroute probe responses"
       },
       {
         "id": "d",
-        "text": "netstat"
+        "text": "The local Ethernet interface is down"
+      },
+      {
+        "id": "c",
+        "text": "DNS is definitely misconfigured"
       }
     ],
     "correctOptionIds": [
       "a"
     ],
-    "explanation": "traceroute discovers intermediate hops toward a target.",
+    "explanation": "traceroute uses TTL/hop-limit expiry and diagnostic responses. A device can forward transit traffic while suppressing those replies. Later responding hops demonstrate that probes traveled beyond hop 2.",
     "distractorExplanations": {
-      "b": "Incorrect. arp does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. dig does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. netstat does not best satisfy the scenario or definition being tested."
+      "b": "Later hops could not answer if all transit traffic were dropped there.",
+      "c": "The trace uses an IP destination and does not establish a DNS fault.",
+      "d": "Multiple remote hops were reached, so the local interface is functioning."
     },
     "tags": [
       "5.4",
       "use-linux-software-troubleshooting-tools"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "man7-ipaddr",
+      "man7-ping",
+      "man7-traceroute",
+      "man7-tracepath",
+      "bind-dig",
+      "ubuntu-host",
+      "man7-netstat"
     ]
   },
   {
     "id": "ITS-NET-5.4-004",
     "objectiveId": "5.4",
     "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "Which Linux command can trace a path and can also discover path MTU without requiring the same privileges as some traceroute modes?",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "Which objective-listed Linux command is especially useful when you want the routed path and path-MTU information shown below?",
+    "context": "$ tracepath 203.0.113.20\n 1?: [LOCALHOST]                      pmtu 1500\n 1:  192.168.1.1                      0.8ms\n 2:  198.51.100.1                     9.4ms pmtu 1400\n 3:  203.0.113.20                    17.2ms reached",
     "options": [
       {
-        "id": "a",
-        "text": "hostname"
+        "id": "c",
+        "text": "arp"
       },
       {
         "id": "b",
-        "text": "arp -d"
+        "text": "host"
       },
       {
-        "id": "c",
-        "text": "ip addr flush"
+        "id": "a",
+        "text": "tracepath"
       },
       {
         "id": "d",
-        "text": "tracepath"
+        "text": "netstat"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "a"
     ],
-    "explanation": "tracepath traces the path and reports path MTU information.",
+    "explanation": "`tracepath` traces the route and can discover/report path MTU information without requiring the same privileges as some traceroute modes.",
     "distractorExplanations": {
-      "a": "Incorrect. hostname does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. arp -d does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. ip addr flush does not best satisfy the scenario or definition being tested."
+      "b": "host performs DNS lookups.",
+      "c": "arp shows legacy IPv4 neighbor-cache entries.",
+      "d": "netstat shows network status such as sockets/routes depending on options but not this trace/PMTU view."
     },
     "tags": [
       "5.4",
       "use-linux-software-troubleshooting-tools"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "man7-ipaddr",
+      "man7-ping",
+      "man7-traceroute",
+      "man7-tracepath",
+      "bind-dig",
+      "ubuntu-host",
+      "man7-netstat"
     ]
   },
   {
     "id": "ITS-NET-5.4-005",
     "objectiveId": "5.4",
     "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which Linux DNS utility provides detailed query output and is commonly used for DNS troubleshooting?",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "What does the DNS status in this `dig` output indicate?",
+    "context": "$ dig app.example.test A\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 4128\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1",
     "options": [
       {
-        "id": "a",
-        "text": "arp"
-      },
-      {
         "id": "b",
-        "text": "ping only"
+        "text": "The Linux Ethernet interface is physically down"
       },
       {
         "id": "c",
-        "text": "dig"
+        "text": "The ARP cache contains a duplicate gateway"
+      },
+      {
+        "id": "a",
+        "text": "The queried DNS server returned NXDOMAIN: the requested name does not exist as queried"
       },
       {
         "id": "d",
-        "text": "netstat"
+        "text": "The query definitely succeeded with an A record"
       }
     ],
     "correctOptionIds": [
-      "c"
+      "a"
     ],
-    "explanation": "dig performs DNS queries and provides detailed DNS response information.",
+    "explanation": "`dig` shows the DNS response status. NXDOMAIN is a negative DNS answer indicating the queried name does not exist as queried; it is different from a timeout or transport failure.",
     "distractorExplanations": {
-      "a": "Incorrect. arp does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. ping only does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. netstat does not best satisfy the scenario or definition being tested."
+      "b": "A DNS response was received, so this output does not support a physical-link-down conclusion.",
+      "c": "No ARP information is shown.",
+      "d": "The status is NXDOMAIN and ANSWER is 0, so no A answer was returned."
     },
     "tags": [
       "5.4",
       "use-linux-software-troubleshooting-tools"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "man7-ipaddr",
+      "man7-ping",
+      "man7-traceroute",
+      "man7-tracepath",
+      "bind-dig",
+      "ubuntu-host",
+      "man7-netstat"
     ]
   },
   {
     "id": "ITS-NET-5.4-006",
     "objectiveId": "5.4",
     "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "easy",
-    "prompt": "Which Linux utility provides a simpler hostname/address DNS lookup interface?",
+    "type": "command-output",
+    "difficulty": "medium",
+    "prompt": "Which Linux utility produced this compact name-to-address lookup?",
+    "context": "$ host files.example.test\nfiles.example.test has address 192.0.2.44",
     "options": [
       {
-        "id": "a",
-        "text": "ip addr"
-      },
-      {
-        "id": "b",
-        "text": "host"
+        "id": "d",
+        "text": "arp"
       },
       {
         "id": "c",
         "text": "traceroute"
       },
       {
-        "id": "d",
-        "text": "netstat"
+        "id": "a",
+        "text": "host"
+      },
+      {
+        "id": "b",
+        "text": "ip addr"
       }
     ],
     "correctOptionIds": [
-      "b"
+      "a"
     ],
-    "explanation": "host performs DNS lookups in a compact format.",
+    "explanation": "`host` is a simple DNS lookup utility that can translate names to addresses and addresses to names.",
     "distractorExplanations": {
-      "a": "Incorrect. ip addr does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. traceroute does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. netstat does not best satisfy the scenario or definition being tested."
+      "b": "ip addr displays/manages interface addresses.",
+      "c": "traceroute displays routed hops.",
+      "d": "arp displays/manages legacy IPv4 neighbor mappings."
     },
     "tags": [
       "5.4",
       "use-linux-software-troubleshooting-tools"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "man7-ipaddr",
+      "man7-ping",
+      "man7-traceroute",
+      "man7-tracepath",
+      "bind-dig",
+      "ubuntu-host",
+      "man7-netstat"
     ]
   },
   {
     "id": "ITS-NET-5.4-007",
     "objectiveId": "5.4",
     "domainId": "5",
-    "type": "single-choice",
-    "difficulty": "medium",
-    "prompt": "Which objective-listed Linux command can display active connections and listening sockets on systems where the legacy net-tools package is available?",
+    "type": "command-output",
+    "difficulty": "hard",
+    "prompt": "What does this objective-listed legacy `netstat` output show?",
+    "context": "$ netstat -tuln\nProto Recv-Q Send-Q Local Address   Foreign Address   State\ntcp        0      0 0.0.0.0:22      0.0.0.0:*         LISTEN",
     "options": [
       {
         "id": "a",
-        "text": "netstat"
-      },
-      {
-        "id": "b",
-        "text": "dig"
+        "text": "A local TCP service is listening on port 22"
       },
       {
         "id": "c",
-        "text": "tracepath"
+        "text": "The default gateway is definitely 0.0.0.0"
       },
       {
         "id": "d",
-        "text": "arp only"
+        "text": "There is no SSH service on this host"
+      },
+      {
+        "id": "b",
+        "text": "DNS returned an AAAA record"
       }
     ],
     "correctOptionIds": [
       "a"
     ],
-    "explanation": "netstat is the objective-listed legacy networking status utility; modern systems may also use ss, but ss is outside this objective.",
+    "explanation": "`netstat -tuln` can show listening TCP/UDP sockets numerically. A TCP LISTEN entry on 0.0.0.0:22 indicates a local service is listening on TCP port 22 on IPv4 interfaces; it does not prove remote firewall reachability.",
     "distractorExplanations": {
-      "b": "Incorrect. dig does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. tracepath does not best satisfy the scenario or definition being tested.",
-      "d": "Incorrect. arp only does not best satisfy the scenario or definition being tested."
+      "b": "This is socket status, not DNS output.",
+      "c": "0.0.0.0 in the Local Address means all IPv4 local interfaces for the listener, not a default gateway.",
+      "d": "Port 22 is the standard SSH port, and the output shows it listening."
     },
     "tags": [
       "5.4",
       "use-linux-software-troubleshooting-tools"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "man7-ipaddr",
+      "man7-ping",
+      "man7-traceroute",
+      "man7-tracepath",
+      "bind-dig",
+      "ubuntu-host",
+      "man7-netstat"
     ]
   },
   {
     "id": "ITS-NET-5.4-008",
     "objectiveId": "5.4",
     "domainId": "5",
-    "type": "single-choice",
+    "type": "command-output",
     "difficulty": "medium",
-    "prompt": "Which objective-listed Linux command displays/manages the legacy IPv4 ARP cache when net-tools is installed?",
+    "prompt": "What does this objective-listed legacy `arp` output primarily represent?",
+    "context": "$ arp -n\nAddress          HWtype  HWaddress           Flags Mask  Iface\n192.168.10.1     ether   34:12:98:aa:bb:01   C           eth0",
     "options": [
       {
-        "id": "a",
-        "text": "dig"
+        "id": "d",
+        "text": "An IPv6 multicast membership table"
       },
       {
         "id": "b",
-        "text": "traceroute"
+        "text": "A DNS reverse-lookup result"
+      },
+      {
+        "id": "a",
+        "text": "An IPv4-to-MAC neighbor mapping on the local link"
       },
       {
         "id": "c",
-        "text": "host"
-      },
-      {
-        "id": "d",
-        "text": "arp"
+        "text": "A list of routed hops"
       }
     ],
     "correctOptionIds": [
-      "d"
+      "a"
     ],
-    "explanation": "arp is explicitly named in the objective. Modern Linux may prefer ip neigh, but the exam objective lists arp.",
+    "explanation": "The legacy `arp` utility displays/manages the IPv4 ARP cache, which maps local-neighbor IPv4 addresses to MAC addresses. Modern Linux often uses `ip neigh`, but `arp` is explicitly in the exam objective.",
     "distractorExplanations": {
-      "a": "Incorrect. dig does not best satisfy the scenario or definition being tested.",
-      "b": "Incorrect. traceroute does not best satisfy the scenario or definition being tested.",
-      "c": "Incorrect. host does not best satisfy the scenario or definition being tested."
+      "b": "DNS reverse lookup uses PTR records and DNS tools such as host/dig.",
+      "c": "traceroute/tracepath show routed hops.",
+      "d": "ARP is an IPv4 neighbor-resolution mechanism, not an IPv6 multicast table."
     },
     "tags": [
       "5.4",
       "use-linux-software-troubleshooting-tools"
     ],
     "sourceRefs": [
-      "official-objectives"
+      "official-objectives",
+      "man7-ipaddr",
+      "man7-ping",
+      "man7-traceroute",
+      "man7-tracepath",
+      "bind-dig",
+      "ubuntu-host",
+      "man7-netstat"
     ]
   }
 ] satisfies PrepQuestion[];

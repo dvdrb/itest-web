@@ -32,27 +32,59 @@
     "5.4": 8
   },
   "questionTypes": {
-    "single-choice": 97,
-    "scenario": 28,
-    "multiple-choice": 16,
-    "subnetting": 3,
-    "command-output": 1
+    "single-choice": 46,
+    "scenario": 47,
+    "multiple-choice": 24,
+    "command-output": 25,
+    "subnetting": 3
   },
   "difficultyCounts": {
-    "easy": 67,
-    "medium": 71,
-    "hard": 7
+    "easy": 38,
+    "medium": 65,
+    "hard": 42
   },
+  "questionsWithContext": 25,
   "validAnswerReferences": true,
+  "allIncorrectOptionsHaveExplanations": true,
   "duplicateNormalizedPrompts": 0,
   "studyNoteCount": 21,
-  "fixtureCount": 45,
-  "fixtureDomainCounts": {
-    "1": 9,
-    "2": 9,
-    "3": 9,
-    "4": 9,
-    "5": 9
+  "sourceCount": 49,
+  "allQuestionSourceRefsResolve": true,
+  "minimumQuestionSourceRefs": 2,
+  "visibleSingleAnswerPositionDistribution": {
+    "A": 30,
+    "C": 30,
+    "B": 30,
+    "D": 30
   },
-  "status": "PASS"
+  "multiAnswerVisiblePositionCombinations": {
+    "AB": 4,
+    "ABC": 4,
+    "ABD": 1,
+    "AC": 3,
+    "ACD": 2,
+    "BC": 1,
+    "BCD": 1,
+    "BD": 4,
+    "CD": 5
+  },
+  "officialTopicCoverageChecks": 151,
+  "officialTopicCoveragePassed": 151,
+  "subnetAudit": {
+    "ITS-NET-4.3-003": {
+      "calculation": "network of 192.168.10.70/26",
+      "verified": "192.168.10.64"
+    },
+    "ITS-NET-4.3-004": {
+      "calculation": "broadcast of 10.1.4.128/27",
+      "verified": "10.1.4.159"
+    },
+    "ITS-NET-4.3-005": {
+      "calculation": "traditional usable hosts in /28",
+      "verified": 14
+    }
+  },
+  "genericDistractorExplanationsRemainingOnBasicItems": 0,
+  "status": "PASS",
+  "distractorExplanationsEditoriallyUpgraded": 190
 }

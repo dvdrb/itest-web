@@ -1,19 +1,19 @@
-# Certiport ITS Networking Content Package
+# Certiport ITS Networking Content Package — Final Reviewed
 
-Generated for the 2025 Certiport IT Specialist Networking objectives (ITS OD Networking 101 0225).
+Built against the user-supplied **2025 Certiport IT Specialist Networking objectives (ITS OD Networking 101 0225)**.
 
-## Contents
-- `questions.production.ts`: 145 original objective-aligned practice questions ({'1': 29, '2': 29, '3': 29, '4': 29, '5': 29})
-- `questions.fixture.ts`: 45-question development fixture, 9 per simulator domain
-- `objectives.ts`: canonical five-domain / 21-objective map
-- `studyNotes/`: 21 concise objective notes
-- `cramSheet.ts`: high-yield memorization data
-- `question-mapping.csv`: question-to-objective mapping
-- `validation-report.json`: structural validation
-- `sources.json`: authoritative reference inventory
+## Production content
+- `questions.production.ts` — 145 original questions, 29 per simulator domain.
+- `studyNotes/` — 21 complete objective notes.
+- `cramSheet.ts` — final high-yield memorization sheet.
+- `objectives.ts` — canonical five-domain / 21-objective map.
+- `coverage-audit.json` — explicit official-topic coverage audit.
+- `validation-report.json` — structural/content QA results.
+- `sources.json` — technical reference inventory.
+- `CONTENT_REVIEW.md` — final editorial/QA summary.
 
-## Important
-These are original practice questions written from public exam objectives. They are not live, copied, reconstructed, or proprietary Certiport questions. The production bank is balanced 29 questions per domain as a simulator/content design choice; Certiport's public objective sheet does not publish official domain weights.
+## Final bank profile
+The bank intentionally mixes direct recall with applied scenarios and troubleshooting. The final question types/difficulties are recorded in `validation-report.json`. Visible correct-answer positions are balanced to avoid answer-position learning.
 
-## App integration
-Use `productionQuestions` as the real bank. For a 45-question simulator, select 9 unique questions per domain if you want the current balanced simulation strategy.
+## Scope boundary
+The official objectives define the curriculum but do not publish confidential live questions, exact live item-type proportions, or per-domain scoring weights. All questions here are newly authored objective-aligned study material. Equal domain counts are our simulator design, not an official Certiport weighting claim.

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { objectiveById, objectives } from '../data/objectives'
 import { fixtureQuestions, questions } from '../data/questions'
+import { studyNotes } from '../data/studyNotes'
 import { buildFullExam, buildQuickPractice, buildWeakAreaPractice } from '../lib/questionSets'
 import type { ProgressByQuestion } from '../types/exam'
 
@@ -26,6 +27,14 @@ describe('production question bank', () => {
 
   it('represents all required question types', () => {
     expect(new Set(questions.map((question) => question.type))).toEqual(new Set(['single-choice', 'multiple-choice', 'scenario', 'subnetting', 'command-output']))
+    const commandOutputQuestions = questions.filter((question) => question.type === 'command-output')
+    expect(commandOutputQuestions.length).toBeGreaterThan(0)
+    expect(commandOutputQuestions.every((question) => question.context?.trim())).toBe(true)
+  })
+
+  it('keeps one final study note for every canonical objective', () => {
+    expect(studyNotes).toHaveLength(21)
+    expect(new Set(studyNotes.map((note) => note.objectiveId))).toEqual(new Set(objectives.map((objective) => objective.id)))
   })
 
   it('keeps the supplied 45-question development fixture balanced and complete', () => {

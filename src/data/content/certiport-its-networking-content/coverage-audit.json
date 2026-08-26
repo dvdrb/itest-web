@@ -1,0 +1,1288 @@
+{
+  "officialTopicChecks": [
+    {
+      "objectiveId": "1.1",
+      "topic": "Internet",
+      "covered": true,
+      "matchedTerms": [
+        "internet"
+      ]
+    },
+    {
+      "objectiveId": "1.1",
+      "topic": "intranet",
+      "covered": true,
+      "matchedTerms": [
+        "intranet"
+      ]
+    },
+    {
+      "objectiveId": "1.1",
+      "topic": "extranet",
+      "covered": true,
+      "matchedTerms": [
+        "extranet"
+      ]
+    },
+    {
+      "objectiveId": "1.1",
+      "topic": "client-server",
+      "covered": true,
+      "matchedTerms": [
+        "client-server"
+      ]
+    },
+    {
+      "objectiveId": "1.1",
+      "topic": "peer-to-peer",
+      "covered": true,
+      "matchedTerms": [
+        "peer-to-peer"
+      ]
+    },
+    {
+      "objectiveId": "1.1",
+      "topic": "unicast",
+      "covered": true,
+      "matchedTerms": [
+        "unicast"
+      ]
+    },
+    {
+      "objectiveId": "1.1",
+      "topic": "multicast",
+      "covered": true,
+      "matchedTerms": [
+        "multicast"
+      ]
+    },
+    {
+      "objectiveId": "1.1",
+      "topic": "broadcast",
+      "covered": true,
+      "matchedTerms": [
+        "broadcast"
+      ]
+    },
+    {
+      "objectiveId": "1.1",
+      "topic": "network devices/IoT",
+      "covered": true,
+      "matchedTerms": [
+        "iot",
+        "router",
+        "switch"
+      ]
+    },
+    {
+      "objectiveId": "1.2",
+      "topic": "hypervisors",
+      "covered": true,
+      "matchedTerms": [
+        "hypervisor"
+      ]
+    },
+    {
+      "objectiveId": "1.2",
+      "topic": "virtual machines",
+      "covered": true,
+      "matchedTerms": [
+        "virtual machine"
+      ]
+    },
+    {
+      "objectiveId": "1.2",
+      "topic": "virtual switches",
+      "covered": true,
+      "matchedTerms": [
+        "virtual switch"
+      ]
+    },
+    {
+      "objectiveId": "1.3",
+      "topic": "VPN",
+      "covered": true,
+      "matchedTerms": [
+        "vpn"
+      ]
+    },
+    {
+      "objectiveId": "1.3",
+      "topic": "Remote Desktop",
+      "covered": true,
+      "matchedTerms": [
+        "remote desktop"
+      ]
+    },
+    {
+      "objectiveId": "2.1",
+      "topic": "perimeter/security zones/DMZ",
+      "covered": true,
+      "matchedTerms": [
+        "dmz",
+        "security zone"
+      ]
+    },
+    {
+      "objectiveId": "2.1",
+      "topic": "VLANs",
+      "covered": true,
+      "matchedTerms": [
+        "vlan"
+      ]
+    },
+    {
+      "objectiveId": "2.1",
+      "topic": "wired LAN",
+      "covered": true,
+      "matchedTerms": [
+        "wired lan",
+        "ethernet cabl"
+      ]
+    },
+    {
+      "objectiveId": "2.1",
+      "topic": "wireless LAN",
+      "covered": true,
+      "matchedTerms": [
+        "wireless lan",
+        "wlan"
+      ]
+    },
+    {
+      "objectiveId": "2.2",
+      "topic": "DSL",
+      "covered": true,
+      "matchedTerms": [
+        "dsl"
+      ]
+    },
+    {
+      "objectiveId": "2.2",
+      "topic": "site-to-site",
+      "covered": true,
+      "matchedTerms": [
+        "site-to-site"
+      ]
+    },
+    {
+      "objectiveId": "2.2",
+      "topic": "cable modem",
+      "covered": true,
+      "matchedTerms": [
+        "cable modem",
+        "cable broadband"
+      ]
+    },
+    {
+      "objectiveId": "2.2",
+      "topic": "satellite",
+      "covered": true,
+      "matchedTerms": [
+        "satellite"
+      ]
+    },
+    {
+      "objectiveId": "2.2",
+      "topic": "cellular 3G/4G/5G",
+      "covered": true,
+      "matchedTerms": [
+        "3g",
+        "4g",
+        "5g"
+      ]
+    },
+    {
+      "objectiveId": "2.3",
+      "topic": "802.11",
+      "covered": true,
+      "matchedTerms": [
+        "802.11"
+      ]
+    },
+    {
+      "objectiveId": "2.3",
+      "topic": "Bluetooth",
+      "covered": true,
+      "matchedTerms": [
+        "bluetooth"
+      ]
+    },
+    {
+      "objectiveId": "2.3",
+      "topic": "WPA",
+      "covered": true,
+      "matchedTerms": [
+        "wpa"
+      ]
+    },
+    {
+      "objectiveId": "2.3",
+      "topic": "WPA2",
+      "covered": true,
+      "matchedTerms": [
+        "wpa2"
+      ]
+    },
+    {
+      "objectiveId": "2.3",
+      "topic": "WEP",
+      "covered": true,
+      "matchedTerms": [
+        "wep"
+      ]
+    },
+    {
+      "objectiveId": "2.3",
+      "topic": "802.1X",
+      "covered": true,
+      "matchedTerms": [
+        "802.1x"
+      ]
+    },
+    {
+      "objectiveId": "2.3",
+      "topic": "other wireless security",
+      "covered": true,
+      "matchedTerms": [
+        "wpa3"
+      ]
+    },
+    {
+      "objectiveId": "2.3",
+      "topic": "point-to-point wireless",
+      "covered": true,
+      "matchedTerms": [
+        "point-to-point"
+      ]
+    },
+    {
+      "objectiveId": "2.3",
+      "topic": "ad hoc",
+      "covered": true,
+      "matchedTerms": [
+        "ad hoc"
+      ]
+    },
+    {
+      "objectiveId": "2.3",
+      "topic": "wireless bridging",
+      "covered": true,
+      "matchedTerms": [
+        "wireless bridg"
+      ]
+    },
+    {
+      "objectiveId": "2.3",
+      "topic": "wireless interference",
+      "covered": true,
+      "matchedTerms": [
+        "interference"
+      ]
+    },
+    {
+      "objectiveId": "2.4",
+      "topic": "star",
+      "covered": true,
+      "matchedTerms": [
+        "star"
+      ]
+    },
+    {
+      "objectiveId": "2.4",
+      "topic": "mesh",
+      "covered": true,
+      "matchedTerms": [
+        "mesh"
+      ]
+    },
+    {
+      "objectiveId": "2.4",
+      "topic": "ring",
+      "covered": true,
+      "matchedTerms": [
+        "ring"
+      ]
+    },
+    {
+      "objectiveId": "2.4",
+      "topic": "bus",
+      "covered": true,
+      "matchedTerms": [
+        "bus"
+      ]
+    },
+    {
+      "objectiveId": "2.4",
+      "topic": "logical topology",
+      "covered": true,
+      "matchedTerms": [
+        "logical topology"
+      ]
+    },
+    {
+      "objectiveId": "2.4",
+      "topic": "physical topology",
+      "covered": true,
+      "matchedTerms": [
+        "physical topology"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "access/trunk ports",
+      "covered": true,
+      "matchedTerms": [
+        "access port",
+        "trunk port"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "device/port capacity",
+      "covered": true,
+      "matchedTerms": [
+        "port count"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "managed/unmanaged",
+      "covered": true,
+      "matchedTerms": [
+        "managed switch",
+        "unmanaged switch"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "VLAN capability",
+      "covered": true,
+      "matchedTerms": [
+        "vlan"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "Layer 2/Layer 3 switches",
+      "covered": true,
+      "matchedTerms": [
+        "layer 2",
+        "layer 3 switch"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "security options",
+      "covered": true,
+      "matchedTerms": [
+        "port security",
+        "security"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "single point of failure",
+      "covered": true,
+      "matchedTerms": [
+        "single point of failure"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "switching types",
+      "covered": true,
+      "matchedTerms": [
+        "store-and-forward",
+        "cut-through"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "MAC table",
+      "covered": true,
+      "matchedTerms": [
+        "mac table",
+        "cam table"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "hub vs switch",
+      "covered": true,
+      "matchedTerms": [
+        "hub"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "collision domain",
+      "covered": true,
+      "matchedTerms": [
+        "collision domain"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "broadcast domain",
+      "covered": true,
+      "matchedTerms": [
+        "broadcast domain"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "half/full duplex",
+      "covered": true,
+      "matchedTerms": [
+        "half duplex",
+        "full duplex"
+      ]
+    },
+    {
+      "objectiveId": "3.1",
+      "topic": "STP",
+      "covered": true,
+      "matchedTerms": [
+        "spanning tree",
+        "stp"
+      ]
+    },
+    {
+      "objectiveId": "3.2",
+      "topic": "bottlenecks",
+      "covered": true,
+      "matchedTerms": [
+        "bottleneck"
+      ]
+    },
+    {
+      "objectiveId": "3.2",
+      "topic": "directly connected routes",
+      "covered": true,
+      "matchedTerms": [
+        "directly connected"
+      ]
+    },
+    {
+      "objectiveId": "3.2",
+      "topic": "static routing",
+      "covered": true,
+      "matchedTerms": [
+        "static route"
+      ]
+    },
+    {
+      "objectiveId": "3.2",
+      "topic": "dynamic routing",
+      "covered": true,
+      "matchedTerms": [
+        "dynamic rout"
+      ]
+    },
+    {
+      "objectiveId": "3.2",
+      "topic": "default routes",
+      "covered": true,
+      "matchedTerms": [
+        "default route"
+      ]
+    },
+    {
+      "objectiveId": "3.2",
+      "topic": "routing table/best route",
+      "covered": true,
+      "matchedTerms": [
+        "longest prefix"
+      ]
+    },
+    {
+      "objectiveId": "3.2",
+      "topic": "port forwarding",
+      "covered": true,
+      "matchedTerms": [
+        "port forward"
+      ]
+    },
+    {
+      "objectiveId": "3.2",
+      "topic": "QoS",
+      "covered": true,
+      "matchedTerms": [
+        "qos",
+        "quality of service"
+      ]
+    },
+    {
+      "objectiveId": "3.2",
+      "topic": "segmentation",
+      "covered": true,
+      "matchedTerms": [
+        "segmentation"
+      ]
+    },
+    {
+      "objectiveId": "3.2",
+      "topic": "convergence",
+      "covered": true,
+      "matchedTerms": [
+        "convergence"
+      ]
+    },
+    {
+      "objectiveId": "3.3",
+      "topic": "cable types/segment length/speed",
+      "covered": true,
+      "matchedTerms": [
+        "100 m",
+        "segment length",
+        "cat5e",
+        "cat6"
+      ]
+    },
+    {
+      "objectiveId": "3.3",
+      "topic": "fiber optic",
+      "covered": true,
+      "matchedTerms": [
+        "fiber"
+      ]
+    },
+    {
+      "objectiveId": "3.3",
+      "topic": "shielded/unshielded twisted pair",
+      "covered": true,
+      "matchedTerms": [
+        "utp",
+        "stp",
+        "shielded",
+        "unshielded"
+      ]
+    },
+    {
+      "objectiveId": "3.3",
+      "topic": "CAT5-CAT7",
+      "covered": true,
+      "matchedTerms": [
+        "cat5",
+        "cat7"
+      ]
+    },
+    {
+      "objectiveId": "3.3",
+      "topic": "crossover/straight-through",
+      "covered": true,
+      "matchedTerms": [
+        "crossover",
+        "straight-through"
+      ]
+    },
+    {
+      "objectiveId": "3.3",
+      "topic": "EMI",
+      "covered": true,
+      "matchedTerms": [
+        "emi",
+        "electromagnetic interference"
+      ]
+    },
+    {
+      "objectiveId": "3.3",
+      "topic": "crosstalk",
+      "covered": true,
+      "matchedTerms": [
+        "crosstalk"
+      ]
+    },
+    {
+      "objectiveId": "3.3",
+      "topic": "interception",
+      "covered": true,
+      "matchedTerms": [
+        "intercept",
+        "tap"
+      ]
+    },
+    {
+      "objectiveId": "4.1",
+      "topic": "seven OSI layers",
+      "covered": true,
+      "matchedTerms": [
+        "application",
+        "presentation",
+        "session",
+        "transport",
+        "network",
+        "data link",
+        "physical"
+      ]
+    },
+    {
+      "objectiveId": "4.1",
+      "topic": "purpose/examples per layer",
+      "covered": true,
+      "matchedTerms": [
+        "layer 7",
+        "layer 4",
+        "layer 3",
+        "layer 2",
+        "layer 1"
+      ]
+    },
+    {
+      "objectiveId": "4.1",
+      "topic": "MAC address",
+      "covered": true,
+      "matchedTerms": [
+        "mac address"
+      ]
+    },
+    {
+      "objectiveId": "4.2",
+      "topic": "TCP/IP layers",
+      "covered": true,
+      "matchedTerms": [
+        "application layer",
+        "transport layer",
+        "internet layer",
+        "network access"
+      ]
+    },
+    {
+      "objectiveId": "4.2",
+      "topic": "purposes/examples",
+      "covered": true,
+      "matchedTerms": [
+        "tcp",
+        "udp",
+        "ip",
+        "ethernet",
+        "dns"
+      ]
+    },
+    {
+      "objectiveId": "4.3",
+      "topic": "classful/classless",
+      "covered": true,
+      "matchedTerms": [
+        "classful",
+        "classless",
+        "cidr"
+      ]
+    },
+    {
+      "objectiveId": "4.3",
+      "topic": "subnetting purpose",
+      "covered": true,
+      "matchedTerms": [
+        "subnetting",
+        "subnet"
+      ]
+    },
+    {
+      "objectiveId": "4.3",
+      "topic": "subnet mask/prefix",
+      "covered": true,
+      "matchedTerms": [
+        "subnet mask",
+        "prefix"
+      ]
+    },
+    {
+      "objectiveId": "4.3",
+      "topic": "default gateway",
+      "covered": true,
+      "matchedTerms": [
+        "default gateway"
+      ]
+    },
+    {
+      "objectiveId": "4.3",
+      "topic": "sockets",
+      "covered": true,
+      "matchedTerms": [
+        "socket"
+      ]
+    },
+    {
+      "objectiveId": "4.3",
+      "topic": "broadcast",
+      "covered": true,
+      "matchedTerms": [
+        "broadcast"
+      ]
+    },
+    {
+      "objectiveId": "4.3",
+      "topic": "private addresses",
+      "covered": true,
+      "matchedTerms": [
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16"
+      ]
+    },
+    {
+      "objectiveId": "4.3",
+      "topic": "loopback",
+      "covered": true,
+      "matchedTerms": [
+        "127.0.0.1",
+        "127/8"
+      ]
+    },
+    {
+      "objectiveId": "4.4",
+      "topic": "128-bit addressing",
+      "covered": true,
+      "matchedTerms": [
+        "128 bits"
+      ]
+    },
+    {
+      "objectiveId": "4.4",
+      "topic": "prefix/default gateway/sockets",
+      "covered": true,
+      "matchedTerms": [
+        "prefix length",
+        "default gateway",
+        "socket"
+      ]
+    },
+    {
+      "objectiveId": "4.4",
+      "topic": "abbreviation",
+      "covered": true,
+      "matchedTerms": [
+        "::",
+        "leading zeros"
+      ]
+    },
+    {
+      "objectiveId": "4.4",
+      "topic": "tunneling/tunnel brokers/dual stack",
+      "covered": true,
+      "matchedTerms": [
+        "tunnel",
+        "tunnel broker",
+        "dual stack"
+      ]
+    },
+    {
+      "objectiveId": "4.4",
+      "topic": "link-local/global",
+      "covered": true,
+      "matchedTerms": [
+        "fe80::/10",
+        "global unicast"
+      ]
+    },
+    {
+      "objectiveId": "4.4",
+      "topic": "all nodes/all routers",
+      "covered": true,
+      "matchedTerms": [
+        "ff02::1",
+        "ff02::2"
+      ]
+    },
+    {
+      "objectiveId": "4.4",
+      "topic": "loopback",
+      "covered": true,
+      "matchedTerms": [
+        "::1"
+      ]
+    },
+    {
+      "objectiveId": "4.5",
+      "topic": "HTTP",
+      "covered": true,
+      "matchedTerms": [
+        "http",
+        "80"
+      ]
+    },
+    {
+      "objectiveId": "4.5",
+      "topic": "HTTPS",
+      "covered": true,
+      "matchedTerms": [
+        "https",
+        "443"
+      ]
+    },
+    {
+      "objectiveId": "4.5",
+      "topic": "FTP",
+      "covered": true,
+      "matchedTerms": [
+        "ftp",
+        "21"
+      ]
+    },
+    {
+      "objectiveId": "4.5",
+      "topic": "SMTP",
+      "covered": true,
+      "matchedTerms": [
+        "smtp",
+        "25"
+      ]
+    },
+    {
+      "objectiveId": "4.5",
+      "topic": "IMAP",
+      "covered": true,
+      "matchedTerms": [
+        "imap",
+        "143"
+      ]
+    },
+    {
+      "objectiveId": "4.5",
+      "topic": "DNS",
+      "covered": true,
+      "matchedTerms": [
+        "dns",
+        "53"
+      ]
+    },
+    {
+      "objectiveId": "4.5",
+      "topic": "RDP",
+      "covered": true,
+      "matchedTerms": [
+        "rdp",
+        "3389"
+      ]
+    },
+    {
+      "objectiveId": "4.5",
+      "topic": "SSH",
+      "covered": true,
+      "matchedTerms": [
+        "ssh",
+        "22"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "HOSTS",
+      "covered": true,
+      "matchedTerms": [
+        "hosts"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "LMHOSTS",
+      "covered": true,
+      "matchedTerms": [
+        "lmhosts"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "DNS",
+      "covered": true,
+      "matchedTerms": [
+        "dns"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "WINS",
+      "covered": true,
+      "matchedTerms": [
+        "wins"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "A",
+      "covered": true,
+      "matchedTerms": [
+        "a →",
+        " a record"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "AAAA",
+      "covered": true,
+      "matchedTerms": [
+        "aaaa"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "MX",
+      "covered": true,
+      "matchedTerms": [
+        "mx"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "PTR",
+      "covered": true,
+      "matchedTerms": [
+        "ptr"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "SRV",
+      "covered": true,
+      "matchedTerms": [
+        "srv"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "CNAME",
+      "covered": true,
+      "matchedTerms": [
+        "cname"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "SOA",
+      "covered": true,
+      "matchedTerms": [
+        "soa"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "forward lookup",
+      "covered": true,
+      "matchedTerms": [
+        "forward lookup"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "reverse lookup",
+      "covered": true,
+      "matchedTerms": [
+        "reverse lookup"
+      ]
+    },
+    {
+      "objectiveId": "4.6",
+      "topic": "resolution process",
+      "covered": true,
+      "matchedTerms": [
+        "resolver"
+      ]
+    },
+    {
+      "objectiveId": "4.7",
+      "topic": "DHCP",
+      "covered": true,
+      "matchedTerms": [
+        "dhcp"
+      ]
+    },
+    {
+      "objectiveId": "4.7",
+      "topic": "static NAT",
+      "covered": true,
+      "matchedTerms": [
+        "static nat"
+      ]
+    },
+    {
+      "objectiveId": "4.7",
+      "topic": "dynamic NAT",
+      "covered": true,
+      "matchedTerms": [
+        "dynamic nat"
+      ]
+    },
+    {
+      "objectiveId": "4.7",
+      "topic": "public/private",
+      "covered": true,
+      "matchedTerms": [
+        "public",
+        "private"
+      ]
+    },
+    {
+      "objectiveId": "4.7",
+      "topic": "PAT",
+      "covered": true,
+      "matchedTerms": [
+        "pat",
+        "napt"
+      ]
+    },
+    {
+      "objectiveId": "4.7",
+      "topic": "firewalls",
+      "covered": true,
+      "matchedTerms": [
+        "firewall"
+      ]
+    },
+    {
+      "objectiveId": "5.1",
+      "topic": "identify problem",
+      "covered": true,
+      "matchedTerms": [
+        "identify"
+      ]
+    },
+    {
+      "objectiveId": "5.1",
+      "topic": "establish theory",
+      "covered": true,
+      "matchedTerms": [
+        "theory"
+      ]
+    },
+    {
+      "objectiveId": "5.1",
+      "topic": "test theory",
+      "covered": true,
+      "matchedTerms": [
+        "test the theory"
+      ]
+    },
+    {
+      "objectiveId": "5.1",
+      "topic": "plan/implement",
+      "covered": true,
+      "matchedTerms": [
+        "plan",
+        "implement"
+      ]
+    },
+    {
+      "objectiveId": "5.1",
+      "topic": "verify",
+      "covered": true,
+      "matchedTerms": [
+        "verify"
+      ]
+    },
+    {
+      "objectiveId": "5.1",
+      "topic": "document",
+      "covered": true,
+      "matchedTerms": [
+        "document"
+      ]
+    },
+    {
+      "objectiveId": "5.1",
+      "topic": "professional conduct",
+      "covered": true,
+      "matchedTerms": [
+        "professional",
+        "etiquette"
+      ]
+    },
+    {
+      "objectiveId": "5.2",
+      "topic": "tool selection",
+      "covered": true,
+      "matchedTerms": [
+        "tool",
+        "choose"
+      ]
+    },
+    {
+      "objectiveId": "5.2",
+      "topic": "multimeter",
+      "covered": true,
+      "matchedTerms": [
+        "multimeter"
+      ]
+    },
+    {
+      "objectiveId": "5.2",
+      "topic": "cable tester",
+      "covered": true,
+      "matchedTerms": [
+        "cable tester"
+      ]
+    },
+    {
+      "objectiveId": "5.2",
+      "topic": "toner",
+      "covered": true,
+      "matchedTerms": [
+        "toner"
+      ]
+    },
+    {
+      "objectiveId": "5.2",
+      "topic": "TDR",
+      "covered": true,
+      "matchedTerms": [
+        "tdr"
+      ]
+    },
+    {
+      "objectiveId": "5.2",
+      "topic": "OTDR",
+      "covered": true,
+      "matchedTerms": [
+        "otdr"
+      ]
+    },
+    {
+      "objectiveId": "5.3",
+      "topic": "ping",
+      "covered": true,
+      "matchedTerms": [
+        "ping"
+      ]
+    },
+    {
+      "objectiveId": "5.3",
+      "topic": "ipconfig",
+      "covered": true,
+      "matchedTerms": [
+        "ipconfig"
+      ]
+    },
+    {
+      "objectiveId": "5.3",
+      "topic": "tracert",
+      "covered": true,
+      "matchedTerms": [
+        "tracert"
+      ]
+    },
+    {
+      "objectiveId": "5.3",
+      "topic": "pathping",
+      "covered": true,
+      "matchedTerms": [
+        "pathping"
+      ]
+    },
+    {
+      "objectiveId": "5.3",
+      "topic": "nslookup",
+      "covered": true,
+      "matchedTerms": [
+        "nslookup"
+      ]
+    },
+    {
+      "objectiveId": "5.3",
+      "topic": "hostname",
+      "covered": true,
+      "matchedTerms": [
+        "hostname"
+      ]
+    },
+    {
+      "objectiveId": "5.3",
+      "topic": "netstat",
+      "covered": true,
+      "matchedTerms": [
+        "netstat"
+      ]
+    },
+    {
+      "objectiveId": "5.3",
+      "topic": "arp",
+      "covered": true,
+      "matchedTerms": [
+        "arp"
+      ]
+    },
+    {
+      "objectiveId": "5.3",
+      "topic": "local loopback",
+      "covered": true,
+      "matchedTerms": [
+        "127.0.0.1",
+        "loopback"
+      ]
+    },
+    {
+      "objectiveId": "5.3",
+      "topic": "protocols",
+      "covered": true,
+      "matchedTerms": [
+        "icmp",
+        "tcp",
+        "udp"
+      ]
+    },
+    {
+      "objectiveId": "5.4",
+      "topic": "ping",
+      "covered": true,
+      "matchedTerms": [
+        "ping"
+      ]
+    },
+    {
+      "objectiveId": "5.4",
+      "topic": "ip addr",
+      "covered": true,
+      "matchedTerms": [
+        "ip addr"
+      ]
+    },
+    {
+      "objectiveId": "5.4",
+      "topic": "traceroute",
+      "covered": true,
+      "matchedTerms": [
+        "traceroute"
+      ]
+    },
+    {
+      "objectiveId": "5.4",
+      "topic": "tracepath",
+      "covered": true,
+      "matchedTerms": [
+        "tracepath"
+      ]
+    },
+    {
+      "objectiveId": "5.4",
+      "topic": "dig",
+      "covered": true,
+      "matchedTerms": [
+        "dig"
+      ]
+    },
+    {
+      "objectiveId": "5.4",
+      "topic": "host",
+      "covered": true,
+      "matchedTerms": [
+        "host"
+      ]
+    },
+    {
+      "objectiveId": "5.4",
+      "topic": "netstat",
+      "covered": true,
+      "matchedTerms": [
+        "netstat"
+      ]
+    },
+    {
+      "objectiveId": "5.4",
+      "topic": "arp",
+      "covered": true,
+      "matchedTerms": [
+        "arp"
+      ]
+    }
+  ],
+  "status": "PASS"
+}
