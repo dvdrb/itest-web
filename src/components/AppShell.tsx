@@ -20,8 +20,8 @@ export function AppShell({ page, onNavigate, children }: AppShellProps) {
     <div className="app-frame">
       <header className="topbar">
         <button className="brand" onClick={() => onNavigate('dashboard')} aria-label="Open dashboard">
-          <span className="brand-mark">NF</span>
-          <span><strong>NETWORK</strong><em>FIELD GUIDE</em></span>
+          <span className="brand-mark">IT</span>
+          <strong>ITS NETWORKING PREP</strong>
         </button>
         <nav aria-label="Primary navigation">
           {links.map((link) => (
@@ -30,10 +30,9 @@ export function AppShell({ page, onNavigate, children }: AppShellProps) {
             </button>
           ))}
         </nav>
-        <span className="status-dot"><i /> LOCAL MODE</span>
       </header>
       <main>{children}</main>
-      <footer>Original study material · Progress is stored only in this browser.</footer>
+      <footer>Original practice material · Progress is saved in this browser.</footer>
     </div>
   )
 }

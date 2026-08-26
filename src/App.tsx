@@ -136,7 +136,7 @@ function App() {
       case 'exam': return <ExamPage session={state.activeExam} questionsById={questionsById} onStart={startExam} onSelect={selectExamAnswer} onJump={jumpExam} onReview={toggleExamReview} onSubmit={() => state.activeExam && completeExam(state.activeExam)} />
       case 'notes': return <StudyNotesPage />
       case 'results': return <ResultsPage attempt={state.attempts[0]} questionsById={questionsById} onPractice={() => navigate('practice')} />
-      default: return <DashboardPage domainProgress={domainProgress} attempts={state.attempts} totalAnswered={domainProgress.reduce((total, entry) => total + entry.attempted, 0)} onNavigate={navigate} onReset={resetProgress} />
+      default: return <DashboardPage domainProgress={domainProgress} attempts={state.attempts} totalAnswered={domainProgress.reduce((total, entry) => total + entry.attempted, 0)} onNavigate={navigate} onPracticeWeak={() => startPractice(buildWeakAreaPractice(questions, state.progress), 'weak-area drill')} onReset={resetProgress} />
     }
   }
 

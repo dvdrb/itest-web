@@ -8,6 +8,7 @@ export function ResultReview({ questions, answers }: { questions: Question[]; an
     const selected = answers[question.id] ?? []
     const chosen = question.options.filter((option) => selected.includes(option.id)).map((option) => option.text).join(', ') || 'No answer'
     const correct = question.options.filter((option) => question.correctOptionIds.includes(option.id)).map((option) => option.text).join(', ')
-    return <article className="review-item" key={question.id}><span>{question.domain} · {question.objectiveId}</span><h3>{question.prompt}</h3><p><b>Your answer:</b> {chosen}</p><p><b>Correct answer:</b> {correct}</p><p className="review-explanation">{question.explanation}</p></article>
+    const selectedDistractors = question.options.filter((option) => selected.includes(option.id) && !question.correctOptionIds.includes(option.id) && question.distractorExplanations[option.id])
+    return <article className="review-item" key={question.id}><span>Objective {question.objectiveId} · {question.domain}</span><h3>{question.prompt}</h3><div className="answer-comparison"><p><b>Your answer</b>{chosen}</p><p><b>Correct answer</b>{correct}</p></div><p className="review-explanation">{question.explanation}</p>{selectedDistractors.length > 0 && <div className="review-distractors"><b>Why this answer was not correct</b>{selectedDistractors.map((option) => <p key={option.id}>{question.distractorExplanations[option.id]}</p>)}</div>}</article>
   })}</div>
 }
