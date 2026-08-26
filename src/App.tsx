@@ -34,7 +34,7 @@ function App() {
   useEffect(() => { writeState(state) }, [state])
 
   const navigate = useCallback((nextPage: Page, bypassActiveExamWarning = false) => {
-    if (!bypassActiveExamWarning && state.activeExam && nextPage !== 'exam' && !window.confirm('A full exam is still active. Its timer will continue while you navigate away. Continue?')) return
+    if (!bypassActiveExamWarning && state.activeExam && nextPage !== 'exam' && !window.confirm('A mock exam is still active. Its timer will continue while you navigate away. Continue?')) return
     window.location.hash = nextPage
     setPage(nextPage)
   }, [state.activeExam])

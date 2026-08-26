@@ -11,7 +11,7 @@ interface AppShellProps {
 const links: Array<{ page: Exclude<Page, 'results'>; label: string }> = [
   { page: 'dashboard', label: 'Dashboard' },
   { page: 'practice', label: 'Practice' },
-  { page: 'exam', label: 'Full exam' },
+  { page: 'exam', label: 'Mock exam' },
   { page: 'notes', label: 'Study notes' },
 ]
 

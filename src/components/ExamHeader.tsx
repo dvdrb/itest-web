@@ -20,5 +20,5 @@ export function ExamHeader({ expiresAt, current, total, onExpire }: ExamHeaderPr
   }, [])
   const remaining = expiresAt - now
   useEffect(() => { if (remaining <= 0) onExpire() }, [remaining, onExpire])
-  return <div className="exam-header"><span>FULL EXAM · QUESTION {current} / {total}</span><strong className={remaining < 300000 ? 'urgent' : ''}>◷ {formatTime(remaining)}</strong></div>
+  return <div className="exam-header"><span>MOCK EXAM · QUESTION {current} / {total}</span><strong className={remaining < 300000 ? 'urgent' : ''}>◷ {formatTime(remaining)}</strong></div>
 }

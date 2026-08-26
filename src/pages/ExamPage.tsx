@@ -15,7 +15,7 @@ interface ExamPageProps {
 }
 
 export function ExamPage({ session, questionsById, onStart, onSelect, onJump, onReview, onManualSubmit, onExpire }: ExamPageProps) {
-  if (!session) return <div className="page exam-intro"><p className="eyebrow">FULL EXAM</p><h1>Ready to begin?</h1><p>45 questions · 50 minutes · Results are shown after you submit. The nine-questions-per-domain distribution is this simulator’s design, not official Certiport weighting.</p><div className="exam-rules"><span>45 questions</span><span>50-minute timer</span><span>Question navigator</span><span>Review flags</span></div><button className="button primary" onClick={onStart}>Start full exam</button></div>
+  if (!session) return <div className="page exam-intro"><p className="eyebrow">MOCK EXAM</p><h1>Ready to begin?</h1><p>45 questions · 50 minutes · Results are shown after you submit. The nine-questions-per-domain distribution is this simulator’s design, not official Certiport weighting.</p><div className="exam-rules"><span>45 questions</span><span>50-minute timer</span><span>Question navigator</span><span>Review flags</span></div><button className="button primary" onClick={onStart}>Start Mock Exam</button></div>
 
   const safeIndex = Math.min(session.currentIndex, session.questionIds.length - 1)
   const question = questionsById[session.questionIds[safeIndex]]
