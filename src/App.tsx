@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { AppShell, type Page } from './components/AppShell'
 import { questions } from './data/questions'
 import { buildFullExam, buildQuickPractice, buildWeakAreaPractice } from './lib/questionSets'
@@ -147,7 +148,10 @@ function App() {
     }
   }
 
-  return <AppShell page={page} onNavigate={navigate}>{renderPage()}</AppShell>
+  return <>
+    <AppShell page={page} onNavigate={navigate}>{renderPage()}</AppShell>
+    <Analytics />
+  </>
 }
 
 export default App
